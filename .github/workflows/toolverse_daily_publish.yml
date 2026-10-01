@@ -1,9 +1,12 @@
 name: Toolverse 90-Day Automation Engine
 
 on:
-  # Daily trigger at 1:30 PM UTC = 7:00 PM IST (Optimal Tier-1 US/UK Peak Window)
+  # Multi-Slot Daily Schedule (Tier-1 Peak Windows):
+  # Slot 1: 1:30 PM UTC = 7:00 PM IST (US Morning 9:30 AM EDT & Europe Midday Peak)
+  # Slot 2: 5:30 PM UTC = 11:00 PM IST (US Afternoon 1:30 PM EDT & West Coast Peak Video Reels)
   schedule:
     - cron: '30 13 * * *'
+    - cron: '30 17 * * *'
   
   # Manual trigger with custom options from GitHub Actions UI
   workflow_dispatch:
