@@ -1,0 +1,15 @@
+================================================================================
+READY-TO-PUBLISH SOCIAL MEDIA CAPTION
+Tool: FORENSICS LAB & METADATA (Studio: Shield Studio)
+================================================================================
+
+Inspect and scrub hidden GPS metadata before posting photos! 🕵️‍♀️📍
+
+Every picture you take with your smartphone embeds invisible tracking data:
+📍 Exact latitude, longitude, and elevation
+📷 Camera model, lens serial number & shutter count
+🧹 1-click metadata stripper to protect your family's privacy
+
+Audit your photos free: toolverse-official.vercel.app
+
+#cybersecurity #privacytips #osint #phototips #dataprivacy #toolverse

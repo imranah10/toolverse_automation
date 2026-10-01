@@ -1,0 +1,15 @@
+================================================================================
+READY-TO-PUBLISH SOCIAL MEDIA CAPTION
+Tool: COLOR PALETTE GENERATOR & EXTRACTOR (Studio: Image Studio)
+================================================================================
+
+Extract dominant color palettes and CSS design tokens from any photo! 🎨✨
+
+Found the perfect color inspiration in an image?
+🎨 Extracts harmonic dominant color swatches in milliseconds
+📋 1-click copy for HEX, RGB, HSL & Tailwind CSS variables
+📐 Create cohesive, beautiful color stories for your web projects
+
+Extract color palettes free: toolverse-official.vercel.app
+
+#uidesign #webdesign #colorpalette #tailwind #designinspiration #toolverse

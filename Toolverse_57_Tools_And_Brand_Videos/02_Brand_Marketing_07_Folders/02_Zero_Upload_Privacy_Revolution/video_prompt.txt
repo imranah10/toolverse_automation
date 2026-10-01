@@ -1,0 +1,31 @@
+================================================================================
+BRAND COMMERCIAL #02: THE ZERO-UPLOAD PRIVACY REVOLUTION
+Total Duration: 20 Seconds (2-Part Seamless Continuation for Google Flow / AI)
+================================================================================
+
+--------------------------------------------------------------------------------
+PART 1: 0 to 10 SECONDS (THE HOOK & PROBLEM)
+--------------------------------------------------------------------------------
+>>> COPY THIS EXACT PROMPT INTO GOOGLE FLOW / KLING / RUNWAY FOR PART 1:
+Moody cyber-thriller 10-second vertical 9:16 commercial. Dramatic dark blue lighting. Fast dolly-in onto a smartphone user uploading a confidential tax document to a random free converter website. CGI visualizes the document shattering into glowing red data packets transmitting across a dark world map to a foreign server warehouse with flashing red surveillance lights. Eerie electronic hum, documentary thriller aesthetic.
+
+>>> PART 1 VOICEOVER AUDIO (0 to 10s):
+"When you upload your bank statement, contract, or ID to a random 'free PDF' website... where does it actually go? Most free tools upload your private files to cloud servers where they can be cached and scanned."
+
+--------------------------------------------------------------------------------
+PART 2: 10 to 20 SECONDS (THE TOOLVERSE REVEAL & CLIMAX — CONTINUATION)
+--------------------------------------------------------------------------------
+>>> COPY THIS PROMPT FOR PART 2 (Click 'Extend Video' / Use Last Frame of Part 1):
+Continuing seamlessly from the foreign server visualization in Part 1. A giant holographic emerald green shield slams into the center of the frame, shattering the red surveillance lines. Text pulses: 'ACTIVE SHIELD: 0ms LATENCY'. The Toolverse interface appears locally on a laptop. An animated WebAssembly CPU diagram shows files processing 100% inside local device RAM with zero bytes transmitted. Camera pulls back to a serene modern office with clean green ambient glow. High-tech security commercial finish.
+
+>>> PART 2 VOICEOVER AUDIO (10 to 20s):
+"Toolverse engineered a strict Zero-Upload architecture. Our tools run locally on your own computer using WebAssembly. Your files never touch a server. Disconnect your Wi-Fi and it still works. Real privacy is math."
+
+--------------------------------------------------------------------------------
+HOW TO GENERATE THIS 20-SECOND VIDEO IN GOOGLE FLOW / RUNWAY / KLING:
+--------------------------------------------------------------------------------
+STEP 1: Google Flow me Part 1 ka prompt paste karein aur 10-second video generate karein.
+STEP 2: Jab Part 1 ban jaye, to video par 'Extend Video' (ya Continue) click karein (ya Part 1 ka aakhiri frame screenshot lekar 'Image to Video' me upload karein).
+STEP 3: Part 2 ka prompt paste karein aur generate dabayein!
+        -> Video bilkul wahi se 100% seamlessly continue ho jayegi!
+STEP 4: CapCut me dono 10s clips ko jod dein = 20-second masterpiece ready!

@@ -1,0 +1,31 @@
+================================================================================
+BRAND COMMERCIAL #01: THE ANTI-SUBSCRIPTION MANIFESTO
+Total Duration: 20 Seconds (2-Part Seamless Continuation for Google Flow / AI)
+================================================================================
+
+--------------------------------------------------------------------------------
+PART 1: 0 to 10 SECONDS (THE HOOK & PROBLEM)
+--------------------------------------------------------------------------------
+>>> COPY THIS EXACT PROMPT INTO GOOGLE FLOW / KLING / RUNWAY FOR PART 1:
+Cinematic 10-second vertical 9:16 commercial. Close-up of a modern laptop screen showing an aggressive red paywall pop-up: 'Enter Credit Card to Export PDF - $240/yr'. A frustrated young creator angrily slams their hands on the desk and violently closes the browser tab. The camera slowly zooms into their determined face reflected in the dark screen as they type a new URL. Moody blue and red backlighting, high cinematic tension, 60fps.
+
+>>> PART 1 VOICEOVER AUDIO (0 to 10s):
+"Stop paying Adobe twenty dollars a month just to compress a PDF or sign an NDA. Every other website traps your work behind greedy paywalls and forced subscriptions."
+
+--------------------------------------------------------------------------------
+PART 2: 10 to 20 SECONDS (THE TOOLVERSE REVEAL & CLIMAX — CONTINUATION)
+--------------------------------------------------------------------------------
+>>> COPY THIS PROMPT FOR PART 2 (Click 'Extend Video' / Use Last Frame of Part 1):
+Continuing seamlessly from the dark screen reflection in Part 1. The screen explodes with brilliant emerald green and cyan light as the Toolverse dark-mode interface loads instantly. A sleek cursor drags a 50MB file into the PixelPress tool, sliding the size to 500KB with a glowing '0ms Latency / 100% Free' badge. Camera pulls back smoothly as the creator smiles with relief. Kinetic text flashes: '57 Free Tools. 0 Signups. 100% Private.' Cinematic electric green glow, ultra-modern commercial finish.
+
+>>> PART 2 VOICEOVER AUDIO (10 to 20s):
+"That’s why we built Toolverse. 57 full-featured web utilities in one private browser tab. Zero credit cards, zero watermarks, forever free. Reclaim your digital freedom at toolverse-official.vercel.app."
+
+--------------------------------------------------------------------------------
+HOW TO GENERATE THIS 20-SECOND VIDEO IN GOOGLE FLOW / RUNWAY / KLING:
+--------------------------------------------------------------------------------
+STEP 1: Google Flow me Part 1 ka prompt paste karein aur 10-second video generate karein.
+STEP 2: Jab Part 1 ban jaye, to video par 'Extend Video' (ya Continue) click karein (ya Part 1 ka aakhiri frame screenshot lekar 'Image to Video' me upload karein).
+STEP 3: Part 2 ka prompt paste karein aur generate dabayein!
+        -> Video bilkul wahi se 100% seamlessly continue ho jayegi!
+STEP 4: CapCut me dono 10s clips ko jod dein = 20-second masterpiece ready!

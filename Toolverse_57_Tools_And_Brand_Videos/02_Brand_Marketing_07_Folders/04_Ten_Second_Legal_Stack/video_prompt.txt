@@ -1,0 +1,31 @@
+================================================================================
+BRAND COMMERCIAL #04: THE 10-SECOND FREELANCER LEGAL STACK
+Total Duration: 20 Seconds (2-Part Seamless Continuation for Google Flow / AI)
+================================================================================
+
+--------------------------------------------------------------------------------
+PART 1: 0 to 10 SECONDS (THE HOOK & PROBLEM)
+--------------------------------------------------------------------------------
+>>> COPY THIS EXACT PROMPT INTO GOOGLE FLOW / KLING / RUNWAY FOR PART 1:
+Relatable workplace drama 10-second vertical 9:16 commercial. An aesthetic coffee shop desk with MacBook, iced latte, and notebook. A young freelancer holds their head in stress looking at a lawyer's invoice reading '$500 for Standard NDA'. Frustrated, they push the bill away and open Toolverse on their laptop. The camera glides down smoothly over their shoulder focusing on the screen. Warm amber cafe lighting, cinematic depth of field.
+
+>>> PART 1 VOICEOVER AUDIO (0 to 10s):
+"Stop paying lawyers five hundred dollars for standard freelance contracts and NDAs. And please stop using sketchy Microsoft Word templates from 2012."
+
+--------------------------------------------------------------------------------
+PART 2: 10 to 20 SECONDS (THE TOOLVERSE REVEAL & CLIMAX — CONTINUATION)
+--------------------------------------------------------------------------------
+>>> COPY THIS PROMPT FOR PART 2 (Click 'Extend Video' / Use Last Frame of Part 1):
+Continuing seamlessly over the freelancer's shoulder from Part 1. On the laptop, the user clicks 'Contract Forge' inside Toolverse. In 3 quick clicks, jurisdiction and payment milestones are configured, and a bulletproof NDA generates instantly. The user taps 'Sign & Edit', draws a crisp digital signature with their stylus, and hits 'Export Vector PDF'. A digital timer on screen counts: 'Total time: 24 seconds'. Upbeat lofi-hiphop beat, confident smiling finish.
+
+>>> PART 2 VOICEOVER AUDIO (10 to 20s):
+"Go to Toolverse and open Contract Forge. Select your contract type, choose your jurisdiction, and the AI generates airtight clauses instantly. Sign it directly in your browser in under 30 seconds. 100% free!"
+
+--------------------------------------------------------------------------------
+HOW TO GENERATE THIS 20-SECOND VIDEO IN GOOGLE FLOW / RUNWAY / KLING:
+--------------------------------------------------------------------------------
+STEP 1: Google Flow me Part 1 ka prompt paste karein aur 10-second video generate karein.
+STEP 2: Jab Part 1 ban jaye, to video par 'Extend Video' (ya Continue) click karein (ya Part 1 ka aakhiri frame screenshot lekar 'Image to Video' me upload karein).
+STEP 3: Part 2 ka prompt paste karein aur generate dabayein!
+        -> Video bilkul wahi se 100% seamlessly continue ho jayegi!
+STEP 4: CapCut me dono 10s clips ko jod dein = 20-second masterpiece ready!

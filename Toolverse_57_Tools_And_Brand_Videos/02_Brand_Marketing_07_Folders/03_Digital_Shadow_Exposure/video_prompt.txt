@@ -1,0 +1,31 @@
+================================================================================
+BRAND COMMERCIAL #03: THE DIGITAL SHADOW EXPOSURE
+Total Duration: 20 Seconds (2-Part Seamless Continuation for Google Flow / AI)
+================================================================================
+
+--------------------------------------------------------------------------------
+PART 1: 0 to 10 SECONDS (THE HOOK & PROBLEM)
+--------------------------------------------------------------------------------
+>>> COPY THIS EXACT PROMPT INTO GOOGLE FLOW / KLING / RUNWAY FOR PART 1:
+Fast-paced viral cyber 10-second vertical 9:16 commercial. A user clicks 'Run Fingerprint Scan' on a laptop screen. Terminal glitch sound effect. Rapid-fire telemetry boxes pop up with neon orange glowing borders tracking the user in real time: 'GPU: NVIDIA RTX 4080', 'Battery: 84% Charging', 'Installed Fonts: 312 detected', 'Display: 2560x1440 Retina'. The user looks at the camera in complete disbelief and shock. Moody cyberpunk lighting.
+
+>>> PART 1 VOICEOVER AUDIO (0 to 10s):
+"The moment you open any website on the internet, it steals over 40 pieces of your private identity without asking. They don't need cookies anymore — they track your GPU, battery, and screen."
+
+--------------------------------------------------------------------------------
+PART 2: 10 to 20 SECONDS (THE TOOLVERSE REVEAL & CLIMAX — CONTINUATION)
+--------------------------------------------------------------------------------
+>>> COPY THIS PROMPT FOR PART 2 (Click 'Extend Video' / Use Last Frame of Part 1):
+Continuing seamlessly from the shocking telemetry readouts in Part 1. The user points directly to the Toolverse Digital Shadow interface on the screen. The orange warning tags smoothly transition into a glowing emerald privacy score dashboard displaying 'Canvas Fingerprint Hash: #9A84F' with a pulsing green badge: 'Processed 100% Locally'. Dynamic typography overlays: 'Test Your Browser Now'. Crisp, modern, high-energy viral finish.
+
+>>> PART 2 VOICEOVER AUDIO (10 to 20s):
+"Don't believe me? Open 'Digital Shadow' on Toolverse right now. In 2 seconds, see exactly what the internet knows about your device — 100% free with zero data transmitted. Link in bio!"
+
+--------------------------------------------------------------------------------
+HOW TO GENERATE THIS 20-SECOND VIDEO IN GOOGLE FLOW / RUNWAY / KLING:
+--------------------------------------------------------------------------------
+STEP 1: Google Flow me Part 1 ka prompt paste karein aur 10-second video generate karein.
+STEP 2: Jab Part 1 ban jaye, to video par 'Extend Video' (ya Continue) click karein (ya Part 1 ka aakhiri frame screenshot lekar 'Image to Video' me upload karein).
+STEP 3: Part 2 ka prompt paste karein aur generate dabayein!
+        -> Video bilkul wahi se 100% seamlessly continue ho jayegi!
+STEP 4: CapCut me dono 10s clips ko jod dein = 20-second masterpiece ready!

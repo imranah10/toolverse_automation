@@ -1,0 +1,16 @@
+================================================================================
+READY-TO-PUBLISH SOCIAL MEDIA CAPTION
+Tool: VISION SWITCH (Studio: Image Studio)
+================================================================================
+
+Test your designs for colorblind accessibility in real-time! 👁️🎨
+
+Over 300 million people worldwide have color vision deficiencies:
+🔴 Protanopia (Red-Blind simulation)
+🟢 Deuteranopia (Green-Blind simulation)
+🔵 Tritanopia & Monochromacy testing
+✅ Ensure critical buttons & error states are legible for everyone
+
+Test your designs free: toolverse-official.vercel.app
+
+#accessibility #uxdesign #webdesign #a11y #uidevelopment #toolverse

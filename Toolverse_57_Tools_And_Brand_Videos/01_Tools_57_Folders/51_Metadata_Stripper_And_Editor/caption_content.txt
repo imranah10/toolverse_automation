@@ -1,0 +1,15 @@
+================================================================================
+READY-TO-PUBLISH SOCIAL MEDIA CAPTION
+Tool: METADATA STRIPPER & EDITOR (Studio: PDF Studio)
+================================================================================
+
+Inspect and strip hidden author & software metadata from your PDFs! 🕵️‍♂️📁
+
+Don't let confidential background data leak to clients or recruiters:
+🔍 Reveals author name, editing software, and exact timestamps
+🧹 1-click sanitizer strips all hidden forensic footprints
+🛡️ Ensures complete privacy before sending sensitive files
+
+Sanitize your documents free: toolverse-official.vercel.app
+
+#cybersecurity #dataprivacy #pdfmetadata #officetips #toolverse

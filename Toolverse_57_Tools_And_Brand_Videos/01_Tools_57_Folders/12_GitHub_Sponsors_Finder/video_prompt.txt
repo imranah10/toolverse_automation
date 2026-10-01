@@ -1,0 +1,19 @@
+================================================================================
+AI VIDEO PROMPT (10-15 SECONDS VERTICAL 9:16 — UI-LOCKED)
+Tool: GITHUB SPONSORS FINDER (Studio: Developer Studio)
+================================================================================
+
+>>> COPY THIS EXACT PROMPT INTO KLING AI / RUNWAY / LUMA (IMAGE-TO-VIDEO):
+High-resolution 12-second vertical 9:16 video starting from the uploaded screenshot. Lock the screen UI completely static, crisp, and sharp with zero distortion of text, icons, or buttons. The camera executes a smooth cinematic 3D parallax zoom-in onto the GITHUB SPONSORS FINDER interface. A sleek white cursor smoothly glides across the screen to hover over the key action area. Subtle ambient neon emerald and cyan glow pulses gently along the borders. Professional tech product showcase, razor-sharp typography, 60fps fluid camera motion, no morphing, no melting, no UI alteration.
+
+================================================================================
+VOICEOVER SCRIPT (10-15 SECONDS SPEAKING TIME):
+================================================================================
+Maintaining open source without funding leads to burnout. Toolverse Sponsors Finder scans GitHub ecosystems to connect developers with active corporate sponsors and funding opportunities. Get paid for the open source code you write.
+
+================================================================================
+HOW TO GENERATE (ZERO DISTORTION GUARANTEE):
+1. Website se is tool ka screenshot lein: https://toolverse-official.vercel.app
+2. Kling AI / Runway me 'Image to Video' select karein, 9:16 vertical aur 10s duration set karein.
+3. Motion slider ko 2 ya 3 (Low Motion) par set karein.
+4. Screenshot upload karein aur upar diya gaya clean prompt paste karein!
