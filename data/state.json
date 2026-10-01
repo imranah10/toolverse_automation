@@ -1,6 +1,6 @@
 {
-  "last_published_day": 5,
-  "last_published_at": "2026-10-01T19:00:22.713Z",
+  "last_published_day": 6,
+  "last_published_at": "2026-10-01T21:58:05.775Z",
   "history": [
     {
       "day": 1,
@@ -55,6 +55,17 @@
         "instagram": "18120671134985255",
         "facebook": "1267223409818393_122114734347481665",
         "linkedin": "urn:li:share:7511500274595979264"
+      }
+    },
+    {
+      "day": 6,
+      "date": "2026-10-01",
+      "tool": "Flipbook Studio & Living Photo",
+      "status": "completed",
+      "results": {
+        "instagram": "18110245367170748",
+        "facebook": "1267223409818393_122114802567481665",
+        "linkedin": "urn:li:share:7511544998354522112"
       }
     }
   ]
