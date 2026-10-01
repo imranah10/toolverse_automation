@@ -1,0 +1,24 @@
+{
+  "name": "toolverse-automation-engine",
+  "version": "1.0.0",
+  "description": "Production 90-Day Multi-Platform Social Media Automation Engine for Toolverse",
+  "main": "scripts/publish_engine.js",
+  "scripts": {
+    "test:conn": "node scripts/publish_engine.js --test",
+    "test:dry": "node scripts/publish_engine.js --dry-run",
+    "test:day4": "node scripts/publish_engine.js --day=4 --dry-run",
+    "publish:day4": "node scripts/publish_engine.js --day=4",
+    "publish": "node scripts/publish_engine.js",
+    "build:schedule": "node scripts/build_schedule.js"
+  },
+  "keywords": [
+    "toolverse",
+    "automation",
+    "github-actions",
+    "instagram",
+    "facebook",
+    "linkedin"
+  ],
+  "author": "Imran Ahmad",
+  "license": "MIT"
+}
