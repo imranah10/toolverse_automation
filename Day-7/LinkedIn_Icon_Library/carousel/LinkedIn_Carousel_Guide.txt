@@ -1,0 +1,111 @@
+TOOLVERSE — LINKEDIN CAROUSEL POSTING GUIDE
+===============================================
+
+Purpose
+-------
+Use this guide whenever you post a Toolverse 6-slide carousel on LinkedIn.
+
+RECOMMENDED CAROUSEL FORMAT
+---------------------------
+• 6 slides
+• Portrait 4:5
+• 1080 × 1350 px working design
+• Keep important text inside generous safe margins
+• Use the same Toolverse visual identity across all slides
+• Slide 1 = hook
+• Slides 2–4 = value / problem / capability
+• Slide 5 = broader Toolverse value proposition
+• Slide 6 = CTA
+
+LINKEDIN POST STRUCTURE
+-----------------------
+1. Start with a short professional hook.
+2. Explain the specific problem the tool solves.
+3. Mention the practical workflow or use case.
+4. Tell people to swipe through the carousel.
+5. End with the Toolverse website.
+6. Use a small number of relevant hashtags.
+
+GENERAL LINKEDIN CAPTION TEMPLATE
+---------------------------------
+A small workflow improvement can save a surprising amount of time.
+
+I’ve been building Toolverse — a multi-studio browser utility platform designed to bring practical tools into one workspace.
+
+Today’s feature: [TOOL NAME]
+
+It helps with:
+• [BENEFIT 1]
+• [BENEFIT 2]
+• [BENEFIT 3]
+
+I’ve put the workflow into the carousel so you can see how it works.
+
+Explore Toolverse:
+toolverse-official.vercel.app
+
+#Toolverse #ProductivityTools #DeveloperTools #WebTools #SoftwareDevelopment
+
+ICON LIBRARY — LINKEDIN CAPTION
+-------------------------------
+Finding the right icon shouldn't require jumping between multiple libraries.
+
+Toolverse Icon Library brings a large searchable collection of icons into the Developer Studio, with multiple visual styles and quick customization options.
+
+The carousel shows the workflow and what the tool is designed to make easier.
+
+Explore:
+toolverse-official.vercel.app
+
+#Toolverse #DeveloperTools #WebDevelopment #UIUX #DesignTools #Productivity
+
+SLIDE-BY-SLIDE LINKEDIN CONTEXT
+-------------------------------
+Slide 1:
+Use the strongest curiosity hook. Do not repeat the entire headline in the caption.
+
+Slide 2:
+Introduce the tool in one sentence and frame it as a practical workflow.
+
+Slide 3:
+Explain the main capability in concrete terms.
+
+Slide 4:
+Highlight the speed / convenience point without making unsupported performance claims.
+
+Slide 5:
+Connect the individual tool to the wider Toolverse ecosystem.
+
+Slide 6:
+Use the website as the clear next step.
+
+POSTING CHECKLIST
+-----------------
+[ ] Upload all 6 slides in the correct order.
+[ ] Check that text is readable on desktop AND mobile.
+[ ] Use the same tool name everywhere.
+[ ] Verify the website URL before publishing.
+[ ] Keep the caption professional and conversational.
+[ ] Avoid excessive hashtags.
+[ ] Avoid making claims that the product does not actually support.
+[ ] Avoid fake testimonials, fake users, fake statistics, or fabricated results.
+[ ] If discussing privacy/local processing, make sure the claim matches the actual implementation.
+[ ] Respond to useful comments with additional product details rather than repeating the sales pitch.
+
+HASHTAG BANK
+------------
+Developer:
+#DeveloperTools #WebDevelopment #JavaScript #React #Frontend #DevTools
+
+Design:
+#UIUX #DesignTools #IconLibrary #DigitalDesign #DesignWorkflow
+
+Productivity:
+#Productivity #ProductivityTools #BrowserTools #WebTools
+
+Brand:
+#Toolverse #SoftwareDevelopment #TechTools
+
+BEST PRACTICE
+-------------
+For each new carousel, keep the visual structure consistent but write a fresh LinkedIn caption around the specific tool. LinkedIn works better when the post explains a real workflow or problem instead of simply copying the Instagram caption.

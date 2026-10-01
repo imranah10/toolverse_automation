@@ -1,0 +1,91 @@
+TOOLVERSE — FILECARVER PRO CAROUSEL GUIDE
+=============================================
+
+CAROUSEL
+Tool: FileCarver Pro
+Studio: Shield Studio
+Format: 6-slide Instagram carousel
+Final size: 1080 × 1350 px (4:5)
+Format: PNG
+Website: toolverse-official.vercel.app
+
+SLIDE FLOW
+----------
+1 — COVER
+Kicker: Shield Studio
+Headline: From zero to done: FileCarver Pro in under a minute
+Support: FileCarver Pro — swipe to see why it matters →
+
+2 — KEY POINT
+Kicker: Point
+Number: 02
+Headline: From zero to done: FileCarver Pro in under a minute
+
+3 — KEY POINT
+Kicker: Point
+Number: 03
+Headline: Carve hidden files out of any binary — recover images, videos and documents. — free, no…
+
+4 — KEY POINT
+Kicker: Point
+Number: 04
+Headline: → toolverse-official.vercel.app #Toolverse
+
+5 — WHY IT WINS
+Kicker: Why it wins
+Headline: 56+ powerful, AI-accelerated utility tools running 100% locally in your browser with zero signups and zero server upl…
+
+6 — CALL TO ACTION
+Kicker: Toolverse
+Headline: See it in action 👉 toolverse-official.vercel.app
+Support: toolverse-official.vercel.app
+Button: Visit toolverse-official.vercel.app
+
+INSTAGRAM CAPTION
+-----------------
+From zero to done: FileCarver Pro in under a minute. ⚡
+
+FileCarver Pro is part of Toolverse's Shield Studio. Swipe through the carousel to see the workflow and explore the wider Toolverse suite.
+
+Explore:
+toolverse-official.vercel.app
+
+#Toolverse #FileCarverPro #ShieldStudio #DeveloperTools #WebTools #ProductivityTools
+
+LINKEDIN CAPTION
+----------------
+A practical browser-based workflow for working with binary data and supported file recovery.
+
+FileCarver Pro is part of Toolverse's Shield Studio. This carousel highlights the workflow and the broader browser-based utility suite.
+
+Explore:
+toolverse-official.vercel.app
+
+#Toolverse #DeveloperTools #WebTools #Productivity
+
+REDDIT POST IDEA
+----------------
+Title:
+"FileCarver Pro — browser-based file recovery utility; feedback welcome"
+
+Body:
+"FileCarver Pro is part of Toolverse's Shield Studio. The concept is to recover supported files from binary data through a browser-based workflow.
+
+Sharing the carousel to get feedback on the workflow, file-type support and useful recovery features."
+
+Check each subreddit’s rules before posting promotional content.
+
+POSTING CHECKLIST
+-----------------
+[ ] Upload slides 1 → 6 in order.
+[ ] Confirm every image is 1080 × 1350 px.
+[ ] Use PNG files.
+[ ] Keep Slide 6 as the final CTA.
+[ ] Verify the website URL before publishing.
+[ ] Check text readability on mobile.
+[ ] Only make privacy/local-processing claims that match the actual implementation.
+[ ] Avoid fabricated testimonials or unsupported statistics.
+
+FUTURE CAROUSELS
+----------------
+After Slide 6, automatically provide the matching .txt guide and package all six PNG slides + guide into one ZIP.

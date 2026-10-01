@@ -1,0 +1,40 @@
+TOOLVERSE CAROUSEL GUIDE
+========================
+
+CAROUSEL 4 — mail / Contact Us
+============================================================
+
+CAMPAIGN IDEA
+-------------
+Theme: A simple way to contact the Toolverse team for feedback, bugs, custom tool requests and enterprise-related conversations.
+
+SLIDE FLOW
+----------
+1. Cover:
+   "The underrated Contact Us pick on Toolverse: mail"
+
+2. Point:
+   "I keep coming back to mail — one of the Contact Us tools on Toolverse — so here's an ho…"
+
+3. Point:
+   "Get in touch with the Toolverse team: feedback, bug reports, custom tool requests, ente…"
+
+4. Point:
+   "Why I actually use it instead of the usual suspects:"
+
+5. Why it wins:
+   "56+ powerful, AI-accelerated utility tools running 100% locally in your browser with zero signups and zero server upl…"
+
+6. CTA:
+   "Try mail free → toolverse-official.vercel.app"
+   Button: "Visit toolverse-official.vercel.app"
+
+BEST PLATFORM USE
+-----------------
+Instagram: Brand/community building and feedback CTA.
+LinkedIn: Product feedback, partnership and business communication angle.
+Reddit: Use only where community rules permit promotional/tool posts; focus on feedback and product-building.
+X / Twitter: Short CTA asking users for feature requests or bug reports.
+
+
+============================================================

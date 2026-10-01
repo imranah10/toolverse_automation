@@ -1,0 +1,38 @@
+================================================================================
+DAY: Day 7
+PLATFORM: Twitter/X
+CONTENT FORMAT: Image Post
+SECTION / SUITE: AI Pro Studio
+TOOL / CAPABILITY: ShouldIBuy
+BEST PUBLISHING TIME: 6:30 PM
+================================================================================
+
+HOW TO POST THIS POST (4 STEPS):
+1. Open 'ai_image_prompt.txt' (or ai_video_prompt.txt / carousel_prompt.txt) —
+   copy the prompt, paste it into the Gemini app / ChatGPT / Midjourney
+   (attach 'screenshot_tool_live.jpg' for a 100% brand-accurate visual) —
+   save the generated photo or video.
+2. Come back here — copy the FULL POST CAPTION + HASHTAGS below.
+3. Open Twitter/X, create the post, attach your generated visual.
+4. Paste the caption + hashtags → publish at 6:30 PM. Done!
+
+[VIRAL HOOK / HEADLINE]
+What can ShouldIBuy actually do? More than you think 👀
+
+[FULL POST CAPTION]
+What can ShouldIBuy actually do? More than you think 👀
+
+Paste any product link — get an honest BUY or AVOID verdict with reasons. — free, no signup, runs in your browser.
+
+→ toolverse-official.vercel.app #Toolverse
+
+[HASHTAGS]
+#Toolverse #ShouldIBuy
+
+[CALL TO ACTION]
+Try ShouldIBuy free → toolverse-official.vercel.app
+
+================================================================================
+OmniPost AI Automated Strategy Note:
+Publish on Twitter/X at 6:30 PM for maximum reach and engagement.
+================================================================================

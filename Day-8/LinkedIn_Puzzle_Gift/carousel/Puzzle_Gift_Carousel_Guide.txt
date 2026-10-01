@@ -1,0 +1,83 @@
+TOOLVERSE — PUZZLE GIFT CAROUSEL GUIDE
+=========================================
+
+Carousel: Puzzle Gift
+Studio: Image Studio
+Format: 6-slide Instagram carousel
+Final size: 1080 × 1350 px (4:5)
+Website: toolverse-official.vercel.app
+
+SLIDE FLOW
+----------
+1 — Image Studio
+POV: you just discovered Puzzle Gift inside Toolverse
+Puzzle Gift — swipe to see why it matters →
+
+2 — Point
+Unpopular opinion: Image Studio tools don't need accounts, uploads or subscriptions.
+Number chip: 02
+
+3 — Point
+Puzzle Gift on Toolverse proves it — turn a photo into a playable puzzle gift box for s…
+Number chip: 03
+
+4 — Point
+Bookmark it, thank yourself later.
+Number chip: 04
+
+5 — Why it wins
+56+ powerful, AI-accelerated utility tools running 100% locally in your browser with zero signups and zero server upl…
+
+6 — Toolverse
+See it in action 👉 toolverse-official.vercel.app
+Support: toolverse-official.vercel.app
+Button: Visit toolverse-official.vercel.app
+
+LINKEDIN CAPTION
+----------------
+Turn a photo into something people can actually play.
+
+Puzzle Gift is part of Toolverse's Image Studio, designed around the idea of turning a photo into a playable puzzle gift experience.
+
+Swipe through the carousel to see the concept and explore the wider Toolverse suite.
+
+toolverse-official.vercel.app
+
+#Toolverse #ImageTools #CreativeTools #WebTools #ProductivityTools
+
+INSTAGRAM CAPTION
+-----------------
+A photo can be more than a photo. 🧩🎁
+
+Puzzle Gift turns a photo into a playable puzzle-gift experience inside Toolverse's Image Studio.
+
+Swipe through → then try it:
+toolverse-official.vercel.app
+
+#Toolverse #PuzzleGift #ImageTools #CreativeTools #WebTools
+
+REDDIT POST IDEA
+----------------
+Title:
+"Built a browser-based tool that turns a photo into a playable puzzle gift — feedback welcome"
+
+Body:
+"Puzzle Gift is part of Toolverse's Image Studio. The idea is to turn a personal photo into a simple interactive puzzle gift that can be shared.
+
+Would love feedback on the concept and what puzzle/customization options would make it more useful."
+
+Check each subreddit’s rules before posting promotional content.
+
+POSTING CHECKLIST
+-----------------
+[ ] Upload all 6 slides in order.
+[ ] Confirm every slide is 1080 × 1350 px.
+[ ] Keep Slide 6 as the final CTA.
+[ ] Verify the website before publishing.
+[ ] Check text readability on mobile.
+[ ] Avoid fake testimonials or unsupported performance claims.
+[ ] Keep hashtags relevant and limited.
+
+FUTURE CAROUSELS
+----------------
+After every Toolverse carousel reaches Slide 6, automatically provide its matching .txt guide without needing a reminder.

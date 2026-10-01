@@ -1,0 +1,29 @@
+If you’ve ever tried to clean up your GitHub account, you already know the nightmare. 🤦‍♂️
+
+GitHub has NO bulk delete button.
+
+To delete 30 old college projects or outdated test forks, you have to:
+1. Open each repo
+2. Click Settings
+3. Scroll all the way to the "Danger Zone"
+4. Click "Delete this repository"
+5. Type out `username/my-old-project` character by character
+6. Confirm password/2FA
+7. Repeat 30 times.
+
+That's 25 minutes of pure clicking, carpal tunnel, and frustration.
+
+That’s why we engineered GitHub Bulk Manager inside Toolverse:
+
+⚡ What it does:
+• Batch Delete & Archive: Select up to 50 repositories at once and delete or archive them in 8 seconds.
+• Public/Private Toggle: Flip repository visibility in bulk with a single click.
+• 100% Secure (RAM-Only): Your Personal Access Token lives strictly in memory. It is never stored in localStorage, cookies, or databases. Closing the browser tab destroys the token instantly.
+• Direct API Calls: Calls go directly from your browser to `api.github.com`. Zero Toolverse backend involvement.
+
+Take back your developer profile and present a clean portfolio to recruiters.
+
+Try it now (free, client-side):
+👉 toolverse-official.vercel.app/studio/developer#tool=github-manager
+
+#GitHub #SoftwareEngineering #DeveloperProductivity #WebDevelopment #OpenSource #DevOps #CodingLife #Toolverse

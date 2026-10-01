@@ -1,0 +1,16 @@
+================================================================================
+TOOL #10: PIXELPRESS (COMPRESS)
+Studio: Image Studio (Day-3)
+================================================================================
+
+[1] VIRAL VIDEO HOOK (First 3 Seconds):
+"Compress 50MB images down to 500KB without losing a single pixel of sharpness."
+
+[2] AI VIDEO GENERATOR PROMPT (9:16 Vertical Video / Runway Gen-3 / Sora / Kling / Pika):
+Satisfying side-by-side vertical 9:16 video. High-res 4K photograph of a jaguar. File size shows 42MB. User drops it into PixelPress. Sliders move smoothly to 'Target Size: 800KB'. The file compresses in 0.2 seconds. A split-screen magnifying glass zooms into the jaguar's whiskers at 800% — both sides look completely identical! Download badge shines in green. ASMR click sounds.
+
+[3] COMPLETE VOICEOVER SCRIPT (15-30s Audio):
+Most image compressors destroy image quality or upload your personal photos to unknown servers. PixelPress uses browser-native WebAssembly to shrink heavy images to an exact target KB size while keeping razor-sharp detail.
+
+[4] SOCIAL MEDIA CAPTION & HASHTAGS:
+Shrink heavy files by 90% with zero quality loss! 🖼️📉 #photohacks #webdesign #freelancers #toolverse

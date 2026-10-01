@@ -1,0 +1,1 @@
+Complete GitScope Pro carousel: 6 PNG slides + Carousel Guide + Post Content.

@@ -1,0 +1,92 @@
+TOOLVERSE — AI BOARDROOM CAROUSEL GUIDE
+==========================================
+
+CAROUSEL
+Tool: AI Boardroom
+Studio: AI Pro Studio
+Format: 6-slide Instagram carousel
+Final size: 1080 × 1350 px (4:5)
+Website: toolverse-official.vercel.app
+
+SLIDE FLOW
+----------
+1 — COVER
+Kicker: AI Pro Studio
+Headline: Your data never leaves your browser with AI Boardroom — here's why that matters
+Support: AI Boardroom — swipe to see why it matters →
+
+2 — KEY POINT
+Kicker: Point
+Number: 02
+Headline: Quick one: AI Boardroom.
+
+3 — KEY POINT
+Kicker: Point
+Number: 03
+Headline: Most AI Pro Studio tools make you wait, sign up, or upload your files. Toolverse does t…
+
+4 — KEY POINT
+Kicker: Point
+Number: 04
+Headline: • Fast: results in seconds
+
+5 — WHY IT WINS
+Kicker: Why it wins
+Headline: 56+ powerful, AI-accelerated utility tools running 100% locally in your browser with zero signups and zero server upl…
+
+6 — CALL TO ACTION
+Kicker: Toolverse
+Headline: AI Boardroom is one click away: toolverse-official.vercel.app
+Support: toolverse-official.vercel.app
+Button: Visit toolverse-official.vercel.app
+
+INSTAGRAM CAPTION
+-----------------
+Your data never leaves your browser with AI Boardroom — here's why that matters. 🔒
+
+AI Boardroom is part of Toolverse's AI Pro Studio. Swipe through the carousel to see the workflow, speed, privacy-focused approach and the wider Toolverse suite.
+
+Explore:
+toolverse-official.vercel.app
+
+#Toolverse #AIBoardroom #AIProStudio #AITools #ProductivityTools #WebTools
+
+LINKEDIN CAPTION
+----------------
+A private browser-based workflow for turning ideas, data and goals into structured outputs.
+
+This carousel introduces AI Boardroom from Toolverse's AI Pro Studio and highlights its browser-based workflow, speed and privacy-focused positioning.
+
+Explore the tool:
+toolverse-official.vercel.app
+
+#Toolverse #AI #Productivity #DeveloperTools #WebTools
+
+REDDIT POST IDEA
+----------------
+Title:
+"AI Boardroom — a browser-based workspace for turning ideas into structured plans and outputs"
+
+Body:
+"AI Boardroom is part of Toolverse's AI Pro Studio. The concept is to bring strategy, analysis, planning and presentation workflows into one browser-based workspace.
+
+Sharing the carousel for feedback on the workflow and feature direction."
+
+Check each subreddit’s rules before posting promotional content.
+
+POSTING CHECKLIST
+-----------------
+[ ] Upload slides 1 → 6 in order.
+[ ] Confirm every image is 1080 × 1350 px.
+[ ] Use PNG files for the carousel.
+[ ] Keep Slide 6 as the CTA.
+[ ] Verify the website URL before publishing.
+[ ] Check all text on mobile before posting.
+[ ] Only make privacy/local-processing claims that match the actual implementation.
+[ ] Avoid fabricated testimonials, statistics or unsupported claims.
+
+FUTURE CAROUSEL WORKFLOW
+------------------------
+After Slide 6, the carousel ZIP should include:
+1. Six separate PNG slides
+2. One matching .txt carousel guide

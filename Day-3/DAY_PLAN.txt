@@ -1,0 +1,39 @@
+================================================================================
+DAY 3 — TODAY'S POSTING PLAN
+Brand: Toolverse
+Platforms today: Instagram, LinkedIn, Twitter/X, Reddit
+================================================================================
+
+WHAT'S IN THIS FOLDER
+One subfolder per platform (<Platform>_<ToolName>). Each subfolder has
+everything for that post: post_ready_to_publish.txt (caption + hashtags +
+steps), ai_image_prompt.txt / ai_video_prompt.txt / carousel_prompt.txt, and
+the tool's real screenshot for a 1:1 brand match.
+
+QUICK REFERENCE — everything ready for today:
+  1. INSTAGRAM — Image Post
+     Tool: Digital Shadow (Shield Studio)
+     Best time: 9:00 AM
+     Hook: Everything you wanted from a Shield Studio tool, minus the bloat: Digital Shadow
+     Caption + hashtags: Instagram_Digital_Shadow/post_ready_to_publish.txt
+  2. LINKEDIN — Carousel Graphic
+     Tool: Compress (PixelPress)
+     Best time: 1:00 PM
+     Hook: Your data never leaves your browser with Compress — here's why that matters
+     Caption + hashtags: LinkedIn_Compress/post_ready_to_publish.txt
+  3. TWITTER/X — Video Reel / Short
+     Tool: Sponsors (Enterprise & Sponsorship)
+     Best time: 6:30 PM
+     Hook: From zero to done: Sponsors in under a minute
+     Caption + hashtags: TwitterX_Sponsors/post_ready_to_publish.txt
+  4. REDDIT — Image Post
+     Tool: mail (Contact Us)
+     Best time: 8:00 PM
+     Hook: The underrated Contact Us pick on Toolverse: mail
+     Caption + hashtags: Reddit_mail/post_ready_to_publish.txt
+
+TIP: You don't have to post on every platform — but everything is already
+prepared if you want to. Generate each visual with the bundled prompts
+(Gemini / ChatGPT / Midjourney / Higgsfield — attach the folder's screenshot),
+then publish following the 4 steps in each post_ready_to_publish.txt.
+================================================================================

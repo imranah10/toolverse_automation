@@ -1,0 +1,12 @@
+PROMPT FOR GEMINI / MIDJOURNEY — TOOLVERSE 4K 3D STUDIO CAROUSEL DECK (6 SLIDES)
+Tool: Watermark Eraser | Studio: Image Studio (Accent: Cyan #06b6d4, Emerald #10b981)
+Canvas: 2160 x 2700 px portrait (4:5).
+
+Brand Identity:
+- Official circular ToolVerse 'TV' logo badge top-left with fine white border ring and text "ToolVerse / Every tool you need. 100% Private."
+- Deep dark obsidian cyber studio scene with perspective desk, ambient teal/emerald rim lighting (#0a1410, #06b6d4, #10b981).
+- Centerpiece: Space-gray MacBook laptop displayed in dramatic 3D isometric perspective on an obsidian wood desk.
+- Authentic Toolverse application screen showing live Watermark Eraser interface with neural inpainting and clean output.
+- Floating 3D translucent frosted glass panels with glowing cyan borders highlighting multi-scale texture reconstruction.
+- Branded desk props: Black ceramic Toolverse coffee mug, debossed spiral notebook, and matte obsidian stylus pen.
+- Pagination: 01/06 through 06/06 top right, 6 pagination dots with active slide illuminated in glowing cyan, and SWIPE → navigation.

@@ -1,0 +1,38 @@
+================================================================================
+DAY: Day 1
+PLATFORM: Twitter/X
+CONTENT FORMAT: Image Post
+SECTION / SUITE: Image Studio
+TOOL / CAPABILITY: Stardust Storm
+BEST PUBLISHING TIME: 6:30 PM
+================================================================================
+
+HOW TO POST THIS POST (4 STEPS):
+1. Open 'ai_image_prompt.txt' (or ai_video_prompt.txt / carousel_prompt.txt) —
+   copy the prompt, paste it into the Gemini app / ChatGPT / Midjourney
+   (attach 'screenshot_tool_live.jpg' for a 100% brand-accurate visual) —
+   save the generated photo or video.
+2. Come back here — copy the FULL POST CAPTION + HASHTAGS below.
+3. Open Twitter/X, create the post, attach your generated visual.
+4. Paste the caption + hashtags → publish at 6:30 PM. Done!
+
+[VIRAL HOOK / HEADLINE]
+What can Stardust Storm actually do? More than you think 👀
+
+[FULL POST CAPTION]
+What can Stardust Storm actually do? More than you think 👀
+
+Your photo erupts into magnetic stardust storms — pure visual magic. — free, no signup, runs in your browser.
+
+→ toolverse-official.vercel.app #Toolverse
+
+[HASHTAGS]
+#Toolverse #StardustStorm
+
+[CALL TO ACTION]
+Open the Image Studio suite: toolverse-official.vercel.app
+
+================================================================================
+OmniPost AI Automated Strategy Note:
+Publish on Twitter/X at 6:30 PM for maximum reach and engagement.
+================================================================================

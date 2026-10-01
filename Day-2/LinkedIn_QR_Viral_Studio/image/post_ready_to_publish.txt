@@ -1,0 +1,25 @@
+================================================================================
+DAY: Day 2
+PLATFORM: LinkedIn
+CONTENT FORMAT: Image Post
+SECTION / SUITE: Generator Studio
+TOOL / CAPABILITY: QR Viral Studio
+BEST PUBLISHING TIME: 1:00 PM
+================================================================================
+Paste the caption + hashtags → publish at 1:00 PM. Done!
+
+[VIRAL HOOK / HEADLINE]
+POV: you just discovered QR Viral Studio inside Toolverse
+
+[FULL POST CAPTION]
+We built QR Viral Studio for one reason: viral-style QR codes with custom colors, logos and frame designs. without the usual friction.
+
+It lives in Generator Studio on Toolverse, it's free, and it takes about 60 seconds to get value out of it.
+
+Try it now: toolverse-official.vercel.app
+
+[HASHTAGS]
+#Toolverse #QRViralStudio #GeneratorStudio #BusinessGrowth #Leadership
+
+[CALL TO ACTION]
+Explore QR Viral Studio 👉 toolverse-official.vercel.app

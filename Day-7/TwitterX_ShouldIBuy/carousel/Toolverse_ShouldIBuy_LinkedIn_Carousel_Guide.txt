@@ -1,0 +1,117 @@
+TOOLVERSE — SHOULDIBUY LINKEDIN CAROUSEL POSTING GUIDE
+========================================================
+
+CAROUSEL
+--------
+Tool: ShouldIBuy
+Studio: AI Pro Studio
+Format: 6-slide LinkedIn/social carousel
+Brand: Toolverse — Multi-Studio Tool Suite & Developer Utilities
+Website: toolverse-official.vercel.app
+
+CAMPAIGN MESSAGE
+----------------
+ShouldIBuy is presented as an AI purchase-advisor workflow where a user can enter a product name or URL and receive an assessment with reasons, pros, cons and alternatives.
+
+SLIDE FLOW
+----------
+Slide 1 — COVER
+Kicker: AI Pro Studio
+Headline: What can ShouldIBuy actually do? More than you think 👀
+Support: ShouldIBuy — swipe to see why it matters →
+
+Slide 2 — KEY POINT
+Kicker: Point
+Headline: What can ShouldIBuy actually do? More than you think 👀
+Number chip: 02
+
+Slide 3 — KEY POINT
+Kicker: Point
+Headline: Paste any product link — get an honest BUY or AVOID verdict with reasons. — free, no si…
+Number chip: 03
+
+Slide 4 — KEY POINT
+Kicker: Point
+Headline: → toolverse-official.vercel.app #Toolverse
+Number chip: 04
+
+Slide 5 — WHY IT WINS
+Kicker: Why it wins
+Headline: 56+ powerful, AI-accelerated utility tools running 100% locally in your browser with zero signups and zero server upl…
+
+Slide 6 — CTA
+Kicker: Toolverse
+Headline: Try ShouldIBuy free → toolverse-official.vercel.app
+Support line: toolverse-official.vercel.app
+Button: Visit toolverse-official.vercel.app
+
+LINKEDIN CAPTION
+----------------
+What if product research could happen in one focused workflow?
+
+Toolverse’s ShouldIBuy is designed to help users assess a product by entering a product name or URL and reviewing the available pros, cons, reasons and alternatives.
+
+The carousel shows the workflow and the idea behind the tool.
+
+Explore Toolverse:
+toolverse-official.vercel.app
+
+#Toolverse #AITools #ProductivityTools #TechTools #ShoppingTools #DeveloperTools
+
+SHORT LINKEDIN VERSION
+----------------------
+A simpler way to research a product before making a decision.
+
+ShouldIBuy in Toolverse lets you enter a product name or URL and review an AI-assisted assessment with reasons, pros, cons and alternatives.
+
+See the workflow in the carousel.
+
+toolverse-official.vercel.app
+
+#Toolverse #AITools #Productivity #Tech
+
+LINKEDIN POSTING TIPS
+--------------------
+• Upload all 6 slides in order.
+• Use the first slide as the visual hook; don't repeat the entire headline in the caption.
+• Keep the caption professional and discussion-oriented.
+• Invite comments about what users look for before buying a product.
+• Avoid claiming that the AI assessment is infallible or guarantees the correct purchase decision.
+• Avoid fabricated reviews, ratings, testimonials or performance statistics.
+• Make sure any privacy/local-processing claim matches the actual implementation.
+• Check the destination URL before publishing.
+• Use a small set of relevant hashtags rather than a long hashtag block.
+
+OPTIONAL ENGAGEMENT QUESTION
+----------------------------
+"What information do you check first before buying a new product — reviews, specs, price, alternatives, or something else?"
+
+PLATFORM ADAPTATION
+-------------------
+Instagram:
+Use the carousel with a shorter curiosity-driven caption and a "save for later" CTA.
+
+Reddit:
+Use an educational, feedback-focused title such as:
+"I built a browser tool for comparing products from a product name or URL — looking for feedback"
+Check subreddit rules before posting promotional content.
+
+X / Twitter:
+Turn the carousel into a short thread:
+1. The purchase-research problem
+2. What ShouldIBuy does
+3. Paste a product link
+4. Review pros/cons and alternatives
+5. Toolverse ecosystem
+6. Website CTA
+
+FINAL CHECKLIST
+---------------
+[ ] Six slides uploaded in order
+[ ] Slide 06 is the final CTA
+[ ] URL is correct
+[ ] Text is readable on mobile
+[ ] Claims match the actual product
+[ ] No fake testimonials or fabricated evidence
+[ ] LinkedIn caption is not copied word-for-word from Instagram
+[ ] Relevant hashtags only

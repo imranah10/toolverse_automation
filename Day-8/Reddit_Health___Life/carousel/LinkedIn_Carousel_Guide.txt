@@ -1,0 +1,107 @@
+TOOLVERSE — HEALTH & LIFE CAROUSEL POSTING GUIDE
+
+CAROUSEL
+Tool: Health & Life
+Studio: Calculator Studio
+Format: 6-slide social carousel
+Website: toolverse-official.vercel.app
+
+CORE MESSAGE
+Health & Life groups practical everyday calculators into one Calculator Studio workflow, including BMI/body metrics, age, GPA and date-difference calculations.
+
+CONTENT NOTE
+This is a productivity/calculator tool carousel, not medical advice. Avoid presenting calculator outputs as a diagnosis or guaranteed health recommendation.
+
+SLIDE FLOW
+Slide 1 — COVER
+Kicker: Calculator Studio
+Headline: Health & Life in Calculator Studio — try it once and you'll keep coming back
+Support: Health & Life — swipe to see why it matters →
+
+Slide 2 — KEY POINT
+Kicker: Point
+Headline: I keep coming back to Health & Life — one of the Calculator Studio tools on Toolverse —…
+Number chip: 02
+
+Slide 3 — KEY POINT
+Kicker: Point
+Headline: BMI + body fat analyzer, age calculator, GPA, date difference.
+Number chip: 03
+
+Slide 4 — KEY POINT
+Kicker: Point
+Headline: Why I actually use it instead of the usual suspects:
+Number chip: 04
+
+Slide 5 — WHY IT WINS
+Kicker: Why it wins
+Headline: 56+ powerful, AI-accelerated utility tools running 100% locally in your browser with zero signups and zero server upl…
+
+Slide 6 — CTA
+Kicker: Toolverse
+Headline: Try Health & Life free → toolverse-official.vercel.app
+Support line: toolverse-official.vercel.app
+Button: Visit toolverse-official.vercel.app
+
+LINKEDIN CAPTION
+Everyday calculations are easier when the useful ones are in one place.
+
+Toolverse’s Health & Life section brings practical calculators into Calculator Studio, including:
+• BMI and body-metric calculations
+• Age calculations
+• GPA calculations
+• Date-difference calculations
+
+The carousel shows the workflow and where Health & Life fits inside the wider Toolverse ecosystem.
+
+Explore Toolverse:
+toolverse-official.vercel.app
+
+#Toolverse #ProductivityTools #CalculatorTools #WebTools #DeveloperTools #TechTools
+
+SHORT LINKEDIN VERSION
+One workspace for the everyday calculations you keep looking up.
+
+Health & Life in Toolverse brings BMI/body metrics, age, GPA and date-difference calculators together in Calculator Studio.
+
+See the workflow:
+toolverse-official.vercel.app
+
+#Toolverse #Productivity #WebTools #Calculator
+
+OPTIONAL ENGAGEMENT QUESTION
+Which everyday calculation do you find yourself looking up most often?
+
+INSTAGRAM CAPTION
+The everyday calculations you need, without the extra friction.
+
+Health & Life brings practical calculators together inside Toolverse’s Calculator Studio.
+
+Swipe through 👆
+toolverse-official.vercel.app
+
+#Toolverse #ProductivityTools #Calculator #WebTools #TechTools
+
+REDDIT POST IDEA
+Title:
+I grouped BMI, age, GPA and date-difference calculators into one browser-based tool — feedback welcome
+
+Body:
+Built Health & Life as part of Toolverse’s Calculator Studio. The goal is simple: keep common everyday calculations in one place instead of opening multiple sites.
+
+Would love feedback on which calculator you’d add next.
+
+Check each subreddit’s rules before posting promotional content.
+
+POSTING CHECKLIST
+[ ] Upload all 6 slides in order.
+[ ] Confirm Slide 6 is the final CTA.
+[ ] Check the website before publishing.
+[ ] Make sure text is readable on mobile.
+[ ] Keep health-related wording informational, not diagnostic.
+[ ] Do not claim medical accuracy beyond what the actual calculator supports.
+[ ] Do not use fake testimonials, fake results or fabricated statistics.
+[ ] Keep hashtags relevant and limited.
+
+FUTURE CAROUSEL WORKFLOW
+Whenever a Toolverse carousel reaches Slide 6, automatically create and provide its matching .txt posting guide in the same response. The user should not need to ask separately.

@@ -1,0 +1,16 @@
+================================================================================
+TOOL #37: VISION SWITCH
+Studio: Image Studio (Day-10)
+================================================================================
+
+[1] VIRAL VIDEO HOOK (First 3 Seconds):
+"See your website through the eyes of colorblind users to make sure your designs are truly accessible."
+
+[2] AI VIDEO GENERATOR PROMPT (9:16 Vertical Video / Runway Gen-3 / Sora / Kling / Pika):
+Eye-opening UX design vertical 9:16 video. A vibrant colorful mobile app design is loaded into Toolverse 'Vision Switch'. The user toggles through simulated visual impairments: Protanopia (Red-Blind), Deuteranopia (Green-Blind), Tritanopia (Blue-Blind), and Monochromacy. In real-time, the colors shift, revealing whether critical buttons and warning labels remain readable. Educational, empathetic, essential design tool.
+
+[3] COMPLETE VOICEOVER SCRIPT (15-30s Audio):
+Over 300 million people worldwide have color vision deficiency. Toolverse Vision Switch simulates how people with different types of colorblindness perceive your designs, helping you create truly accessible web products.
+
+[4] SOCIAL MEDIA CAPTION & HASHTAGS:
+Test your designs for colorblind accessibility in real-time! 👁️🎨 #accessibility #uxdesign #webdesign #toolverse

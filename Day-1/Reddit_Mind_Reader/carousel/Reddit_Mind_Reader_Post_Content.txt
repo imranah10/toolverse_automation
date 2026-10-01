@@ -1,0 +1,24 @@
+TOOLVERSE POST CONTENT
+======================
+
+Platform: Reddit
+Tool: Mind Reader
+Studio: Text Studio
+
+CAPTION
+-------
+I’ve been experimenting with a small browser-based text tool called Mind Reader.
+
+The idea is simple: give it an input, explore the response, and see whether it surfaces an angle you hadn't considered.
+
+I’d be interested in feedback on usefulness, clarity of the workflow, interesting use cases, and what you would add.
+
+Demo: toolverse-official.vercel.app
+
+Please check subreddit rules before posting promotional content.
+
+#Toolverse #MindReader #TextTools #CreativeTools
+
+CTA
+---
+toolverse-official.vercel.app

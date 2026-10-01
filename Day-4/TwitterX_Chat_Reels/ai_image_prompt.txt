@@ -1,0 +1,14 @@
+PROMPT FOR CHATGPT (DALL-E 3) / GEMINI / MIDJOURNEY — VISUAL ANGLE 15: FLATLAY
+(💡 TIP FOR 100% "HUBAHU" BRAND ACCURACY: Attach 'screenshot_tool_live.jpg' — this tool's real UI — alongside this prompt into ChatGPT or Gemini!)
+
+Prompt: Create a high-converting commercial advertising visual for "Toolverse" (Multi-Studio Tool Suite & Developer Utilities).
+- Concept: A premium top-down flat-lay: a designer desk where a tablet displays "Chat Reels" mid-run ("the finished live output"), surrounded by branded props, notes and tools of the trade
+- Spotlight capability: "Chat Reels" (Text Studio) — delivers: the finished live output.
+- Visual Style: Bright airy editorial flat-lay, soft diffused daylight, muted premium palette with one brand-color accent, Kinfolk-magazine aesthetic
+- Composition: Perfect overhead 1:1 grid, generous negative space top-left for headline overlay, crisp shadows, 8K photorealistic
+- Aspect Ratio (MANDATORY — the final image MUST be 16:9):
+   • Exact export size: 1600 x 900 px (landscape (X timeline widescreen))
+   • DALL-E 3 / Gemini: 1792 x 1024 landscape
+   • Midjourney: append --ar 16:9
+   • Compose the scene freely, but crop/export the FINAL image to exactly 16:9.
+- Details: A printed card next to the tablet reading the outcome — the physical world acknowledging the digital result

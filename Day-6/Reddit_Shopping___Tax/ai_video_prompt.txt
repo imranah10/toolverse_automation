@@ -1,0 +1,16 @@
+================================================================================
+TOOL #23: SHOPPING & TAX
+Studio: Calculator Studio (Day-6)
+================================================================================
+
+[1] VIRAL VIDEO HOOK (First 3 Seconds):
+"Avoid nasty customs duty and hidden import taxes when shopping online from international stores."
+
+[2] AI VIDEO GENERATOR PROMPT (9:16 Vertical Video / Runway Gen-3 / Sora / Kling / Pika):
+Smart shopping vertical 9:16 video. E-commerce checkout page showing item for $150. Delivery says: 'Import fees may apply'. User opens Toolverse 'Shopping & Tax'. Selects origin country, destination country, and product category. The calculator reveals the exact breakdown: VAT/GST, import customs tariff, and courier clearance fees. Total landed cost calculated with zero surprises.
+
+[3] COMPLETE VOICEOVER SCRIPT (15-30s Audio):
+Ever had a package held hostage at customs because of surprise import duties? Toolverse Shopping & Tax calculates international VAT, GST, customs tariffs, and currency exchange rates before you place that cross-border order.
+
+[4] SOCIAL MEDIA CAPTION & HASHTAGS:
+Never get surprised by hidden import customs and taxes again! 🛍️📦 #onlineshopping #customsduty #smartshopper #toolverse

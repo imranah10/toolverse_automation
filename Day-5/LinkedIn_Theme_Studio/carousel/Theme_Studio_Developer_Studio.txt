@@ -1,0 +1,40 @@
+TOOLVERSE CAROUSEL GUIDE
+========================
+
+CAROUSEL 5 — Theme Studio (Developer Studio)
+============================================================
+
+CAMPAIGN IDEA
+-------------
+Theme Studio is presented as a fast way to preview and generate a real theme system for Toolverse components.
+
+SLIDE FLOW
+----------
+1. Cover:
+   "POV: you just discovered Theme Studio inside Toolverse"
+
+2. Point:
+   "Quick one: Theme Studio."
+
+3. Point:
+   "Most Developer Studio tools make you wait, sign up, or upload your files. Toolverse doe…"
+
+4. Point:
+   "• Fast: results in seconds"
+
+5. Why it wins:
+   "56+ powerful, AI-accelerated utility tools running 100% locally in your browser with zero signups and zero server upl…"
+
+6. CTA:
+   "Open the Developer Studio suite: toolverse-official.vercel.app"
+   Button: "Visit toolverse-official.vercel.app"
+
+BEST PLATFORM USE
+-----------------
+Instagram: Developer/design-system audience.
+LinkedIn: Front-end engineering, design systems and developer productivity.
+Reddit: r/webdev, r/react, r/frontend-type audiences may be relevant depending on subreddit rules.
+X / Twitter: Developer-tool launch/discovery thread.
+
+
+============================================================

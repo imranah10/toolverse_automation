@@ -1,0 +1,37 @@
+================================================================================
+DAY: Day 5
+PLATFORM: Reddit (100% Subreddit Rule-Safe / Anti-Ban Format)
+RECOMMENDED SUBREDDIT: r/SideProject (Backups: r/SideProject, r/productivity)
+TOOL / CAPABILITY: Universal Clipboard (Shield Studio)
+BEST PUBLISHING TIME: 8:00 PM
+================================================================================
+
+[VIRAL HOOK / HEADLINE]
+Built a privacy-first Universal Clipboard & text utility inside the browser — nothing leaves your local device
+
+[FULL POST CAPTION]
+Hey everyone,
+
+I've been building a collection of privacy-first, client-side utilities called **Toolverse**, and today I wanted to share **Universal Clipboard** (part of the *Shield Studio* module) to get some honest feedback from the community.
+
+### What it does:
+
+
+### Why I built it (and how it avoids common annoyances):
+- **100% Client-Side Execution:** Everything processes locally inside your browser (JavaScript / Web APIs). Your files and text are never uploaded to a remote server.
+- **Zero Friction:** No login wall, no email capture, no credit card, and no "3 free tries then paywall" dark patterns.
+- **Lightweight & Fast:** Opens immediately and gets out of the way.
+
+**Live link if you want to test it:** https://toolverse-official.vercel.app
+
+I'd genuinely appreciate any feedback on:
+1. UI/UX edge cases on desktop or mobile
+2. Any extra features you'd find useful in `Universal Clipboard`
+
+Thanks for checking it out!
+
+[HASHTAGS]
+(none — NEVER use hashtags on Reddit to avoid AutoMod spam filters)
+
+[CALL TO ACTION]
+Test it live: https://toolverse-official.vercel.app

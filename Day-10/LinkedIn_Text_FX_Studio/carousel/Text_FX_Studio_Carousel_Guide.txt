@@ -1,0 +1,56 @@
+TOOLVERSE — TEXT FX STUDIO CAROUSEL GUIDE
+
+Tool: Text FX Studio
+Studio: Text Studio
+Carousel: 6 slides
+Export: PNG, 2160 × 2700 px (4:5)
+Instagram alternative: 1080 × 1350 px
+Website: toolverse-official.vercel.app
+
+SLIDE 1 — COVER
+Kicker: Text Studio
+Headline: Stop losing hours — Text FX Studio on Toolverse does it in seconds
+Support: Text FX Studio — swipe to see why it matters →
+
+SLIDE 2 — KEY POINT
+Kicker: Point
+Number: 02
+Headline: Stop losing hours — Text FX Studio on Toolverse does it in seconds
+
+SLIDE 3 — KEY POINT
+Kicker: Point
+Number: 03
+Headline: neon, chrome, fire, matrix and 20+ live text effects — export as image..
+
+SLIDE 4 — KEY POINT
+Kicker: Point
+Number: 04
+Headline: Works instantly in your browser
+
+SLIDE 5 — WHY IT WINS
+Kicker: Why it wins
+Headline: 56+ powerful, AI-accelerated utility tools running 100% locally in your browser with zero signups and zero server upl…
+
+SLIDE 6 — CALL TO ACTION
+Kicker: Toolverse
+Headline: Open the Text Studio suite: toolverse-official.vercel.app
+Support: toolverse-official.vercel.app
+Button: Visit toolverse-official.vercel.app
+
+INSTAGRAM CAPTION
+Stop losing hours. Text FX Studio turns simple text into eye-catching visual effects in seconds.
+
+Neon, chrome, fire, matrix and more — explore the Text Studio workflow in Toolverse.
+
+Try it: toolverse-official.vercel.app
+
+#Toolverse #TextFXStudio #TextStudio #AITools #DesignTools #CreativeTools
+
+POSTING CHECKLIST
+[ ] Upload Slides 1 → 6 in order.
+[ ] PNG format.
+[ ] 4:5 export: 2160 × 2700 px.
+[ ] Keep Slide 6 as the final CTA.
+[ ] Verify the website URL before publishing.
+[ ] Check text readability on mobile.
+[ ] Only make privacy/local-processing claims that match the actual implementation.

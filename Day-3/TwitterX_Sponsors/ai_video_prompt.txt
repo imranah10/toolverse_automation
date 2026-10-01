@@ -1,0 +1,16 @@
+================================================================================
+TOOL #12: GITHUB SPONSORS FINDER
+Studio: Developer Studio (Day-3)
+================================================================================
+
+[1] VIRAL VIDEO HOOK (First 3 Seconds):
+"Open-source developers: Here's how to discover high-paying sponsors and contributors for your project."
+
+[2] AI VIDEO GENERATOR PROMPT (9:16 Vertical Video / Runway Gen-3 / Sora / Kling / Pika):
+Inspiring developer vertical 9:16 video. A tired developer maintaining an open source library with zero funding. They enter their repository into Toolverse 'Sponsors Finder'. An interactive network graph maps out top enterprise backers, potential sponsors, and corporate users already relying on their code. Green dollar sign badges and connection nodes glow. Upbeat, motivating lo-fi music.
+
+[3] COMPLETE VOICEOVER SCRIPT (15-30s Audio):
+Maintaining open source without funding leads to burnout. Toolverse Sponsors Finder scans GitHub ecosystems to connect developers with active corporate sponsors and funding opportunities. Get paid for the open source code you write.
+
+[4] SOCIAL MEDIA CAPTION & HASHTAGS:
+Find real sponsors for your open-source repositories! 💡🐙 #opensource #github #softwareengineering #toolverse

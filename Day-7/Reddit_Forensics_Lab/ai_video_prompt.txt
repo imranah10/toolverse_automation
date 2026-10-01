@@ -1,0 +1,16 @@
+================================================================================
+TOOL #27: FORENSICS LAB & METADATA
+Studio: Shield Studio (Day-7)
+================================================================================
+
+[1] VIRAL VIDEO HOOK (First 3 Seconds):
+"Every photo you share online carries 13 layers of hidden forensic metadata that tracks you."
+
+[2] AI VIDEO GENERATOR PROMPT (9:16 Vertical Video / Runway Gen-3 / Sora / Kling / Pika):
+True-detective cyber aesthetic vertical 9:16 video. A user drops a scenic mountain photo into Toolverse 'Forensics Lab'. The system performs a 13-layer forensic breakdown: GPS coordinates pinpoint an exact house on a map, camera serial number highlights in amber, and original capture timestamp displays down to the millisecond. User clicks 'Scrub Metadata' — all surveillance footprints vanish into a green privacy shield.
+
+[3] COMPLETE VOICEOVER SCRIPT (15-30s Audio):
+Before posting photos online, inspect what they reveal about you. Toolverse Forensics Lab reveals 13 hidden forensic layers — including GPS locations, device serials, and software traces — and lets you scrub them completely clean with one click.
+
+[4] SOCIAL MEDIA CAPTION & HASHTAGS:
+Inspect and scrub hidden GPS metadata before posting photos! 🕵️‍♀️📍 #cybersecurity #privacytips #osint #toolverse

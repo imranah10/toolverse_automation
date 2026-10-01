@@ -1,0 +1,16 @@
+Did you know every PDF you share carries hidden forensic metadata that exposes your real name, computer model, and editing time? 🕵️‍♂️📁
+
+When you submit a resume, academic paper, or client proposal, background metadata can reveal confidential details you never intended to share — including software licenses, GPS location tags, and exact revision timestamps.
+
+That’s why we engineered Metadata Stripper & Editor inside Toolverse:
+
+✨ What makes it fundamentally different:
+1️⃣ Deep Forensic Scan: Inspect 12+ hidden metadata layers (Author, Producer, Creation Date, Mod Date, Software Build).
+2️⃣ 1-Click Sanitizer: Completely scrubs all tracking footprints from the PDF structure.
+3️⃣ Custom Metadata Editor: Replace sensitive author tags with clean, professional metadata.
+4️⃣ 100% Client-Side Privacy: Processed completely in your browser tab using WebAssembly — your documents are never uploaded to any cloud server.
+
+Try it free today (no signup, no credit card):
+👉 https://toolverse-official.vercel.app/studio/pdf#tool=metadata
+
+#Toolverse #DataPrivacy #CyberSecurity #PDFEditor #Metadata #Infosec #PrivacyFirst #DocumentSecurity #Productivity #TechHacks #DeveloperTools

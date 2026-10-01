@@ -1,0 +1,19 @@
+================================================================================
+AI VIDEO PROMPT (10-15 SECONDS VERTICAL 9:16 — UI-LOCKED)
+Tool: COLOR PALETTE GENERATOR & EXTRACTOR (Studio: Image Studio)
+================================================================================
+
+>>> COPY THIS EXACT PROMPT INTO KLING AI / RUNWAY / LUMA (IMAGE-TO-VIDEO):
+High-resolution 12-second vertical 9:16 video starting from the uploaded screenshot. Lock the screen UI completely static, crisp, and sharp with zero distortion of text, icons, or buttons. The camera executes a smooth cinematic 3D parallax zoom-in onto the Color Palette Generator interface. A sleek white cursor smoothly glides across the color swatches, hovering over the 'Copy Tailwind' button. Subtle ambient neon emerald and cyan glow pulses gently along the borders. Professional tech product showcase, razor-sharp typography, 60fps fluid camera motion, no morphing, no melting, no UI alteration.
+
+================================================================================
+VOICEOVER SCRIPT (10-15 SECONDS SPEAKING TIME):
+================================================================================
+Stole color inspiration from an aesthetic photo? Toolverse Color Palette extracts dominant colors, harmonious gradients, and ready-to-paste Tailwind CSS design tokens in one second. Try it free today!
+
+================================================================================
+HOW TO GENERATE (ZERO DISTORTION GUARANTEE):
+1. Website se is tool ka screenshot lein: https://toolverse-official.vercel.app/studio/image#tool=color-palette
+2. Kling AI / Runway me 'Image to Video' select karein, 9:16 vertical aur 10s duration set karein.
+3. Motion slider ko 2 ya 3 (Low Motion) par set karein.
+4. Screenshot upload karein aur upar diya gaya clean prompt paste karein!

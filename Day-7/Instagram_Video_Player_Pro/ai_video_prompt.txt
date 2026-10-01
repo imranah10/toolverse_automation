@@ -1,0 +1,16 @@
+================================================================================
+TOOL #25: VIDEO PLAYER PRO
+Studio: Generator Studio (Day-7)
+================================================================================
+
+[1] VIRAL VIDEO HOOK (First 3 Seconds):
+"The cleanest browser video player with frame-by-frame scrubbing and instant subtitle sync."
+
+[2] AI VIDEO GENERATOR PROMPT (9:16 Vertical Video / Runway Gen-3 / Sora / Kling / Pika):
+Slick media player vertical 9:16 video. High-framerate action sports video playing inside Toolverse 'Video Player Pro'. User scrolls mouse wheel — video steps backward and forward frame-by-frame (0.01s precision). Drags an SRT subtitle file onto the player — subtitles snap into sync instantly with custom typography and zero audio drift. Dark glassmorphic modern UI.
+
+[3] COMPLETE VOICEOVER SCRIPT (15-30s Audio):
+Default browser video players are clunky and lack professional playback controls. Toolverse Video Player Pro gives you frame-by-frame precision scrubbing, playback speed toggles up to 4x, and instant local subtitle sync with zero lag.
+
+[4] SOCIAL MEDIA CAPTION & HASHTAGS:
+Frame-by-frame precision video playback directly in your browser! 🎥⚡ #videoediting #filmproduction #videoplayer #toolverse

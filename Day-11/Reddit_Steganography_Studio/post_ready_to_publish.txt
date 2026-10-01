@@ -1,0 +1,20 @@
+How to hide confidential files and encrypted messages invisibly inside harmless images (100% in-browser) 🛡️
+
+Whenever you send a password-protected ZIP or encrypted attachment via email or messaging apps, it immediately draws attention. Automated firewalls inspect it, metadata logs it, and cloud providers flag it.
+
+Steganography is the art of concealing confidential data inside an ordinary file so that nobody even realizes a secret exists.
+
+We built Steganography Studio v3 inside Toolverse Shield Studio:
+
+🔍 How It Works:
+• 1-Bit, 2-Bit, & 3-Bit Modes: Embeds encrypted payload bits into the Least Significant Bits (LSB) of image pixels. In 1-bit mode, the change is mathematically indistinguishable from camera sensor noise.
+• Auto-Compression (Deflate): Automatically compresses files before embedding — shrinking a 5MB document down to ~1MB so it fits inside smaller images.
+• Military-Grade AES-256-GCM: Even if an adversary extracts the hidden raw bits, they cannot read them without your passphrase.
+• Built-In Steganalysis Testing: Includes real-time Chi-Square distribution tests and PSNR quality metrics to prove zero visual distortion.
+
+Everything runs 100% locally in your browser using the Web Crypto API. Not a single byte ever leaves your machine.
+
+Try hiding or extracting a test file:
+👉 toolverse-official.vercel.app/studio/shield#tool=steganography
+
+#privacy #cybersecurity #steganography #infosec #cryptography #webtools #opensource #toolverse

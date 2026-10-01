@@ -1,0 +1,40 @@
+TOOLVERSE CAROUSEL GUIDE
+========================
+
+CAROUSEL 7 — Flipbook (PDF Studio)
+============================================================
+
+CAMPAIGN IDEA
+-------------
+Theme: Turn a PDF into an interactive page-turning flipbook without unnecessary platform bloat.
+
+SLIDE FLOW
+----------
+1. Cover:
+   "Everything you wanted from a PDF Studio tool, minus the bloat: Flipbook"
+
+2. Point:
+   "Unpopular opinion: PDF Studio tools don't need accounts, uploads or subscriptions."
+
+3. Point:
+   "Flipbook on Toolverse proves it — turn any PDF into a real page-flip flipbook you can s…"
+
+4. Point:
+   "Bookmark it, thank yourself later."
+
+5. Why it wins:
+   "56+ powerful, AI-accelerated utility tools running 100% locally in your browser with zero signups and zero server upl…"
+
+6. CTA:
+   "Explore Flipbook 👉 toolverse-official.vercel.app"
+   Button: "Visit toolverse-official.vercel.app"
+
+BEST PLATFORM USE
+-----------------
+Instagram: Designers, students, publishers, catalogs, portfolios and project creators.
+LinkedIn: PDF/document presentation and interactive publishing workflow.
+Reddit: PDF/document productivity communities; show a before/after or demo.
+Pinterest: Portfolio, catalog, wedding album and digital publication use cases.
+
+
+============================================================

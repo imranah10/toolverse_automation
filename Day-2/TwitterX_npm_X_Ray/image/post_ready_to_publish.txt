@@ -1,0 +1,25 @@
+================================================================================
+DAY: Day 2
+PLATFORM: Twitter/X
+CONTENT FORMAT: Carousel Graphic
+SECTION / SUITE: Developer Studio
+TOOL / CAPABILITY: npm X-Ray
+BEST PUBLISHING TIME: 6:30 PM
+================================================================================
+Paste the caption + hashtags → publish at 6:30 PM. Done!
+
+[VIRAL HOOK / HEADLINE]
+Why are teams quietly switching to npm X-Ray?
+
+[FULL POST CAPTION]
+Why are teams quietly switching to npm X-Ray?
+
+Live health check of ANY npm package — downloads, versions, dependencies, real signals. — free, no signup, runs in your browser.
+
+→ toolverse-official.vercel.app #Toolverse
+
+[HASHTAGS]
+#Toolverse #npmXRay
+
+[CALL TO ACTION]
+Try npm X-Ray free → toolverse-official.vercel.app

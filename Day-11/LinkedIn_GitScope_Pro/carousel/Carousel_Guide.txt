@@ -1,0 +1,25 @@
+TOOLVERSE — GITSCOPE PRO CAROUSEL GUIDE
+
+6 slides | PNG | 2160 x 2700 px | 4:5
+
+SLIDE 1 — COVER
+Kicker: Developer Studio
+Headline: From zero to done: GitScope Pro in under a minute
+Support: GitScope Pro — swipe to see why it matters →
+
+SLIDE 2 — POINT
+Headline: From zero to done: GitScope Pro in under a minute
+
+SLIDE 3 — POINT
+Headline: X-ray any GitHub repo — 3D code city, health score, security scan, bus factor, commit h…
+
+SLIDE 4 — POINT
+Headline: → toolverse-official.vercel.app #Toolverse
+
+SLIDE 5 — WHY IT WINS
+Headline: 56+ powerful, AI-accelerated utility tools running 100% locally in your browser with zero signups and zero server upl…
+
+SLIDE 6 — CTA
+Headline: Try GitScope Pro free → toolverse-official.vercel.app
+Support: toolverse-official.vercel.app
+Button: Visit toolverse-official.vercel.app

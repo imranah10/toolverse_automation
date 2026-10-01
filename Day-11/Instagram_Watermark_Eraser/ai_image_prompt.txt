@@ -1,0 +1,11 @@
+PROMPT FOR CHATGPT (DALL-E 3) / GEMINI / MIDJOURNEY — COMMERCIAL ADVERTISING VISUAL
+(💡 TIP FOR 100% BRAND ACCURACY: Attach 'screenshot_tool_live.jpg' — the real UI of Watermark Eraser — alongside this prompt!)
+
+Prompt: Create a high-converting commercial advertising visual for "Toolverse" (Multi-Studio Tool Suite & Developer Utilities) spotlighting "Watermark Eraser" (Image Studio).
+- Concept: A high-contrast cyber workspace. A modern laptop displays the Toolverse Watermark Eraser interface with a dramatic before-and-after split photo. Left: image ruined by aggressive watermarks, logos, and stamps. Right: seamlessly erased with pristine background texture rebuilt with zero blur patches.
+- Spotlight capability: "Watermark Eraser" (Image Studio) — AI Auto-Remove for photos and frame-exact audio sample-locked v4 engine for videos.
+- Visual Style: Dark luxury tech scene, moody lighting with emerald green (#10b981) and cyan (#06b6d4) glowing accents, black glass desk, photorealistic reflections.
+- Typography in Visual: Top left "ToolVerse" logo, "Image Studio", bold headline "Watermark Eraser — The Image Studio Secret to Flawless Photos". Glowing badges: "AI Auto-Remove", "Zero Blur", "Video Engine v4", "100% Private".
+- Aspect Ratio (MANDATORY — 1:1):
+   • Exact export size: 1080 x 1080 px (square)
+   • Midjourney: append --ar 1:1

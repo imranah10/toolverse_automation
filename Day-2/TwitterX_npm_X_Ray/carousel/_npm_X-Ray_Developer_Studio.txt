@@ -1,0 +1,41 @@
+TOOLVERSE CAROUSEL GUIDE
+========================
+
+CAROUSEL 1 — npm X-Ray (Developer Studio)
+============================================================
+
+CAMPAIGN IDEA
+-------------
+Theme: Developer teams discovering npm X-Ray as a practical package-inspection tool.
+
+SLIDE FLOW
+----------
+1. Cover:
+   "Why are teams quietly switching to npm X-Ray?"
+   Kicker: Developer Studio
+
+2. Point:
+   "Why are teams quietly switching to npm X-Ray?"
+
+3. Point:
+   "Live health check of ANY npm package — downloads, versions, dependencies, real signals.…"
+
+4. Point:
+   "→ toolverse-official.vercel.app #Toolverse"
+
+5. Why it wins:
+   "56+ powerful, AI-accelerated utility tools running 100% locally in your browser with zero signups and zero server upl…"
+
+6. CTA:
+   "Try npm X-Ray free → toolverse-official.vercel.app"
+   Button: "Visit toolverse-official.vercel.app"
+
+BEST PLATFORM USE
+-----------------
+Instagram: Developer-tool discovery carousel; use all 6 slides.
+LinkedIn: Position it as a developer productivity / package visibility post.
+Reddit: Use as a discussion-style post around npm package health and developer tooling; avoid overly promotional copy.
+X / Twitter: Turn the 6 slides into a short thread, one point per post.
+
+
+============================================================

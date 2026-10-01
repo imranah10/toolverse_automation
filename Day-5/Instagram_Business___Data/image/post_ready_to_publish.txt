@@ -1,0 +1,30 @@
+================================================================================
+DAY: Day 5
+PLATFORM: Instagram
+CONTENT FORMAT: Image Post
+SECTION / SUITE: Generator Studio
+TOOL / CAPABILITY: Business & Data
+BEST PUBLISHING TIME: 9:00 AM
+================================================================================
+
+Paste the caption + hashtags → publish at 9:00 AM. Done!
+
+[VIRAL HOOK / HEADLINE]
+Invoice generator, fake/test data maker and business document helpers. — no signup, no uploads, zero waiting
+
+[FULL POST CAPTION]
+3 reasons Business & Data earns its spot in your bookmarks:
+
+1️⃣ Invoice generator, fake/test data maker and business document helpers.
+2️⃣ Zero data leaves your browser
+3️⃣ It's part of the full Generator Studio suite on Toolverse
+
+Test it yourself → toolverse-official.vercel.app
+
+[HASHTAGS]
+#Toolverse #BusinessData #GeneratorStudio #BusinessGrowth #Leadership #GlobalWorkforce #Engineering #FutureOfWork
+
+[CALL TO ACTION]
+Try Business & Data free → toolverse-official.vercel.app
+
+================================================================================

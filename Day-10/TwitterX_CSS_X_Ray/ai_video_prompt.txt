@@ -1,0 +1,16 @@
+================================================================================
+TOOL #40: CSS X-RAY
+Studio: Developer Studio (Day-10)
+================================================================================
+
+[1] VIRAL VIDEO HOOK (First 3 Seconds):
+"Inspect the exact computed CSS tokens, font sizes, and color palettes of any UI component."
+
+[2] AI VIDEO GENERATOR PROMPT (9:16 Vertical Video / Runway Gen-3 / Sora / Kling / Pika):
+High-speed frontend developer vertical 9:16 video. User hovers over an intricate modern card component inside Toolverse 'CSS X-Ray'. Holographic visual rulers and token tags overlay the card: padding: 24px, border-radius: 16px, background: rgba(255,255,255,0.08), backdrop-filter: blur(12px). 1-click exports the full design token JSON. Clean, technical, ultra-satisfying.
+
+[3] COMPLETE VOICEOVER SCRIPT (15-30s Audio):
+Inspecting complex CSS in standard dev tools requires digging through dozens of nested styles. Toolverse CSS X-Ray extracts computed design tokens, padding, typography scales, and color variables in one clean visual view.
+
+[4] SOCIAL MEDIA CAPTION & HASHTAGS:
+Extract design tokens and computed styles with visual precision! 🩻🎨 #css #frontenddev #webdevelopment #toolverse

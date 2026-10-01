@@ -1,0 +1,89 @@
+TOOLVERSE — PRINT SMART PACK CAROUSEL GUIDE
+=============================================
+
+CAROUSEL
+Tool: Print Smart Pack
+Studio: PDF Studio
+Format: 6-slide Instagram carousel
+Final slide size: 1080 × 1350 px (4:5)
+Website: toolverse-official.vercel.app
+
+SLIDE FLOW
+----------
+1. COVER
+PDF Studio
+Print-perfect PDF packs — booklet, N-up, poster split made easy. — no signup, no uploads, zero waiting
+Print Smart Pack — swipe to see why it matters →
+
+2. KEY POINT
+Point
+3 reasons Print Smart Pack earns its spot in your bookmarks:
+
+3. KEY POINT
+Point
+1️⃣ Print-perfect PDF packs — booklet, N-up, poster split made easy.
+
+4. KEY POINT
+Point
+2️⃣ Zero data leaves your browser
+
+5. WHY IT WINS
+Why it wins
+56+ powerful, AI-accelerated utility tools running 100% locally in your browser with zero signups and zero server upl…
+
+6. CALL TO ACTION
+Toolverse
+Print Smart Pack is one click away: toolverse-official.vercel.app
+toolverse-official.vercel.app
+Visit toolverse-official.vercel.app
+
+LINKEDIN CAPTION
+----------------
+Print-ready PDF workflows without the usual friction.
+
+Print Smart Pack in Toolverse's PDF Studio is built around practical print workflows such as booklet layouts, N-up pages, poster splitting and professional output.
+
+The carousel walks through the key idea, privacy-focused browser workflow and the wider Toolverse ecosystem.
+
+Explore:
+toolverse-official.vercel.app
+
+#Toolverse #PDFTools #ProductivityTools #WebTools #DeveloperTools
+
+INSTAGRAM CAPTION
+-----------------
+Print smarter. Keep the workflow simple.
+
+Booklet, N-up, poster split and more inside Print Smart Pack — part of Toolverse's PDF Studio.
+
+Swipe through the carousel and explore:
+toolverse-official.vercel.app
+
+#Toolverse #PDFTools #Productivity #WebTools #TechTools
+
+REDDIT POST IDEA
+----------------
+Title:
+"Built a browser-based PDF print workflow for booklet, N-up and poster layouts — feedback welcome"
+
+Body:
+"Print Smart Pack is part of Toolverse's PDF Studio. The goal is to make common print-prep workflows easier from the browser.
+
+Looking for feedback on which print layout or PDF workflow should be added next."
+
+Check subreddit rules before posting promotional content.
+
+POSTING CHECKLIST
+-----------------
+[ ] Upload all 6 slides in order.
+[ ] Confirm each slide is 1080 × 1350 px.
+[ ] Keep Slide 6 as the final CTA.
+[ ] Verify the website URL before publishing.
+[ ] Make sure text is readable on mobile.
+[ ] Only make privacy/local-processing claims that match the actual implementation.
+[ ] Avoid fake testimonials, fabricated statistics or unsupported claims.
+[ ] Keep hashtags relevant and limited.
+
+FUTURE CAROUSEL WORKFLOW
+------------------------
+When a Toolverse carousel reaches Slide 6, automatically provide its matching .txt posting guide without requiring a reminder.

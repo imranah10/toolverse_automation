@@ -1,0 +1,16 @@
+================================================================================
+TOOL #08: NPM X-RAY
+Studio: Developer Studio (Day-2)
+================================================================================
+
+[1] VIRAL VIDEO HOOK (First 3 Seconds):
+"Developers: Inspect any npm package's security vulnerabilities and bundle size before you install it."
+
+[2] AI VIDEO GENERATOR PROMPT (9:16 Vertical Video / Runway Gen-3 / Sora / Kling / Pika):
+Fast-paced developer vertical 9:16 video. Terminal window with code flying. Developer types 'npm i huge-library'. Suddenly, a red warning flashes. Cut to Toolverse 'npm X-Ray'. User types the package name. An instant holographic radar scan appears: Bundle Size: 4.8MB (Red warning), Security Vulnerabilities: 3, Unpacked Size, Maintenance Health: 98%. Developer swaps to a lightweight alternative in 2 seconds. Hacker aesthetic with green glowing code.
+
+[3] COMPLETE VOICEOVER SCRIPT (15-30s Audio):
+Installing random npm packages without auditing them is how apps get hacked and bundle sizes bloat. Toolverse npm X-Ray audits any package's true bundle footprint, dependency tree, and security vulnerabilities directly in your browser.
+
+[4] SOCIAL MEDIA CAPTION & HASHTAGS:
+X-Ray any npm package before it breaks your build! 🩻💻 #javascript #webdev #reactjs #toolverse

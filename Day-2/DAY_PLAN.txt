@@ -1,0 +1,39 @@
+================================================================================
+DAY 2 — TODAY'S POSTING PLAN
+Brand: Toolverse
+Platforms today: Instagram, LinkedIn, Twitter/X, Reddit
+================================================================================
+
+WHAT'S IN THIS FOLDER
+One subfolder per platform (<Platform>_<ToolName>). Each subfolder has
+everything for that post: post_ready_to_publish.txt (caption + hashtags +
+steps), ai_image_prompt.txt / ai_video_prompt.txt / carousel_prompt.txt, and
+the tool's real screenshot for a 1:1 brand match.
+
+QUICK REFERENCE — everything ready for today:
+  1. INSTAGRAM — Video Reel / Short
+     Tool: Financial Calculators (Calculator Studio)
+     Best time: 9:00 AM
+     Hook: EMI planner, SIP, compound interest, salary, currency, fuel cost. — no signup, no uploads, zero waiting
+     Caption + hashtags: Instagram_Financial_Calculators/post_ready_to_publish.txt
+  2. LINKEDIN — Image Post
+     Tool: QR Viral Studio (Generator Studio)
+     Best time: 1:00 PM
+     Hook: POV: you just discovered QR Viral Studio inside Toolverse
+     Caption + hashtags: LinkedIn_QR_Viral_Studio/post_ready_to_publish.txt
+  3. TWITTER/X — Carousel Graphic
+     Tool: npm X-Ray (Developer Studio)
+     Best time: 6:30 PM
+     Hook: Why are teams quietly switching to npm X-Ray?
+     Caption + hashtags: TwitterX_npm_X_Ray/post_ready_to_publish.txt
+  4. REDDIT — Video Reel / Short
+     Tool: Contract Forge (AI Pro Studio)
+     Best time: 8:00 PM
+     Hook: Contract Forge in AI Pro Studio — try it once and you'll keep coming back
+     Caption + hashtags: Reddit_Contract_Forge/post_ready_to_publish.txt
+
+TIP: You don't have to post on every platform — but everything is already
+prepared if you want to. Generate each visual with the bundled prompts
+(Gemini / ChatGPT / Midjourney / Higgsfield — attach the folder's screenshot),
+then publish following the 4 steps in each post_ready_to_publish.txt.
+================================================================================

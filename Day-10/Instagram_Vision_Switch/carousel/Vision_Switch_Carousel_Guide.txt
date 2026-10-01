@@ -1,0 +1,92 @@
+TOOLVERSE — VISION SWITCH CAROUSEL GUIDE
+===========================================
+
+Tool: Vision Switch
+Studio: Image Studio
+Carousel: 6 slides
+PNG export: 2160 × 2700 px (4:5, 4K-style export)
+Instagram standard alternative: 1080 × 1350 px
+Website: toolverse-official.vercel.app
+
+SLIDE 1 — COVER
+Kicker: Image Studio
+Headline: Vision Switch: the Image Studio shortcut nobody told you about
+Support: Vision Switch — swipe to see why it matters →
+
+SLIDE 2 — KEY POINT
+Kicker: Point
+Number: 02
+Headline: Vision Switch: the Image Studio shortcut nobody told you about
+
+SLIDE 3 — KEY POINT
+Kicker: Point
+Number: 03
+Headline: one photo, 8 AI eyes — see yourself through wildly different lenses..
+
+SLIDE 4 — KEY POINT
+Kicker: Point
+Number: 04
+Headline: Works instantly in your browser
+
+SLIDE 5 — WHY IT WINS
+Kicker: Why it wins
+Headline: 56+ powerful, AI-accelerated utility tools running 100% locally in your browser with zero signups and zero server upl…
+
+SLIDE 6 — CALL TO ACTION
+Kicker: Toolverse
+Headline: Try Vision Switch free → toolverse-official.vercel.app
+Support: toolverse-official.vercel.app
+Button: Visit toolverse-official.vercel.app
+
+INSTAGRAM CAPTION
+-----------------
+Vision Switch: the Image Studio shortcut nobody told you about. 👀
+
+One photo, multiple visual directions. Explore different styles through Toolverse's Image Studio.
+
+Swipe through → then try it:
+toolverse-official.vercel.app
+
+#Toolverse #VisionSwitch #ImageStudio #AITools #CreativeTools #ImageEditing
+
+LINKEDIN CAPTION
+----------------
+One source image can support multiple creative directions.
+
+This carousel introduces Vision Switch from Toolverse's Image Studio and highlights the browser-based workflow for exploring different visual styles.
+
+Explore:
+toolverse-official.vercel.app
+
+#Toolverse #ImageStudio #AI #CreativeTools #WebTools
+
+REDDIT POST IDEA
+----------------
+Title:
+Vision Switch — exploring multiple visual styles from one image
+
+Body:
+Vision Switch is an Image Studio feature concept inside Toolverse. The workflow focuses on taking one source image and exploring different visual directions.
+
+Sharing the carousel for feedback on the workflow, style options and feature concept.
+
+Check each subreddit’s rules before posting promotional content.
+
+POSTING CHECKLIST
+-----------------
+[ ] Upload Slides 1 → 6 in order.
+[ ] Use PNG format.
+[ ] 4:5 export: 2160 × 2700 px.
+[ ] Use 1080 × 1350 px if you specifically need Instagram's standard feed-size export.
+[ ] Keep Slide 6 as the final CTA.
+[ ] Verify the website URL before publishing.
+[ ] Check text readability on mobile.
+[ ] Only make privacy/local-processing claims that match the actual implementation.
+[ ] Avoid unsupported statistics or fabricated testimonials.
+
+FUTURE CAROUSELS
+----------------
+After Slide 6, automatically package:
+• Six separate PNG slides
+• Matching carousel-guide .txt
+• One ZIP containing all files
