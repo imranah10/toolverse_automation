@@ -200,6 +200,52 @@ async function publishToInstagram(postItem, isDryRun) {
   }
 }
 
+// 2b. Publish to Instagram Story (24h Ephemeral Broadcast)
+async function publishToInstagramStory(postItem, isDryRun) {
+  console.log(`\n📱 [Instagram Story] Preparing 24h Story for @toolverse.offiicial...`);
+  const mediaUrl = postItem.public_url || `https://raw.githubusercontent.com/${GITHUB_REPO}/main/${postItem.media_path}`;
+
+  if (isDryRun) {
+    console.log(`  [DRY-RUN] Instagram Story API call simulated successfully.`);
+    return { ok: true, id: "simulated_story_id" };
+  }
+
+  try {
+    let containerUrl = `https://graph.facebook.com/v21.0/${IG_ACCOUNT_ID}/media`;
+    let params = new URLSearchParams();
+    params.append('access_token', META_TOKEN);
+    params.append('media_type', 'STORIES');
+
+    if (postItem.media_type === 'VIDEO') {
+      params.append('video_url', mediaUrl);
+    } else {
+      params.append('image_url', mediaUrl);
+    }
+
+    const step1 = await apiRequest(`${containerUrl}?${params.toString()}`, 'POST');
+    if (step1.ok && step1.data.id) {
+      const waitSeconds = postItem.media_type === 'VIDEO' ? 20 : 8;
+      await sleep(waitSeconds * 1000);
+
+      let publishUrl = `https://graph.facebook.com/v21.0/${IG_ACCOUNT_ID}/media_publish`;
+      let pubParams = new URLSearchParams();
+      pubParams.append('creation_id', step1.data.id);
+      pubParams.append('access_token', META_TOKEN);
+
+      const step2 = await apiRequest(`${publishUrl}?${pubParams.toString()}`, 'POST');
+      if (step2.ok && step2.data.id) {
+        console.log(`  🎉 INSTAGRAM STORY PUBLISHED LIVE! Story ID: ${step2.data.id}`);
+        return { ok: true, id: step2.data.id };
+      }
+    }
+    console.log(`  ℹ️ Note: Story auto-post skipped (Requires 9:16 vertical ratio or container in progress).`);
+    return { ok: false, skipped: true };
+  } catch (e) {
+    console.log(`  ℹ️ Story auto-post notice:`, e.message);
+    return { ok: false, error: e.message };
+  }
+}
+
 // 3. Publish to Facebook Page
 async function publishToFacebook(postItem, isDryRun) {
   console.log(`\n📘 [Facebook] Preparing Post for ToolverseOfficial...`);
@@ -349,6 +395,7 @@ async function main() {
 
   // Run Platform Publishers
   const igResult = await publishToInstagram(postItem, isDryRun);
+  const storyResult = await publishToInstagramStory(postItem, isDryRun);
   const fbResult = await publishToFacebook(postItem, isDryRun);
   const liResult = await publishToLinkedIn(postItem, isDryRun);
 
