@@ -299,9 +299,12 @@ async function publishToLinkedIn(postItem, isDryRun) {
     return { ok: true, id: "simulated_li_id" };
   }
 
+  const personUrn = process.env.LINKEDIN_PERSON_URN || "urn:li:person:hVtQz-ykyU";
+  const authorUrn = personUrn;
+
   try {
     const liBody = {
-      author: `urn:li:organization:${LINKEDIN_ORG_ID}`,
+      author: authorUrn,
       lifecycleState: "PUBLISHED",
       specificContent: {
         "com.linkedin.ugc.ShareContent": {
@@ -312,7 +315,7 @@ async function publishToLinkedIn(postItem, isDryRun) {
               status: "READY",
               description: { text: postItem.hook },
               originalUrl: "https://toolverse-official.vercel.app",
-              title: { text: postItem.tool_name }
+              title: { text: postItem.tool_name + " | Toolverse" }
             }
           ]
         }
