@@ -2,8 +2,8 @@ name: Toolverse 90-Day Automation Engine
 
 on:
   # Multi-Slot Daily Schedule (Tier-1 Peak Windows):
-  # Slot 1: 1:30 PM UTC = 7:00 PM IST (US Morning 9:30 AM EDT & Europe Midday Peak)
-  # Slot 2: 5:30 PM UTC = 11:00 PM IST (US Afternoon 1:30 PM EDT & West Coast Peak Video Reels)
+  # Slot 1: 1:30 PM UTC = 7:00 PM IST (US Morning 9:30 AM EDT & Europe Midday Peak) -> Infographic / Image
+  # Slot 2: 5:30 PM UTC = 11:00 PM IST (US Afternoon 1:30 PM EDT & Reels Peak) -> Viral MP4 Video Reel & Story
   schedule:
     - cron: '30 13 * * *'
     - cron: '30 17 * * *'
@@ -11,8 +11,17 @@ on:
   # Manual trigger with custom options from GitHub Actions UI
   workflow_dispatch:
     inputs:
+      slot:
+        description: 'Publishing Slot (auto / image / video)'
+        required: false
+        default: 'auto'
+        type: choice
+        options:
+          - auto
+          - image
+          - video
       target_day:
-        description: 'Specify Day Number to Publish (e.g. 4). Leave blank for auto-next.'
+        description: 'Specify Day Number to Publish (e.g. 8). Leave blank for auto-next.'
         required: false
         default: ''
       dry_run:
@@ -55,16 +64,26 @@ jobs:
           LINKEDIN_PERSON_URN: ${{ secrets.LINKEDIN_PERSON_URN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
-          FLAGS=""
+          HOUR=$(date -u +%H)
+          SLOT_FLAG=""
+          if [ -n "${{ github.event.inputs.slot }}" ] && [ "${{ github.event.inputs.slot }}" != "auto" ]; then
+            SLOT_FLAG="--slot=${{ github.event.inputs.slot }}"
+          elif [ "$HOUR" -ge 16 ]; then
+            SLOT_FLAG="--slot=video"
+          else
+            SLOT_FLAG="--slot=image"
+          fi
+
+          FLAGS="$SLOT_FLAG"
           if [ "${{ github.event.inputs.test_connection }}" = "true" ]; then
             FLAGS="--test"
           elif [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
-            FLAGS="--dry-run"
+            FLAGS="$FLAGS --dry-run"
             if [ -n "${{ github.event.inputs.target_day }}" ]; then
               FLAGS="$FLAGS --day=${{ github.event.inputs.target_day }}"
             fi
           elif [ -n "${{ github.event.inputs.target_day }}" ]; then
-            FLAGS="--day=${{ github.event.inputs.target_day }}"
+            FLAGS="$FLAGS --day=${{ github.event.inputs.target_day }}"
           fi
           
           echo "Executing: node scripts/publish_engine.js $FLAGS"

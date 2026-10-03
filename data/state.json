@@ -1,39 +1,42 @@
 {
+  "current_day": 10,
+  "last_completed_day": 9,
   "last_published_day": 9,
   "last_published_at": "2026-10-03T17:33:10.812Z",
+  "day_slots": {
+    "9": {
+      "image": {
+        "published": true,
+        "published_at": "2026-10-03T17:33:10.812Z",
+        "results": {
+          "instagram": "18081174620374446",
+          "facebook": "1267223409818393_122115981309481665",
+          "linkedin": "urn:li:share:7512203105711833088"
+        }
+      },
+      "video": {
+        "published": false
+      }
+    }
+  },
   "history": [
     {
       "day": 1,
       "date": "2026-09-26",
       "tool": "Toolverse & PDF Viral Studio",
-      "status": "completed",
-      "published_platforms": [
-        "Instagram",
-        "Facebook",
-        "LinkedIn"
-      ]
+      "status": "completed"
     },
     {
       "day": 2,
       "date": "2026-09-27",
       "tool": "Financial Calculators & QR Viral Studio",
-      "status": "completed",
-      "published_platforms": [
-        "Instagram",
-        "Facebook",
-        "LinkedIn"
-      ]
+      "status": "completed"
     },
     {
       "day": 3,
       "date": "2026-09-28",
       "tool": "Digital Shadow & PixelPress Compress",
-      "status": "completed",
-      "published_platforms": [
-        "Instagram",
-        "Facebook",
-        "LinkedIn"
-      ]
+      "status": "completed"
     },
     {
       "day": 4,

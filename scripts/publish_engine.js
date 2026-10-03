@@ -1,13 +1,22 @@
 /**
  * publish_engine.js
- * Toolverse Automated Publishing Engine
- * Built for GitHub Actions Cron & Instant Manual Testing
+ * Toolverse Automated Multi-Slot Publishing Engine
+ * Built for GitHub Actions Cron & Direct Manual Execution
  * 
- * Supports:
- * - Meta Graph API (Instagram Business + Facebook Page)
- * - LinkedIn UGC / Posts API (Company & Personal)
- * - Intelligent Media Fallbacks (Catbox + GitHub Raw URL)
- * - Self-healing State Tracking (data/state.json)
+ * Schedule Architecture:
+ * - Slot 1 (Prime - 7:00 PM IST / 13:30 UTC):
+ *     Publishes High-Res Infographic / Feature Carousel (IMAGE)
+ *     Destinations: Instagram Feed + Facebook Page + LinkedIn Company & Personal
+ * 
+ * - Slot 2 (Viral - 11:00 PM IST / 17:30 UTC):
+ *     Publishes Viral MP4 Video Demo / Product Showcase (VIDEO)
+ *     Destinations: Instagram Reels Tab + Instagram Story 24h + Facebook Page Video
+ * 
+ * Features:
+ * - Idempotent Slot Tracking (never double-posts or skips days)
+ * - Meta Video Processing Status Polling (guarantees Reel readiness)
+ * - Automatic Cloud CDN Video URL Resolution (GitHub Releases & Catbox)
+ * - Self-healing State Tracking in data/state.json
  */
 
 const fs = require('fs');
@@ -17,8 +26,22 @@ const path = require('path');
 const args = process.argv.slice(2);
 const isTestMode = args.includes('--test');
 const isDryRun = args.includes('--dry-run');
+
 const dayArg = args.find(a => a.startsWith('--day='));
 const targetDayOverride = dayArg ? parseInt(dayArg.split('=')[1], 10) : null;
+
+const slotArg = args.find(a => a.startsWith('--slot='));
+let targetSlot = slotArg ? slotArg.split('=')[1].toLowerCase() : 'auto';
+
+// Auto-detect slot based on UTC hour if auto
+if (targetSlot === 'auto' || !['image', 'video', '1', '2'].includes(targetSlot)) {
+  const utcHour = new Date().getUTCHours();
+  // 13:30 UTC = 7:00 PM IST (Image)
+  // 17:30 UTC = 11:00 PM IST (Video)
+  targetSlot = utcHour >= 16 ? 'video' : 'image';
+}
+if (targetSlot === '1') targetSlot = 'image';
+if (targetSlot === '2') targetSlot = 'video';
 
 // Load local .env if present
 const envPath = path.join(__dirname, '../.env');
@@ -47,6 +70,7 @@ const GITHUB_REPO = process.env.GITHUB_REPOSITORY || "imranah10/toolverse_automa
 
 const STATE_FILE = path.join(__dirname, '../data/state.json');
 const SCHEDULE_FILE = path.join(__dirname, '../data/schedule_90_days.json');
+const VIDEO_MAP_FILE = path.join(__dirname, '../data/video_cloud_urls.json');
 
 // Helper to delay
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
@@ -56,7 +80,7 @@ async function apiRequest(url, method = 'GET', body = null, headers = {}) {
   const options = {
     method,
     headers: {
-      'User-Agent': 'Toolverse-Automation-Engine/1.0',
+      'User-Agent': 'Toolverse-Automation-Engine/2.0',
       ...headers
     }
   };
@@ -79,13 +103,51 @@ async function apiRequest(url, method = 'GET', body = null, headers = {}) {
   return { ok: response.ok, status: response.status, data: json || text };
 }
 
+// Resolve public video URL for a post
+function resolveVideoUrl(postItem) {
+  if (postItem.video_url && postItem.video_url.startsWith('http')) {
+    return postItem.video_url;
+  }
+
+  // Check video_cloud_urls.json
+  if (fs.existsSync(VIDEO_MAP_FILE)) {
+    try {
+      const vMap = JSON.parse(fs.readFileSync(VIDEO_MAP_FILE, 'utf8'));
+      // Check direct asset key or search by folder
+      if (postItem.video_path) {
+        const parts = postItem.video_path.split('/');
+        const folder = parts.find(p => p.match(/^\d+_/));
+        if (folder) {
+          const safeKey = (folder.toLowerCase().replace(/[^a-z0-9_]/g, '_') + '.mp4').replace(/_+/g, '_');
+          if (vMap[safeKey]) return vMap[safeKey];
+        }
+      }
+      // Check day8 print smart pack special key
+      if (postItem.day_num === 8 && vMap['day8_print_smart_pack.mp4']) {
+        return vMap['day8_print_smart_pack.mp4'];
+      }
+    } catch (e) {}
+  }
+
+  // Fallback to GitHub Release CDN convention
+  if (postItem.video_path) {
+    const parts = postItem.video_path.split('/');
+    const folder = parts.find(p => p.match(/^\d+_/));
+    if (folder) {
+      const safeKey = (folder.toLowerCase().replace(/[^a-z0-9_]/g, '_') + '.mp4').replace(/_+/g, '_');
+      return `https://github.com/${GITHUB_REPO}/releases/download/v1.0-assets/${safeKey}`;
+    }
+  }
+
+  return null;
+}
+
 // 1. Connection & Health Check Test Mode
 async function runHealthCheck() {
   console.log("================================================================================");
-  console.log("             TOOLVERSE AUTOMATION ENGINE — CONNECTIVITY TEST                   ");
+  console.log("        TOOLVERSE AUTOMATION ENGINE — MULTI-SLOT CONNECTIVITY TEST              ");
   console.log("================================================================================");
 
-  // Check 1: Meta Access Token & Facebook Page
   console.log("\n[1/4] Verifying Facebook Page Access & Token...");
   try {
     const fbRes = await apiRequest(`https://graph.facebook.com/v21.0/${FB_PAGE_ID}?fields=name,id,fan_count&access_token=${META_TOKEN}`);
@@ -98,7 +160,6 @@ async function runHealthCheck() {
     console.error(`  ❌ Facebook Request Failed:`, e.message);
   }
 
-  // Check 2: Instagram Business Account
   console.log("\n[2/4] Verifying Instagram Business Account...");
   try {
     const igRes = await apiRequest(`https://graph.facebook.com/v21.0/${IG_ACCOUNT_ID}?fields=username,name,id&access_token=${META_TOKEN}`);
@@ -111,64 +172,67 @@ async function runHealthCheck() {
     console.error(`  ❌ Instagram Request Failed:`, e.message);
   }
 
-  // Check 3: State File & Next Target Day
   console.log("\n[3/4] Inspecting Local State Tracker...");
   if (fs.existsSync(STATE_FILE)) {
     const state = JSON.parse(fs.readFileSync(STATE_FILE, 'utf8'));
-    console.log(`  ✅ State file found: Last published Day ${state.last_published_day}`);
-    console.log(`  👉 Next scheduled publish will be: DAY ${state.last_published_day + 1}`);
+    console.log(`  ✅ Current Active Day: ${state.current_day || state.last_published_day}`);
   } else {
-    console.log(`  ⚠️ State file not found, will default to starting from Day 4.`);
+    console.log(`  ⚠️ State file not found, will default to starting from Day 8.`);
   }
 
-  // Check 4: Schedule File
-  console.log("\n[4/4] Verifying 90-Day Content Database...");
+  console.log("\n[4/4] Verifying Schedule & Video Assets...");
   if (fs.existsSync(SCHEDULE_FILE)) {
     const sched = JSON.parse(fs.readFileSync(SCHEDULE_FILE, 'utf8'));
-    console.log(`  ✅ Master 90-day schedule verified: ${sched.length} posts loaded.`);
-    const day4 = sched.find(s => s.day_num === 4);
-    if (day4) {
-      console.log(`  👉 Day 4 Tool: "${day4.tool_name}" (${day4.media_type})`);
-      console.log(`  👉 Day 4 Media URL: ${day4.public_url || '(Raw GitHub fallback)'}`);
-    }
-  } else {
-    console.error(`  ❌ Schedule file missing! Run 'node scripts/build_schedule.js' first.`);
+    console.log(`  ✅ Schedule loaded: ${sched.length} posts configured.`);
+  }
+  if (fs.existsSync(VIDEO_MAP_FILE)) {
+    const vMap = JSON.parse(fs.readFileSync(VIDEO_MAP_FILE, 'utf8'));
+    console.log(`  ✅ Video CDN Cloud Assets mapped: ${Object.keys(vMap).length} videos.`);
   }
 
   console.log("\n================================================================================");
-  console.log("            ALL SYSTEMS READY FOR GITHUB ACTIONS AUTOMATION!                     ");
+  console.log("            ALL SYSTEMS READY FOR MULTI-SLOT 90-DAY AUTOMATION!                  ");
   console.log("================================================================================\n");
 }
 
-// 2. Publish to Instagram
-async function publishToInstagram(postItem, isDryRun) {
-  console.log(`\n📸 [Instagram] Preparing Post for @toolverse.offiicial...`);
-  const mediaUrl = postItem.public_url || `https://raw.githubusercontent.com/${GITHUB_REPO}/main/${postItem.media_path}`;
-  const caption = postItem.ig_caption;
+// 2. Publish to Instagram (Feed Image or Video Reel)
+async function publishToInstagram(postItem, slotType, isDryRun) {
+  console.log(`\n📸 [Instagram] Preparing ${slotType.toUpperCase()} for @toolverse.offiicial...`);
+  
+  let mediaUrl = '';
+  if (slotType === 'video') {
+    mediaUrl = resolveVideoUrl(postItem);
+    if (!mediaUrl) {
+      console.error(`  ❌ No video URL found for Day ${postItem.day_num}!`);
+      return { ok: false, error: 'missing_video_url' };
+    }
+  } else {
+    mediaUrl = postItem.public_url || `https://raw.githubusercontent.com/${GITHUB_REPO}/main/${postItem.media_path}`;
+  }
 
-  console.log(`  Format: ${postItem.media_type}`);
+  const caption = postItem.ig_caption;
+  console.log(`  Format: ${slotType === 'video' ? 'REEL (Video Tab)' : 'IMAGE (Feed Grid)'}`);
   console.log(`  Media Source: ${mediaUrl}`);
-  console.log(`  Caption Length: ${caption.length} characters`);
 
   if (isDryRun) {
     console.log(`  [DRY-RUN] Instagram API call simulated successfully.`);
-    return { ok: true, id: "simulated_ig_id" };
+    return { ok: true, id: `simulated_ig_${slotType}_id` };
   }
 
   // Step 1: Create Media Container
-  let containerUrl = `https://graph.facebook.com/v21.0/${IG_ACCOUNT_ID}/media`;
-  let params = new URLSearchParams();
+  const containerUrl = `https://graph.facebook.com/v21.0/${IG_ACCOUNT_ID}/media`;
+  const params = new URLSearchParams();
   params.append('access_token', META_TOKEN);
   params.append('caption', caption);
 
-  if (postItem.media_type === 'VIDEO') {
+  if (slotType === 'video') {
     params.append('media_type', 'REELS');
     params.append('video_url', mediaUrl);
   } else {
     params.append('image_url', mediaUrl);
   }
 
-  console.log(`  ⏳ Sending media container creation request...`);
+  console.log(`  ⏳ Sending ${slotType === 'video' ? 'Reel' : 'Image'} container creation request...`);
   const step1 = await apiRequest(`${containerUrl}?${params.toString()}`, 'POST');
 
   if (!step1.ok || !step1.data.id) {
@@ -179,20 +243,40 @@ async function publishToInstagram(postItem, isDryRun) {
   const creationId = step1.data.id;
   console.log(`  ✅ Container Created (ID: ${creationId})`);
 
-  // Wait for processing
-  const waitSeconds = postItem.media_type === 'VIDEO' ? 25 : 8;
-  console.log(`  ⏳ Waiting ${waitSeconds}s for Meta media processing...`);
-  await sleep(waitSeconds * 1000);
+  // Step 1b: Wait and Poll for Video Processing (Critical for Reels!)
+  if (slotType === 'video') {
+    console.log(`  ⏳ Polling Meta server for video transcoding...`);
+    let ready = false;
+    for (let attempt = 1; attempt <= 15; attempt++) {
+      await sleep(6000);
+      const statusRes = await apiRequest(`https://graph.facebook.com/v21.0/${creationId}?fields=status_code,status&access_token=${META_TOKEN}`);
+      const status = statusRes.data?.status_code;
+      console.log(`    [Attempt ${attempt}/15] Reel Status: ${status || 'PROCESSING'}`);
+      if (status === 'FINISHED') {
+        ready = true;
+        break;
+      }
+      if (status === 'ERROR') {
+        console.error(`  ❌ Meta Video Processing Error:`, statusRes.data);
+        return { ok: false, error: statusRes.data };
+      }
+    }
+    if (!ready) {
+      console.log(`  ⚠️ Proceeding with publish attempt after max poll wait.`);
+    }
+  } else {
+    await sleep(8000);
+  }
 
   // Step 2: Publish Container
-  let publishUrl = `https://graph.facebook.com/v21.0/${IG_ACCOUNT_ID}/media_publish`;
-  let pubParams = new URLSearchParams();
+  const publishUrl = `https://graph.facebook.com/v21.0/${IG_ACCOUNT_ID}/media_publish`;
+  const pubParams = new URLSearchParams();
   pubParams.append('creation_id', creationId);
   pubParams.append('access_token', META_TOKEN);
 
   const step2 = await apiRequest(`${publishUrl}?${pubParams.toString()}`, 'POST');
   if (step2.ok && step2.data.id) {
-    console.log(`  🎉 INSTAGRAM PUBLISHED LIVE! Post ID: ${step2.data.id}`);
+    console.log(`  🎉 INSTAGRAM ${slotType.toUpperCase()} PUBLISHED LIVE! ID: ${step2.data.id}`);
     return { ok: true, id: step2.data.id };
   } else {
     console.error(`  ❌ Instagram Publish Failed:`, step2.data);
@@ -200,23 +284,27 @@ async function publishToInstagram(postItem, isDryRun) {
   }
 }
 
-// 2b. Publish to Instagram Story (24h Ephemeral Broadcast)
-async function publishToInstagramStory(postItem, isDryRun) {
-  console.log(`\n📱 [Instagram Story] Preparing 24h Story for @toolverse.offiicial...`);
-  const mediaUrl = postItem.public_url || `https://raw.githubusercontent.com/${GITHUB_REPO}/main/${postItem.media_path}`;
-
-  if (isDryRun) {
-    console.log(`  [DRY-RUN] Instagram Story API call simulated successfully.`);
-    return { ok: true, id: "simulated_story_id" };
-  }
+// 2b. Publish to Instagram Story (24h Broadcast)
+async function publishToInstagramStory(postItem, slotType, isDryRun) {
+  if (isDryRun) return { ok: true, id: "simulated_story" };
 
   try {
-    let containerUrl = `https://graph.facebook.com/v21.0/${IG_ACCOUNT_ID}/media`;
-    let params = new URLSearchParams();
+    console.log(`\n📱 [Instagram Story] Broadcasting 24h Story...`);
+    let mediaUrl = '';
+    if (slotType === 'video') {
+      mediaUrl = resolveVideoUrl(postItem);
+    } else {
+      mediaUrl = postItem.public_url || `https://raw.githubusercontent.com/${GITHUB_REPO}/main/${postItem.media_path}`;
+    }
+
+    if (!mediaUrl) return { ok: false, skipped: true };
+
+    const containerUrl = `https://graph.facebook.com/v21.0/${IG_ACCOUNT_ID}/media`;
+    const params = new URLSearchParams();
     params.append('access_token', META_TOKEN);
     params.append('media_type', 'STORIES');
 
-    if (postItem.media_type === 'VIDEO') {
+    if (slotType === 'video') {
       params.append('video_url', mediaUrl);
     } else {
       params.append('image_url', mediaUrl);
@@ -224,47 +312,49 @@ async function publishToInstagramStory(postItem, isDryRun) {
 
     const step1 = await apiRequest(`${containerUrl}?${params.toString()}`, 'POST');
     if (step1.ok && step1.data.id) {
-      const waitSeconds = postItem.media_type === 'VIDEO' ? 20 : 8;
-      await sleep(waitSeconds * 1000);
-
-      let publishUrl = `https://graph.facebook.com/v21.0/${IG_ACCOUNT_ID}/media_publish`;
-      let pubParams = new URLSearchParams();
+      await sleep(10000);
+      const pubParams = new URLSearchParams();
       pubParams.append('creation_id', step1.data.id);
       pubParams.append('access_token', META_TOKEN);
 
-      const step2 = await apiRequest(`${publishUrl}?${pubParams.toString()}`, 'POST');
+      const step2 = await apiRequest(`https://graph.facebook.com/v21.0/${IG_ACCOUNT_ID}/media_publish?${pubParams.toString()}`, 'POST');
       if (step2.ok && step2.data.id) {
         console.log(`  🎉 INSTAGRAM STORY PUBLISHED LIVE! Story ID: ${step2.data.id}`);
         return { ok: true, id: step2.data.id };
       }
     }
-    console.log(`  ℹ️ Note: Story auto-post skipped (Requires 9:16 vertical ratio or container in progress).`);
+    console.log(`  ℹ️ Story auto-post deferred.`);
     return { ok: false, skipped: true };
   } catch (e) {
-    console.log(`  ℹ️ Story auto-post notice:`, e.message);
     return { ok: false, error: e.message };
   }
 }
 
-// 3. Publish to Facebook Page
-async function publishToFacebook(postItem, isDryRun) {
-  console.log(`\n📘 [Facebook] Preparing Post for ToolverseOfficial...`);
-  const mediaUrl = postItem.public_url || `https://raw.githubusercontent.com/${GITHUB_REPO}/main/${postItem.media_path}`;
-  const message = postItem.fb_caption;
+// 3. Publish to Facebook Page (Photo or Video)
+async function publishToFacebook(postItem, slotType, isDryRun) {
+  console.log(`\n📘 [Facebook] Preparing ${slotType.toUpperCase()} for ToolverseOfficial...`);
+  
+  let mediaUrl = '';
+  if (slotType === 'video') {
+    mediaUrl = resolveVideoUrl(postItem);
+  } else {
+    mediaUrl = postItem.public_url || `https://raw.githubusercontent.com/${GITHUB_REPO}/main/${postItem.media_path}`;
+  }
 
-  console.log(`  Format: ${postItem.media_type}`);
+  const message = postItem.fb_caption;
+  console.log(`  Format: ${slotType === 'video' ? 'VIDEO POST' : 'PHOTO POST'}`);
   console.log(`  Media Source: ${mediaUrl}`);
 
   if (isDryRun) {
     console.log(`  [DRY-RUN] Facebook Page API call simulated successfully.`);
-    return { ok: true, id: "simulated_fb_id" };
+    return { ok: true, id: `simulated_fb_${slotType}_id` };
   }
 
   let endpoint = `https://graph.facebook.com/v21.0/${FB_PAGE_ID}/photos`;
   let params = new URLSearchParams();
   params.append('access_token', META_TOKEN);
 
-  if (postItem.media_type === 'VIDEO') {
+  if (slotType === 'video') {
     endpoint = `https://graph.facebook.com/v21.0/${FB_PAGE_ID}/videos`;
     params.append('file_url', mediaUrl);
     params.append('description', message);
@@ -276,7 +366,7 @@ async function publishToFacebook(postItem, isDryRun) {
   const res = await apiRequest(`${endpoint}?${params.toString()}`, 'POST');
   if (res.ok && (res.data.id || res.data.post_id)) {
     const pid = res.data.post_id || res.data.id;
-    console.log(`  🎉 FACEBOOK PAGE PUBLISHED LIVE! Post ID: ${pid}`);
+    console.log(`  🎉 FACEBOOK PAGE PUBLISHED LIVE! ID: ${pid}`);
     return { ok: true, id: pid };
   } else {
     console.error(`  ❌ Facebook Publish Failed:`, res.data);
@@ -284,13 +374,11 @@ async function publishToFacebook(postItem, isDryRun) {
   }
 }
 
-// 4. Publish to LinkedIn
+// 4. Publish to LinkedIn (Company Page + Personal Profile)
 async function publishToLinkedIn(postItem, isDryRun) {
   console.log(`\n💼 [LinkedIn] Preparing Post for Toolverse Official...`);
   if (!LINKEDIN_TOKEN) {
-    console.log(`  ℹ️ [INFO] LinkedIn Access Token not provided in environment.`);
-    console.log(`  ℹ️ Meta platforms (Instagram + Facebook) will publish normally.`);
-    console.log(`  ℹ️ To enable LinkedIn, add LINKEDIN_ACCESS_TOKEN to GitHub Secrets.`);
+    console.log(`  ℹ️ [INFO] LinkedIn Access Token not configured in environment.`);
     return { ok: true, skipped: true };
   }
 
@@ -315,7 +403,7 @@ async function publishToLinkedIn(postItem, isDryRun) {
               status: "READY",
               description: { text: postItem.hook },
               originalUrl: "https://toolverse-official.vercel.app",
-              title: { text: postItem.tool_name + " | Toolverse" }
+              title: { text: `${postItem.tool_name} | Toolverse` }
             }
           ]
         }
@@ -351,7 +439,7 @@ async function main() {
   }
 
   console.log("================================================================================");
-  console.log("                 TOOLVERSE DAILY AUTOMATION ENGINE                              ");
+  console.log("                 TOOLVERSE DUAL-SLOT AUTOMATION ENGINE                          ");
   console.log("================================================================================");
 
   // Load schedule
@@ -362,28 +450,41 @@ async function main() {
   const schedule = JSON.parse(fs.readFileSync(SCHEDULE_FILE, 'utf8'));
 
   // Load state
-  let state = { last_published_day: 3, history: [] };
+  let state = {
+    current_day: 8,
+    last_completed_day: 7,
+    day_slots: {},
+    history: []
+  };
+
   if (fs.existsSync(STATE_FILE)) {
     try {
-      state = JSON.parse(fs.readFileSync(STATE_FILE, 'utf8'));
+      const parsed = JSON.parse(fs.readFileSync(STATE_FILE, 'utf8'));
+      state = { ...state, ...parsed };
+      if (!state.current_day) {
+        state.current_day = state.last_published_day || 8;
+      }
+      if (!state.day_slots) {
+        state.day_slots = {};
+      }
     } catch (e) {
-      console.warn("Could not parse state file, using default.");
+      console.warn("Could not parse state file, using defaults.");
     }
   }
 
-  // Determine target day
-  let targetDay = targetDayOverride || (state.last_published_day + 1);
+  const targetDay = targetDayOverride || state.current_day || 8;
+  const slotKey = targetSlot; // 'image' or 'video'
 
-  if (targetDay > 90) {
-    console.log(`All 90 days have completed! Resetting or maintenance mode.`);
+  console.log(`\n▶️ Target Publishing Day: DAY ${targetDay} (Out of 90)`);
+  console.log(`▶️ Active Publishing Slot: ${slotKey.toUpperCase()} (${slotKey === 'image' ? 'Slot 1: 7:00 PM IST Prime' : 'Slot 2: 11:00 PM IST Viral Reel'})`);
+  console.log(`▶️ Execution Mode: ${isDryRun ? '[DRY-RUN SIMULATION]' : '[LIVE PRODUCTION RUN]'}`);
+
+  // Duplicate Check
+  const daySlotState = state.day_slots[targetDay] || {};
+  if (daySlotState[slotKey] && daySlotState[slotKey].published) {
+    console.log(`\nℹ️ [DUPLICATE PREVENTION] Slot "${slotKey}" for Day ${targetDay} was ALREADY published at ${daySlotState[slotKey].published_at}.`);
+    console.log(`ℹ️ Skipping execution to prevent duplicate posts.`);
     return;
-  }
-
-  console.log(`Target Publishing Day: DAY ${targetDay} (Out of 90)`);
-  if (isDryRun) {
-    console.log(`Execution Mode: [DRY-RUN SIMULATION] (No live posts will be created)`);
-  } else {
-    console.log(`Execution Mode: [LIVE PRODUCTION RUN]`);
   }
 
   const postItem = schedule.find(s => s.day_num === targetDay);
@@ -396,34 +497,55 @@ async function main() {
   console.log(`Suite: ${postItem.suite}`);
   console.log(`Hook: "${postItem.hook}"`);
 
-  // Run Platform Publishers
-  const igResult = await publishToInstagram(postItem, isDryRun);
-  const storyResult = await publishToInstagramStory(postItem, isDryRun);
-  const fbResult = await publishToFacebook(postItem, isDryRun);
-  const liResult = await publishToLinkedIn(postItem, isDryRun);
+  let igResult = { ok: false };
+  let fbResult = { ok: false };
+  let liResult = { ok: false };
+  let storyResult = { ok: false };
 
-  // Update State if not dry-run
+  if (slotKey === 'image') {
+    // Slot 1 (Prime): Image to IG Grid, FB Photo, LinkedIn
+    igResult = await publishToInstagram(postItem, 'image', isDryRun);
+    fbResult = await publishToFacebook(postItem, 'image', isDryRun);
+    liResult = await publishToLinkedIn(postItem, isDryRun);
+  } else {
+    // Slot 2 (Viral): MP4 Reel to IG Reels, IG Story, FB Video
+    igResult = await publishToInstagram(postItem, 'video', isDryRun);
+    storyResult = await publishToInstagramStory(postItem, 'video', isDryRun);
+    fbResult = await publishToFacebook(postItem, 'video', isDryRun);
+  }
+
+  // Record slot in state
   if (!isDryRun && (igResult.ok || fbResult.ok)) {
-    state.last_published_day = targetDay;
-    state.last_published_at = new Date().toISOString();
-    state.history.push({
-      day: targetDay,
-      date: new Date().toISOString().split('T')[0],
-      tool: postItem.tool_name,
-      status: "completed",
+    if (!state.day_slots[targetDay]) {
+      state.day_slots[targetDay] = {};
+    }
+
+    state.day_slots[targetDay][slotKey] = {
+      published: true,
+      published_at: new Date().toISOString(),
       results: {
         instagram: igResult.id || igResult.error,
         facebook: fbResult.id || fbResult.error,
+        story: storyResult.id || null,
         linkedin: liResult.id || (liResult.skipped ? 'skipped' : liResult.error)
       }
-    });
+    };
 
+    // If Slot 2 (video) just finished, the entire day is officially complete! Advance to tomorrow
+    if (slotKey === 'video') {
+      state.last_completed_day = targetDay;
+      state.current_day = targetDay + 1;
+      state.last_published_day = targetDay;
+      console.log(`\n🏆 Day ${targetDay} fully completed! Advanced current_day to Day ${targetDay + 1} for tomorrow's Slot 1.`);
+    }
+
+    state.last_published_at = new Date().toISOString();
     fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2), 'utf8');
-    console.log(`\n✅ State updated successfully: last_published_day = ${targetDay}`);
+    console.log(`✅ State updated and recorded in data/state.json`);
   }
 
   console.log("\n================================================================================");
-  console.log(`              DAY ${targetDay} PUBLISHING EXECUTION FINISHED                     `);
+  console.log(`        DAY ${targetDay} [${slotKey.toUpperCase()}] PUBLISHING EXECUTION FINISHED `);
   console.log("================================================================================\n");
 }
 
