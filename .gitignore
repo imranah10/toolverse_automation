@@ -16,4 +16,5 @@ Thumbs.db
 *.tmp
 *.log
 scripts/upload_all_remaining.js
+scripts/upload_remaining_retry.js
 scratch/

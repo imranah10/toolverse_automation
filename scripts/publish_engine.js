@@ -360,7 +360,12 @@ async function publishToFacebook(postItem, slotType, isDryRun) {
     mediaUrl = resolveImageUrl(postItem);
   }
 
-  const message = postItem.fb_caption;
+  let message = postItem.fb_caption || "";
+  // Enrich Facebook caption with tool spotlight, hook, and hashtags
+  const hashtags = (postItem.ig_caption.match(/#\w+/g) || []).slice(0, 8).join(' ');
+  if (!message.includes('#') && hashtags) {
+    message = `${postItem.tool_name} — ${postItem.hook}\n\n${message}\n\n${hashtags}`;
+  }
   console.log(`  Format: ${slotType === 'video' ? 'VIDEO POST' : 'PHOTO POST'}`);
   console.log(`  Media Source: ${mediaUrl}`);
 
@@ -393,7 +398,56 @@ async function publishToFacebook(postItem, slotType, isDryRun) {
   }
 }
 
-// 4. Publish to LinkedIn (Company & Personal)
+// Helper to upload image to LinkedIn
+async function uploadImageToLinkedIn(imageUrl, authorUrn) {
+  try {
+    const regRes = await apiRequest("https://api.linkedin.com/v2/assets?action=registerUpload", "POST", {
+      registerUploadRequest: {
+        recipes: ["urn:li:digitalmediaRecipe:feedshare-image"],
+        owner: authorUrn,
+        serviceRelationships: [
+          {
+            relationshipType: "OWNER",
+            identifier: "urn:li:userGeneratedContent"
+          }
+        ]
+      }
+    }, {
+      Authorization: `Bearer ${LINKEDIN_TOKEN}`,
+      'X-Restli-Protocol-Version': '2.0.0'
+    });
+
+    if (!regRes.ok || !regRes.data?.value?.uploadMechanism?.["com.linkedin.digitalmedia.uploading.MediaUploadHttpRequest"]?.uploadUrl) {
+      return null;
+    }
+
+    const uploadUrl = regRes.data.value.uploadMechanism["com.linkedin.digitalmedia.uploading.MediaUploadHttpRequest"].uploadUrl;
+    const assetUrn = regRes.data.value.asset;
+
+    const imgFetch = await fetch(imageUrl);
+    if (!imgFetch.ok) return null;
+    const imgBuffer = Buffer.from(await imgFetch.arrayBuffer());
+
+    const uploadRes = await fetch(uploadUrl, {
+      method: "POST",
+      headers: {
+        "Authorization": `Bearer ${LINKEDIN_TOKEN}`,
+        "Content-Type": "image/png"
+      },
+      body: imgBuffer
+    });
+
+    if (uploadRes.ok || uploadRes.status === 201) {
+      return assetUrn;
+    }
+    return null;
+  } catch (e) {
+    console.warn("  ⚠️ LinkedIn image upload helper:", e.message);
+    return null;
+  }
+}
+
+// 4. Publish to LinkedIn (Personal Profile & Company Page)
 async function publishToLinkedIn(postItem, isDryRun) {
   console.log(`\n💼 [LinkedIn] Preparing Post for Toolverse...`);
   if (!LINKEDIN_TOKEN) {
@@ -410,10 +464,36 @@ async function publishToLinkedIn(postItem, isDryRun) {
   const authorUrn = personUrn;
 
   try {
-    const liBody = {
-      author: authorUrn,
-      lifecycleState: "PUBLISHED",
-      specificContent: {
+    const imageUrl = resolveImageUrl(postItem);
+    let assetUrn = null;
+    if (imageUrl) {
+      console.log(`  Uploading image to LinkedIn: ${imageUrl}...`);
+      assetUrn = await uploadImageToLinkedIn(imageUrl, authorUrn);
+      if (assetUrn) {
+        console.log(`  ✅ LinkedIn Image Asset Created: ${assetUrn}`);
+      }
+    }
+
+    let specificContent = {};
+    if (assetUrn) {
+      specificContent = {
+        "com.linkedin.ugc.ShareContent": {
+          shareCommentary: { 
+            text: `${postItem.li_caption}\n\nLive Demo: https://toolverse-official.vercel.app` 
+          },
+          shareMediaCategory: "IMAGE",
+          media: [
+            {
+              status: "READY",
+              description: { text: postItem.hook },
+              media: assetUrn,
+              title: { text: `${postItem.tool_name} | Toolverse` }
+            }
+          ]
+        }
+      };
+    } else {
+      specificContent = {
         "com.linkedin.ugc.ShareContent": {
           shareCommentary: { text: postItem.li_caption },
           shareMediaCategory: "ARTICLE",
@@ -426,7 +506,13 @@ async function publishToLinkedIn(postItem, isDryRun) {
             }
           ]
         }
-      },
+      };
+    }
+
+    const liBody = {
+      author: authorUrn,
+      lifecycleState: "PUBLISHED",
+      specificContent,
       visibility: {
         "com.linkedin.ugc.MemberNetworkVisibility": "PUBLIC"
       }
