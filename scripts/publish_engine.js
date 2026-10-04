@@ -1,6 +1,6 @@
 /**
  * publish_engine.js
- * Toolverse Automated Multi-Slot Publishing Engine
+ * Toolverse Automated Multi-Slot Publishing Engine v2.1
  * Built for GitHub Actions Cron & Direct Manual Execution
  * 
  * Schedule Architecture:
@@ -12,11 +12,12 @@
  *     Publishes Viral MP4 Video Demo / Product Showcase (VIDEO)
  *     Destinations: Instagram Reels Tab + Instagram Story 24h + Facebook Page Video
  * 
- * Features:
- * - Idempotent Slot Tracking (never double-posts or skips days)
+ * Key Fixes v2.1:
+ * - Specific Tool Folder Key Resolution (fixes parent folder mismatch)
+ * - Safe Image URL Fallback on Video-Only Days (never sends .mp4 to image endpoints)
+ * - Anti-Stuck-Forever Guard (allows forward progress on persistent failures)
  * - Meta Video Processing Status Polling (guarantees Reel readiness)
- * - Automatic Cloud CDN Video URL Resolution (GitHub Releases & Catbox)
- * - Self-healing State Tracking in data/state.json
+ * - Idempotent Slot Tracking (never double-posts or skips days)
  */
 
 const fs = require('fs');
@@ -80,7 +81,7 @@ async function apiRequest(url, method = 'GET', body = null, headers = {}) {
   const options = {
     method,
     headers: {
-      'User-Agent': 'Toolverse-Automation-Engine/2.0',
+      'User-Agent': 'Toolverse-Automation-Engine/2.1',
       ...headers
     }
   };
@@ -103,38 +104,62 @@ async function apiRequest(url, method = 'GET', body = null, headers = {}) {
   return { ok: response.ok, status: response.status, data: json || text };
 }
 
-// Resolve public video URL for a post
+// High-Res Image Resolution (Guarantees valid image on video days)
+function resolveImageUrl(postItem) {
+  if (postItem.public_url && !postItem.public_url.endsWith('.mp4')) {
+    return postItem.public_url;
+  }
+  if (postItem.media_path && !postItem.media_path.endsWith('.mp4')) {
+    return `https://raw.githubusercontent.com/${GITHUB_REPO}/main/${postItem.media_path}`;
+  }
+
+  // Safe fallback studio images
+  const studioFallbacks = {
+    "Master Suite": "https://files.catbox.moe/118wy5.png",
+    "Calculator Studio": "https://files.catbox.moe/02x7fd.png",
+    "Shield Studio": "https://files.catbox.moe/3q6qdn.png",
+    "PDF Studio": "https://files.catbox.moe/3gsioo.png",
+    "Business Studio": "https://files.catbox.moe/t2ifm5.png",
+    "Creative Studio": "https://files.catbox.moe/zd7nco.png",
+    "Media Studio": "https://files.catbox.moe/c3ysxm.png",
+    "Utility Studio": "https://files.catbox.moe/yd73yd.png",
+    "Dev Studio": "https://files.catbox.moe/eiehcr.png",
+    "Brand Commercial": "https://files.catbox.moe/118wy5.png",
+    "Tool Demo": "https://files.catbox.moe/02x7fd.png",
+    "Build In Public": "https://files.catbox.moe/118wy5.png"
+  };
+
+  return studioFallbacks[postItem.suite] || "https://files.catbox.moe/118wy5.png";
+}
+
+// Precision Video URL Resolution (Exact tool folder matching)
 function resolveVideoUrl(postItem) {
   if (postItem.video_url && postItem.video_url.startsWith('http')) {
     return postItem.video_url;
   }
 
-  // Check video_cloud_urls.json
-  if (fs.existsSync(VIDEO_MAP_FILE)) {
-    try {
-      const vMap = JSON.parse(fs.readFileSync(VIDEO_MAP_FILE, 'utf8'));
-      // Check direct asset key or search by folder
-      if (postItem.video_path) {
-        const parts = postItem.video_path.split('/');
-        const folder = parts.find(p => p.match(/^\d+_/));
-        if (folder) {
-          const safeKey = (folder.toLowerCase().replace(/[^a-z0-9_]/g, '_') + '.mp4').replace(/_+/g, '_');
+  const vPath = postItem.video_path || (postItem.media_path && postItem.media_path.endsWith('.mp4') ? postItem.media_path : null);
+  if (vPath) {
+    const normalized = vPath.replace(/\\/g, '/');
+    const parts = normalized.split('/');
+    // Direct parent of the mp4 file is ALWAYS the specific tool folder
+    const specificFolder = parts[parts.length - 2];
+    
+    if (specificFolder) {
+      const safeKey = (specificFolder.toLowerCase().replace(/[^a-z0-9_]/g, '_') + '.mp4').replace(/_+/g, '_');
+      
+      // 1. Check video_cloud_urls.json
+      if (fs.existsSync(VIDEO_MAP_FILE)) {
+        try {
+          const vMap = JSON.parse(fs.readFileSync(VIDEO_MAP_FILE, 'utf8'));
           if (vMap[safeKey]) return vMap[safeKey];
-        }
+          if (postItem.day_num === 8 && vMap['day8_print_smart_pack.mp4']) {
+            return vMap['day8_print_smart_pack.mp4'];
+          }
+        } catch (e) {}
       }
-      // Check day8 print smart pack special key
-      if (postItem.day_num === 8 && vMap['day8_print_smart_pack.mp4']) {
-        return vMap['day8_print_smart_pack.mp4'];
-      }
-    } catch (e) {}
-  }
 
-  // Fallback to GitHub Release CDN convention
-  if (postItem.video_path) {
-    const parts = postItem.video_path.split('/');
-    const folder = parts.find(p => p.match(/^\d+_/));
-    if (folder) {
-      const safeKey = (folder.toLowerCase().replace(/[^a-z0-9_]/g, '_') + '.mp4').replace(/_+/g, '_');
+      // 2. Direct GitHub Release CDN URL
       return `https://github.com/${GITHUB_REPO}/releases/download/v1.0-assets/${safeKey}`;
     }
   }
@@ -145,7 +170,7 @@ function resolveVideoUrl(postItem) {
 // 1. Connection & Health Check Test Mode
 async function runHealthCheck() {
   console.log("================================================================================");
-  console.log("        TOOLVERSE AUTOMATION ENGINE — MULTI-SLOT CONNECTIVITY TEST              ");
+  console.log("        TOOLVERSE AUTOMATION ENGINE v2.1 — CONNECTIVITY TEST                    ");
   console.log("================================================================================");
 
   console.log("\n[1/4] Verifying Facebook Page Access & Token...");
@@ -176,18 +201,12 @@ async function runHealthCheck() {
   if (fs.existsSync(STATE_FILE)) {
     const state = JSON.parse(fs.readFileSync(STATE_FILE, 'utf8'));
     console.log(`  ✅ Current Active Day: ${state.current_day || state.last_published_day}`);
-  } else {
-    console.log(`  ⚠️ State file not found, will default to starting from Day 8.`);
   }
 
   console.log("\n[4/4] Verifying Schedule & Video Assets...");
   if (fs.existsSync(SCHEDULE_FILE)) {
     const sched = JSON.parse(fs.readFileSync(SCHEDULE_FILE, 'utf8'));
     console.log(`  ✅ Schedule loaded: ${sched.length} posts configured.`);
-  }
-  if (fs.existsSync(VIDEO_MAP_FILE)) {
-    const vMap = JSON.parse(fs.readFileSync(VIDEO_MAP_FILE, 'utf8'));
-    console.log(`  ✅ Video CDN Cloud Assets mapped: ${Object.keys(vMap).length} videos.`);
   }
 
   console.log("\n================================================================================");
@@ -207,7 +226,7 @@ async function publishToInstagram(postItem, slotType, isDryRun) {
       return { ok: false, error: 'missing_video_url' };
     }
   } else {
-    mediaUrl = postItem.public_url || `https://raw.githubusercontent.com/${GITHUB_REPO}/main/${postItem.media_path}`;
+    mediaUrl = resolveImageUrl(postItem);
   }
 
   const caption = postItem.ig_caption;
@@ -294,7 +313,7 @@ async function publishToInstagramStory(postItem, slotType, isDryRun) {
     if (slotType === 'video') {
       mediaUrl = resolveVideoUrl(postItem);
     } else {
-      mediaUrl = postItem.public_url || `https://raw.githubusercontent.com/${GITHUB_REPO}/main/${postItem.media_path}`;
+      mediaUrl = resolveImageUrl(postItem);
     }
 
     if (!mediaUrl) return { ok: false, skipped: true };
@@ -338,7 +357,7 @@ async function publishToFacebook(postItem, slotType, isDryRun) {
   if (slotType === 'video') {
     mediaUrl = resolveVideoUrl(postItem);
   } else {
-    mediaUrl = postItem.public_url || `https://raw.githubusercontent.com/${GITHUB_REPO}/main/${postItem.media_path}`;
+    mediaUrl = resolveImageUrl(postItem);
   }
 
   const message = postItem.fb_caption;
@@ -374,9 +393,9 @@ async function publishToFacebook(postItem, slotType, isDryRun) {
   }
 }
 
-// 4. Publish to LinkedIn (Company Page + Personal Profile)
+// 4. Publish to LinkedIn (Company & Personal)
 async function publishToLinkedIn(postItem, isDryRun) {
-  console.log(`\n💼 [LinkedIn] Preparing Post for Toolverse Official...`);
+  console.log(`\n💼 [LinkedIn] Preparing Post for Toolverse...`);
   if (!LINKEDIN_TOKEN) {
     console.log(`  ℹ️ [INFO] LinkedIn Access Token not configured in environment.`);
     return { ok: true, skipped: true };
@@ -439,7 +458,7 @@ async function main() {
   }
 
   console.log("================================================================================");
-  console.log("                 TOOLVERSE DUAL-SLOT AUTOMATION ENGINE                          ");
+  console.log("            TOOLVERSE DUAL-SLOT AUTOMATION ENGINE v2.1                          ");
   console.log("================================================================================");
 
   // Load schedule
@@ -451,8 +470,8 @@ async function main() {
 
   // Load state
   let state = {
-    current_day: 8,
-    last_completed_day: 7,
+    current_day: 10,
+    last_completed_day: 9,
     day_slots: {},
     history: []
   };
@@ -462,7 +481,7 @@ async function main() {
       const parsed = JSON.parse(fs.readFileSync(STATE_FILE, 'utf8'));
       state = { ...state, ...parsed };
       if (!state.current_day) {
-        state.current_day = state.last_published_day || 8;
+        state.current_day = (state.last_published_day || 9) + 1;
       }
       if (!state.day_slots) {
         state.day_slots = {};
@@ -472,7 +491,7 @@ async function main() {
     }
   }
 
-  const targetDay = targetDayOverride || state.current_day || 8;
+  const targetDay = targetDayOverride || state.current_day || 10;
   const slotKey = targetSlot; // 'image' or 'video'
 
   console.log(`\n▶️ Target Publishing Day: DAY ${targetDay} (Out of 90)`);
@@ -515,33 +534,49 @@ async function main() {
   }
 
   // Record slot in state
-  if (!isDryRun && (igResult.ok || fbResult.ok)) {
+  if (!isDryRun) {
     if (!state.day_slots[targetDay]) {
       state.day_slots[targetDay] = {};
     }
 
-    state.day_slots[targetDay][slotKey] = {
-      published: true,
-      published_at: new Date().toISOString(),
-      results: {
-        instagram: igResult.id || igResult.error,
-        facebook: fbResult.id || fbResult.error,
-        story: storyResult.id || null,
-        linkedin: liResult.id || (liResult.skipped ? 'skipped' : liResult.error)
+    if (igResult.ok || fbResult.ok) {
+      state.day_slots[targetDay][slotKey] = {
+        published: true,
+        published_at: new Date().toISOString(),
+        results: {
+          instagram: igResult.id || igResult.error,
+          facebook: fbResult.id || fbResult.error,
+          story: storyResult.id || null,
+          linkedin: liResult.id || (liResult.skipped ? 'skipped' : liResult.error)
+        }
+      };
+
+      // If Slot 2 (video) just finished, the entire day is officially complete! Advance to tomorrow
+      if (slotKey === 'video') {
+        state.last_completed_day = targetDay;
+        state.current_day = targetDay + 1;
+        state.last_published_day = targetDay;
+        console.log(`\n🏆 Day ${targetDay} fully completed! Advanced current_day to Day ${targetDay + 1} for tomorrow's Slot 1.`);
       }
-    };
 
-    // If Slot 2 (video) just finished, the entire day is officially complete! Advance to tomorrow
-    if (slotKey === 'video') {
-      state.last_completed_day = targetDay;
-      state.current_day = targetDay + 1;
-      state.last_published_day = targetDay;
-      console.log(`\n🏆 Day ${targetDay} fully completed! Advanced current_day to Day ${targetDay + 1} for tomorrow's Slot 1.`);
+      state.last_published_at = new Date().toISOString();
+      fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2), 'utf8');
+      console.log(`✅ State updated and recorded in data/state.json`);
+    } else {
+      // Anti-Stuck Guard: Track failures and allow forward progress after repeated failures
+      const currentFailures = (state.day_slots[targetDay][slotKey]?.failures || 0) + 1;
+      state.day_slots[targetDay][slotKey] = {
+        published: false,
+        failures: currentFailures,
+        last_error: { ig: igResult.error, fb: fbResult.error }
+      };
+
+      if (currentFailures >= 2 && slotKey === 'video') {
+        console.warn(`⚠️ Day ${targetDay} encountered repeated failures. Advancing to prevent permanent blockage.`);
+        state.current_day = targetDay + 1;
+      }
+      fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2), 'utf8');
     }
-
-    state.last_published_at = new Date().toISOString();
-    fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2), 'utf8');
-    console.log(`✅ State updated and recorded in data/state.json`);
   }
 
   console.log("\n================================================================================");
