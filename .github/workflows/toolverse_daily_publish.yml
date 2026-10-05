@@ -5,8 +5,14 @@ on:
   # Slot 1: 1:30 PM UTC = 7:00 PM IST (US Morning 9:30 AM EDT & Europe Midday Peak) -> Infographic / Image
   # Slot 2: 5:30 PM UTC = 11:00 PM IST (US Afternoon 1:30 PM EDT & Reels Peak) -> Viral MP4 Video Reel & Story
   schedule:
+    # Slot 1: 7:00 PM IST (13:30 UTC) with 7:45 PM & 8:15 PM IST fail-safe retries
     - cron: '30 13 * * *'
+    - cron: '45 13 * * *'
+    - cron: '15 14 * * *'
+    # Slot 2: 11:00 PM IST (17:30 UTC) with 11:45 PM & 12:15 AM IST fail-safe retries
     - cron: '30 17 * * *'
+    - cron: '45 17 * * *'
+    - cron: '15 18 * * *'
   
   # Manual trigger with custom options from GitHub Actions UI
   workflow_dispatch:

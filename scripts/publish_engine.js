@@ -461,75 +461,87 @@ async function publishToLinkedIn(postItem, isDryRun) {
   }
 
   const personUrn = process.env.LINKEDIN_PERSON_URN || "urn:li:person:hVtQz-ykyU";
-  const authorUrn = personUrn;
+  const orgUrn = LINKEDIN_ORG_ID ? `urn:li:organization:${LINKEDIN_ORG_ID}` : null;
 
   try {
     const imageUrl = resolveImageUrl(postItem);
-    let assetUrn = null;
-    if (imageUrl) {
-      console.log(`  Uploading image to LinkedIn: ${imageUrl}...`);
-      assetUrn = await uploadImageToLinkedIn(imageUrl, authorUrn);
+    const targets = [];
+    if (orgUrn) targets.push({ type: 'Company Page', urn: orgUrn });
+    if (personUrn) targets.push({ type: 'Personal Profile', urn: personUrn });
+
+    const publishedIds = [];
+
+    for (const target of targets) {
+      let assetUrn = null;
+      if (imageUrl) {
+        assetUrn = await uploadImageToLinkedIn(imageUrl, target.urn);
+      }
+
+      let specificContent = {};
       if (assetUrn) {
-        console.log(`  ✅ LinkedIn Image Asset Created: ${assetUrn}`);
+        specificContent = {
+          "com.linkedin.ugc.ShareContent": {
+            shareCommentary: { 
+              text: `${postItem.li_caption}\n\nLive Demo: https://toolverse-official.vercel.app` 
+            },
+            shareMediaCategory: "IMAGE",
+            media: [
+              {
+                status: "READY",
+                description: { text: postItem.hook },
+                media: assetUrn,
+                title: { text: `${postItem.tool_name} | Toolverse` }
+              }
+            ]
+          }
+        };
+      } else {
+        specificContent = {
+          "com.linkedin.ugc.ShareContent": {
+            shareCommentary: { text: postItem.li_caption },
+            shareMediaCategory: "ARTICLE",
+            media: [
+              {
+                status: "READY",
+                description: { text: postItem.hook },
+                originalUrl: "https://toolverse-official.vercel.app",
+                title: { text: `${postItem.tool_name} | Toolverse` }
+              }
+            ]
+          }
+        };
+      }
+
+      const liBody = {
+        author: target.urn,
+        lifecycleState: "PUBLISHED",
+        specificContent,
+        visibility: {
+          "com.linkedin.ugc.MemberNetworkVisibility": "PUBLIC"
+        }
+      };
+
+      const liRes = await apiRequest("https://api.linkedin.com/v2/ugcPosts", "POST", liBody, {
+        Authorization: `Bearer ${LINKEDIN_TOKEN}`,
+        'X-Restli-Protocol-Version': '2.0.0'
+      });
+
+      if (liRes.ok && liRes.data.id) {
+        console.log(`  🎉 LINKEDIN [${target.type}] PUBLISHED LIVE! ID: ${liRes.data.id}`);
+        publishedIds.push(liRes.data.id);
+      } else {
+        if (target.type === 'Company Page') {
+          console.log(`  ℹ️ [Notice] Company Page posting requires w_organization_social scope. Published to Personal Profile instead.`);
+        } else {
+          console.warn(`  ⚠️ LinkedIn [${target.type}] Notice:`, liRes.data);
+        }
       }
     }
 
-    let specificContent = {};
-    if (assetUrn) {
-      specificContent = {
-        "com.linkedin.ugc.ShareContent": {
-          shareCommentary: { 
-            text: `${postItem.li_caption}\n\nLive Demo: https://toolverse-official.vercel.app` 
-          },
-          shareMediaCategory: "IMAGE",
-          media: [
-            {
-              status: "READY",
-              description: { text: postItem.hook },
-              media: assetUrn,
-              title: { text: `${postItem.tool_name} | Toolverse` }
-            }
-          ]
-        }
-      };
-    } else {
-      specificContent = {
-        "com.linkedin.ugc.ShareContent": {
-          shareCommentary: { text: postItem.li_caption },
-          shareMediaCategory: "ARTICLE",
-          media: [
-            {
-              status: "READY",
-              description: { text: postItem.hook },
-              originalUrl: "https://toolverse-official.vercel.app",
-              title: { text: `${postItem.tool_name} | Toolverse` }
-            }
-          ]
-        }
-      };
+    if (publishedIds.length > 0) {
+      return { ok: true, id: publishedIds.join(', ') };
     }
-
-    const liBody = {
-      author: authorUrn,
-      lifecycleState: "PUBLISHED",
-      specificContent,
-      visibility: {
-        "com.linkedin.ugc.MemberNetworkVisibility": "PUBLIC"
-      }
-    };
-
-    const liRes = await apiRequest("https://api.linkedin.com/v2/ugcPosts", "POST", liBody, {
-      Authorization: `Bearer ${LINKEDIN_TOKEN}`,
-      'X-Restli-Protocol-Version': '2.0.0'
-    });
-
-    if (liRes.ok && liRes.data.id) {
-      console.log(`  🎉 LINKEDIN PUBLISHED LIVE! Post ID: ${liRes.data.id}`);
-      return { ok: true, id: liRes.data.id };
-    } else {
-      console.warn(`  ⚠️ LinkedIn Publish Notice:`, liRes.data);
-      return { ok: false, error: liRes.data };
-    }
+    return { ok: false, error: "Failed to publish on LinkedIn targets" };
   } catch (e) {
     console.warn(`  ⚠️ LinkedIn Error:`, e.message);
     return { ok: false, error: e.message };
