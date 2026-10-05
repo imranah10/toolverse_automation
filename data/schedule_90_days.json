@@ -136,7 +136,8 @@
     "hook": "Remove unwanted stamps and inspect git repo metrics locally",
     "ig_caption": "Erase watermarks cleanly and analyze git repositories without cloning gigabytes of code.\n\nhttps://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Clean up photos and analyze git project metrics effortlessly.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Analyzing a public GitHub repository usually requires cloning the entire codebase. GitScope Pro visualizes dependencies, commits, and activity directly in the browser.\n\nhttps://toolverse-official.vercel.app"
+    "li_caption": "Analyzing a public GitHub repository usually requires cloning the entire codebase. GitScope Pro visualizes dependencies, commits, and activity directly in the browser.\n\nhttps://toolverse-official.vercel.app",
+    "public_url": "https://files.catbox.moe/feqfmc.png"
   },
   {
     "day_num": 12,
@@ -148,7 +149,8 @@
     "hook": "Upscale low-res photos to 4K and strip GPS EXIF data",
     "ig_caption": "Boost photo sharpness to 4K while wiping dangerous GPS location data before posting online.\n\nhttps://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Enhance image clarity and protect your privacy by stripping EXIF metadata.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Every smartphone photo contains hidden metadata: GPS coordinates, device serial numbers, and camera timestamps. Strip it before uploading anywhere using Toolverse.\n\nhttps://toolverse-official.vercel.app"
+    "li_caption": "Every smartphone photo contains hidden metadata: GPS coordinates, device serial numbers, and camera timestamps. Strip it before uploading anywhere using Toolverse.\n\nhttps://toolverse-official.vercel.app",
+    "public_url": "https://files.catbox.moe/j50d3n.png"
   },
   {
     "day_num": 13,
@@ -160,7 +162,8 @@
     "hook": "Extract aesthetic hex codes and create depth maps from photos",
     "ig_caption": "Drop any photo to generate harmonious color palettes and convert 2D images into interactive 3D parallax.\n\nhttps://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Extract designer color palettes and 3D depth maps in 1 second!\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Designers spend hours matching hex codes. Toolverse Color Palette Generator uses k-means clustering directly in WebAssembly to pull dominant color accents in 200ms.\n\nhttps://toolverse-official.vercel.app"
+    "li_caption": "Designers spend hours matching hex codes. Toolverse Color Palette Generator uses k-means clustering directly in WebAssembly to pull dominant color accents in 200ms.\n\nhttps://toolverse-official.vercel.app",
+    "public_url": "https://files.catbox.moe/4489mp.png"
   },
   {
     "day_num": 14,
@@ -172,7 +175,8 @@
     "hook": "Transform photos into pixel art and simulate cascade network blasts",
     "ig_caption": "Convert photos into retro 8-bit pixel art and visualize complex network node graph explosions.\n\nhttps://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Retro pixel art converter + interactive graph simulation right in your browser.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "From retro image rendering to graph theory simulations, Toolverse shows what modern WebAssembly can achieve without backend server overhead.\n\nhttps://toolverse-official.vercel.app"
+    "li_caption": "From retro image rendering to graph theory simulations, Toolverse shows what modern WebAssembly can achieve without backend server overhead.\n\nhttps://toolverse-official.vercel.app",
+    "public_url": "https://files.catbox.moe/8kk4aj.png"
   },
   {
     "day_num": 15,

@@ -37,31 +37,7 @@
         }
       }
     },
-    "11": {
-      "video": {
-        "published": false,
-        "failures": 1,
-        "last_error": {
-          "ig": {
-            "id": "18118388083888121",
-            "status": "Error: Media upload has failed with error code 2207076",
-            "status_code": "ERROR"
-          },
-          "fb": {
-            "error": {
-              "message": "Unable to fetch video file from URL.",
-              "type": "OAuthException",
-              "code": 389,
-              "error_subcode": 1363057,
-              "is_transient": false,
-              "error_user_title": "Unable to fetch video file from URL",
-              "error_user_msg": "Unable to fetch video file from URL.",
-              "fbtrace_id": "AAukRLLApTnGIns6Q3OdP02"
-            }
-          }
-        }
-      }
-    }
+    "11": {}
   },
   "history": [
     {
