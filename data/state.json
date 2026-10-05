@@ -57,6 +57,14 @@
           "story": null
         }
       }
+    },
+    "12": {
+      "image": {
+        "published": false
+      },
+      "video": {
+        "published": false
+      }
     }
   },
   "history": [
@@ -145,6 +153,6 @@
       }
     }
   ],
-  "last_published_day": 11,
-  "last_published_at": "2026-10-05T17:37:11.473Z"
+  "last_published_day": 12,
+  "last_published_at": "2026-10-05T18:06:55.118Z"
 }
