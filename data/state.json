@@ -117,6 +117,27 @@
           "linkedin": "urn:li:share:7513025765815537665"
         }
       }
+    },
+    "15": {
+      "video": {
+        "published": false,
+        "failures": 1,
+        "last_error": {
+          "ig": "missing_video_url",
+          "fb": {
+            "error": {
+              "message": "Unable to fetch video file from URL.",
+              "type": "OAuthException",
+              "code": 389,
+              "error_subcode": 1363057,
+              "is_transient": false,
+              "error_user_title": "Unable to fetch video file from URL",
+              "error_user_msg": "Unable to fetch video file from URL.",
+              "fbtrace_id": "Al8di1dr1_HCpOnLF5F7ovQ"
+            }
+          }
+        }
+      }
     }
   },
   "history": [
