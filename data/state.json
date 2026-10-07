@@ -1,5 +1,5 @@
 {
-  "current_day": 17,
+  "current_day": 18,
   "last_completed_day": 13,
   "day_slots": {
     "9": {
@@ -167,9 +167,13 @@
     "17": {
       "video": {
         "published": false,
-        "failures": 1,
+        "failures": 2,
         "last_error": {
-          "ig": "missing_video_url",
+          "ig": {
+            "id": "18119331442888121",
+            "status": "Error: Media upload has failed with error code 2207076",
+            "status_code": "ERROR"
+          },
           "fb": {
             "error": {
               "message": "Unable to fetch video file from URL.",
@@ -179,7 +183,7 @@
               "is_transient": false,
               "error_user_title": "Unable to fetch video file from URL",
               "error_user_msg": "Unable to fetch video file from URL.",
-              "fbtrace_id": "AQ-p-b6x00ThfQtxKsmh_hv"
+              "fbtrace_id": "AUyIdzSrS70o-dnwJBilpr-"
             }
           }
         }
