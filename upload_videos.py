@@ -4,7 +4,7 @@
 #  Run:  python upload_videos.py
 #  Windows PC par Python 3 chahiye (python.org se free)
 # ============================================================
-import json, os, re, sys, getpass, http.client, urllib.request, ssl
+import json, os, re, sys, time, getpass, http.client, urllib.request, ssl
 
 REPO = 'imranah10/toolverse_automation'
 RELEASE_TAG = 'v1.0-assets'
@@ -92,37 +92,55 @@ def scan_videos(root, missing):
     return found, fuzzy_skipped
 
 def stream_upload(token, release_id, key, filepath):
-    """1MB chunks me upload - file memory me nahi jaati"""
+    """1MB chunks me upload - file memory me nahi jaati.
+    v2.2: Host header fix (iska missing hona se server connection reset
+    karta tha - Errno 10054) + network error par 3 retry."""
     size = os.path.getsize(filepath)
-    conn = http.client.HTTPSConnection('uploads.github.com', timeout=600)
     url = f'/repos/{REPO}/releases/{release_id}/assets?name={key}'
-    conn.putrequest('POST', url, skip_host=True, skip_accept_encoding=True)
-    conn.putheader('Authorization', f'token {token}')
-    conn.putheader('User-Agent', 'tv-uploader')
-    conn.putheader('Accept', 'application/vnd.github+json')
-    conn.putheader('Content-Type', 'video/mp4')
-    conn.putheader('Content-Length', str(size))
-    conn.endheaders()
-    sent = 0
-    next_mark = 10 * 1024 * 1024
-    with open(filepath, 'rb') as f:
-        while True:
-            chunk = f.read(1024 * 1024)
-            if not chunk:
-                break
-            conn.send(chunk)
-            sent += len(chunk)
-            if sent >= next_mark:
-                print(f'      ... {sent // (1024*1024)} MB bheja gaya')
-                next_mark += 10 * 1024 * 1024
-    resp = conn.getresponse()
-    body = resp.read().decode()
-    conn.close()
-    return resp.status, body
+    for attempt in range(3):
+        conn = None
+        try:
+            conn = http.client.HTTPSConnection('uploads.github.com', timeout=600)
+            conn.putrequest('POST', url, skip_accept_encoding=True)
+            conn.putheader('Host', 'uploads.github.com')
+            conn.putheader('Authorization', f'token {token}')
+            conn.putheader('User-Agent', 'tv-uploader')
+            conn.putheader('Accept', 'application/vnd.github+json')
+            conn.putheader('Content-Type', 'video/mp4')
+            conn.putheader('Content-Length', str(size))
+            conn.endheaders()
+            sent = 0
+            next_mark = 10 * 1024 * 1024
+            with open(filepath, 'rb') as f:
+                while True:
+                    chunk = f.read(1024 * 1024)
+                    if not chunk:
+                        break
+                    conn.send(chunk)
+                    sent += len(chunk)
+                    if sent >= next_mark:
+                        print(f'      ... {sent // (1024*1024)} MB bheja gaya')
+                        next_mark += 10 * 1024 * 1024
+            resp = conn.getresponse()
+            body = resp.read().decode()
+            conn.close()
+            return resp.status, body
+        except Exception as e:
+            if conn:
+                try:
+                    conn.close()
+                except Exception:
+                    pass
+            if attempt < 2:
+                print(f'      !! Network issue ({str(e)[:60]})')
+                print(f'      !! 5 second me dobara koshish ({attempt + 2}/3)...')
+                time.sleep(5)
+            else:
+                raise
 
 def main():
     print('=' * 58)
-    print('   TOOLVERSE VIDEO UPLOADER v2 - sirf missing videos')
+    print('   TOOLVERSE VIDEO UPLOADER v2.2 - sirf missing videos')
     print('=' * 58)
 
     token = os.environ.get('GH_TOKEN', '').strip()
@@ -201,6 +219,7 @@ def main():
         except Exception as e:
             failed.append((key, str(e)[:120]))
             print(f'      [FAIL] {e}')
+        time.sleep(2)  # ek video ke baad chhota break - server khush rahta hai
 
     # 5. final CDN verify
     print('[5/5] Final verification (CDN check)...\n')
