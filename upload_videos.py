@@ -70,6 +70,27 @@ def cdn_exists(key):
     except Exception:
         return False
 
+def scan_videos(root, missing):
+    """root folder ke andar saari mp4 dhoondo aur missing keys se match karo"""
+    found = {}          # key -> filepath
+    fuzzy_skipped = []
+    for dirpath, dirnames, filenames in os.walk(root):
+        mp4s = [f for f in filenames if f.lower().endswith('.mp4')]
+        if not mp4s:
+            continue
+        dir_name = os.path.basename(dirpath.rstrip(os.sep))
+        key = make_key(dir_name)
+        if key in missing and key not in found:
+            found[key] = os.path.join(dirpath, max(mp4s, key=lambda f: os.path.getsize(os.path.join(dirpath, f))))
+            continue
+        if key not in ALL_KEYS:
+            fk, sc = fuzzy_match(dir_name, [m for m in missing if m not in found])
+            if fk:
+                found[fk] = os.path.join(dirpath, max(mp4s, key=lambda f: os.path.getsize(os.path.join(dirpath, f))))
+            else:
+                fuzzy_skipped.append(dir_name)
+    return found, fuzzy_skipped
+
 def stream_upload(token, release_id, key, filepath):
     """1MB chunks me upload - file memory me nahi jaati"""
     size = os.path.getsize(filepath)
@@ -132,37 +153,33 @@ def main():
     else:
         print(f'   Missing: {len(missing)} videos -> inhe upload karenge')
 
-    # 3. scan local videos
+    # 3. scan local videos (agar pehli baar kuch na mile to dobara path poochta hai)
     print('[3/5] Ab videos dhoond raha hoon tumhare computer par...')
     here = os.path.dirname(os.path.abspath(__file__))
-    p = input(f'   Videos kis folder me hain? (khali Enter = is script wali folder)\n   Path: ').strip().strip('"')
-    root = p if p and os.path.isdir(p) else here
-    if p and not os.path.isdir(p):
-        print('   !! Wo folder nahi mila, is script wali folder use kar raha hoon')
-    print(f'   Scan: {root}')
-
-    found = {}          # key -> filepath
-    fuzzy_skipped = []
-    for dirpath, dirnames, filenames in os.walk(root):
-        mp4s = [f for f in filenames if f.lower().endswith('.mp4')]
-        if not mp4s:
-            continue
-        dir_name = os.path.basename(dirpath.rstrip(os.sep))
-        key = make_key(dir_name)
-        if key in missing and key not in found:
-            found[key] = os.path.join(dirpath, max(mp4s, key=lambda f: os.path.getsize(os.path.join(dirpath, f))))
-            continue
-        if key not in ALL_KEYS:
-            fk, sc = fuzzy_match(dir_name, [m for m in missing if m not in found])
-            if fk:
-                found[fk] = os.path.join(dirpath, max(mp4s, key=lambda f: os.path.getsize(os.path.join(dirpath, f))))
-            else:
-                fuzzy_skipped.append(dir_name)
-
-    print(f'   Mile: {len(found)} / {len(missing)} missing videos')
-    still_missing = [k for k in missing if k not in found]
+    found, fuzzy_skipped = {}, []
+    for attempt in range(3):
+        print('   TIP: video wali folder ko mouse se pakad kar is window me drag kar do,')
+        print('        path khud likha aayega. Phir Enter dabao.')
+        p = input('   Videos kis folder me hain? (khali Enter = is script wali folder)\n   Path: ').strip().strip('"')
+        root = p if p and os.path.isdir(p) else here
+        if p and not os.path.isdir(p):
+            print('   !! Wo folder nahi mila, is script wali folder use kar raha hoon')
+        print(f'   Scan: {root}')
+        found, fuzzy_skipped = scan_videos(root, missing)
+        print(f'   Mile: {len(found)} / {len(missing)} missing videos')
+        if found:
+            break
+        if attempt < 2:
+            print()
+            print('   !! Is folder me ek bhi matching video nahi mili.')
+            print('   !! Wahi folder ka path daalo jisme VIDEO FOLDERS hain,')
+            print('   !! jaise "Toolverse_57_Tools_And_Brand_Videos" wali folder')
+            print('   !! ya uske upar wali folder (parent folder).')
+            print()
     if fuzzy_skipped:
         print(f'   (Ye folders match nahi hue: {", ".join(fuzzy_skipped[:8])}{"..." if len(fuzzy_skipped) > 8 else ""})')
+    if not found:
+        sys.exit('Koi video nahi mili. Videos wali folder ka path sahi karke dobara chalao:\n   python upload_videos.py')
 
     # 4. upload
     print('[4/5] Upload shuru...')
