@@ -9,7 +9,8 @@
     "hook": "Toolverse: the browser shortcut nobody told you about",
     "ig_caption": "57 free browser-side developer and productivity tools. 100% private, no signups, no uploads.\n\nExplore: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Stop paying monthly subscriptions for basic web utilities! Toolverse gives you 57 free client-side tools running 100% locally in your browser.\n\nTry it now: https://toolverse-official.vercel.app",
-    "li_caption": "Why do so many web utilities force you to create an account, upload sensitive files, and hit a paywall on the 3rd use?\n\nI built Toolverse to challenge that model — 57 production tools running purely client-side via WebAssembly & Web APIs.\n\nTry it free: https://toolverse-official.vercel.app"
+    "li_caption": "Why do so many web utilities force you to create an account, upload sensitive files, and hit a paywall on the 3rd use?\n\nI built Toolverse to challenge that model — 57 production tools running purely client-side via WebAssembly & Web APIs.\n\nTry it free: https://toolverse-official.vercel.app",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/02_Brand_Marketing_07_Folders/01_Anti_Subscription_Manifesto/Untitled design-cleaned.mp4"
   },
   {
     "day_num": 2,
@@ -21,7 +22,8 @@
     "hook": "Financial Calculators that don't steal your financial data",
     "ig_caption": "Zero-server financial planning: calculate mortgages, loans, and ROI in real-time without logging in.\n\nhttps://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Smart financial modeling right in your browser. Calculate loans, savings, and investments privately.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Financial privacy matters. We built Toolverse Financial Calculators with zero analytics, zero cookies, and zero server logging.\n\nExplore: https://toolverse-official.vercel.app"
+    "li_caption": "Financial privacy matters. We built Toolverse Financial Calculators with zero analytics, zero cookies, and zero server logging.\n\nExplore: https://toolverse-official.vercel.app",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/01_Tools_57_Folders/05_Financial_Calculators/video (9)-cleaned.mp4"
   },
   {
     "day_num": 3,
@@ -33,7 +35,8 @@
     "hook": "What does the internet really know about you?",
     "ig_caption": "Discover your browser fingerprint, active trackers, and WebRTC leaks in 1 click with Digital Shadow.\n\nCheck your score: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Are you being tracked across the web? Digital Shadow analyzes your browser privacy footprint in seconds.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Most people have no idea how much device metadata modern websites extract quietly in the background.\n\nDigital Shadow exposes this instantly. Run an audit on your browser: https://toolverse-official.vercel.app"
+    "li_caption": "Most people have no idea how much device metadata modern websites extract quietly in the background.\n\nDigital Shadow exposes this instantly. Run an audit on your browser: https://toolverse-official.vercel.app",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/01_Tools_57_Folders/10_PixelPress_Compress/video (14)-cleaned.mp4"
   },
   {
     "day_num": 4,
@@ -176,7 +179,8 @@
     "ig_caption": "Convert photos into retro 8-bit pixel art and visualize complex network node graph explosions.\n\nhttps://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Retro pixel art converter + interactive graph simulation right in your browser.\n\nhttps://toolverse-official.vercel.app",
     "li_caption": "From retro image rendering to graph theory simulations, Toolverse shows what modern WebAssembly can achieve without backend server overhead.\n\nhttps://toolverse-official.vercel.app",
-    "public_url": "https://files.catbox.moe/8kk4aj.png"
+    "public_url": "https://files.catbox.moe/8kk4aj.png",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/54_art_converters.mp4"
   },
   {
     "day_num": 15,
@@ -188,7 +192,9 @@
     "hook": "Simplify your daily tasks with PDF Viral Studio",
     "ig_caption": "PDF Viral Studio on Toolverse — fast, private, and free.\n\nTry it now: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Discover PDF Viral Studio on Toolverse.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "High-performance browser tools: Introducing PDF Viral Studio. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app"
+    "li_caption": "High-performance browser tools: Introducing PDF Viral Studio. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/02_pdf_viral_studio.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/01_Tools_57_Folders/02_PDF_Viral_Studio/video (7)-cleaned.mp4"
   },
   {
     "day_num": 16,
@@ -201,7 +207,8 @@
     "hook": "Watch Mind Reader solve this workflow problem in 10 seconds",
     "ig_caption": "================================================================================\nREADY-TO-PUBLISH SOCIAL MEDIA CAPTION\nTool: MIND READER (Studio: Text Studio)\n================================================================================\n\nWhat does your writing reveal about your subconscious mind? 🧠⚡\n\nToolverse Mind Reader breaks down your text in real time:\n🔍 Detects hidden emotional tone and subconscious biases\n📊 Maps communication style (Assertive vs Analytical)\n💡 Helps you write more persuasive emails and pitches\n\nPaste your text and test your results at: toolverse-official.vercel.app\n\n#psychology #mindset #writingtips #ai #communication #toolverse\n",
     "fb_caption": "Instant browser tool: Mind Reader. Free, private, and runs directly on your device.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Demoing Mind Reader — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app"
+    "li_caption": "Demoing Mind Reader — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/03_mind_reader.mp4"
   },
   {
     "day_num": 17,
@@ -213,7 +220,9 @@
     "hook": "The ultimate zero-friction freelancer stack for contracts and privacy",
     "ig_caption": "Combine Stardust Storm and Toolverse PDF Studio for a completely private document workflow.\n\nTest it: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Streamline your client workflow with Toolverse utilities.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Freelancers and agency owners spend too much time toggling between paywalled SaaS tools. Here's how to run your full contract and media workflow 100% locally.\n\nhttps://toolverse-official.vercel.app"
+    "li_caption": "Freelancers and agency owners spend too much time toggling between paywalled SaaS tools. Here's how to run your full contract and media workflow 100% locally.\n\nhttps://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/04_stardust_storm.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/01_Tools_57_Folders/04_Stardust_Storm/video.mp4"
   },
   {
     "day_num": 18,
@@ -226,7 +235,8 @@
     "hook": "Why the subscription software model is broken — and what we built instead",
     "ig_caption": "================================================================================\nREADY-TO-PUBLISH SOCIAL MEDIA CAPTION\nBrand Commercial #01: THE ANTI-SUBSCRIPTION MANIFESTO\n================================================================================\n\nStop paying $240/year for basic tools that should be free! 🚫💳\n\nSubscription fatigue is real. Every website today wants your credit card:\n❌ \"Enter credit card to export without watermark\"\n❌ \"Create an account to download your 1-page PDF\"\n❌ \"Monthly subscription for basic file compression\"\n\nToolverse is the anti-subscription movement:\n✅ 57 professional web tools across 8 studios\n✅ 100% free with zero sign-ups and zero watermarks\n✅ Runs locally in your browser with complete privacy\n\nReclaim your digital freedom: toolverse-official.vercel.app\n\n#antisaas #productivity #usefulwebsites #freelancehacks #softwaredevelopment #toolverse\n",
     "fb_caption": "Tired of subscriptions? Toolverse provides 57 free, client-side tools with zero paywalls.\n\nVisit: https://toolverse-official.vercel.app",
-    "li_caption": "Software subscriptions have gotten out of hand. Why are developers and creators paying $15-30/month for basic tools that can execute 100% inside modern web browsers?\n\nThat's why I built Toolverse — 57 free tools with complete client-side data privacy.\n\nExplore: https://toolverse-official.vercel.app"
+    "li_caption": "Software subscriptions have gotten out of hand. Why are developers and creators paying $15-30/month for basic tools that can execute 100% inside modern web browsers?\n\nThat's why I built Toolverse — 57 free tools with complete client-side data privacy.\n\nExplore: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/01_anti_subscription_manifesto.mp4"
   },
   {
     "day_num": 19,
@@ -239,7 +249,8 @@
     "hook": "Watch Financial Calculators solve this workflow problem in 10 seconds",
     "ig_caption": "================================================================================\nREADY-TO-PUBLISH SOCIAL MEDIA CAPTION\nTool: FINANCIAL CALCULATORS (Studio: Calculator Studio)\n================================================================================\n\nThe exact math of compounding interest that schools never taught you! 📈💰\n\nStop guessing your financial future. Use Toolverse Financial Calculators to plan your wealth:\n💵 Monthly SIP compounding growth projections\n🏡 Accurate Loan EMI & interest cost breakdowns\n📉 Real inflation-adjusted purchasing power calculations\n\nTake control of your money for free: toolverse-official.vercel.app\n\n#personalfinance #investing #wealthbuilding #financialfreedom #moneytips #toolverse\n",
     "fb_caption": "Instant browser tool: Financial Calculators. Free, private, and runs directly on your device.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Demoing Financial Calculators — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app"
+    "li_caption": "Demoing Financial Calculators — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/05_financial_calculators.mp4"
   },
   {
     "day_num": 20,
@@ -251,7 +262,9 @@
     "hook": "How I built 57 developer tools as a solo founder without venture capital",
     "ig_caption": "Building in public: 57 tools, 0 external funding, 100% browser-side code.\n\nHere is how WebAssembly and modern web APIs make heavy servers obsolete.\n\nExplore: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Behind the scenes of Toolverse: Building 57 fast web utilities for developers worldwide.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Lessons learned building 57 production tools solo:\n\n1. WebAssembly is massively underutilized for client-side processing.\n2. Users hate account walls for one-off tasks.\n3. Privacy-first architecture dramatically lowers cloud hosting costs.\n\nExplore Toolverse: https://toolverse-official.vercel.app"
+    "li_caption": "Lessons learned building 57 production tools solo:\n\n1. WebAssembly is massively underutilized for client-side processing.\n2. Users hate account walls for one-off tasks.\n3. Privacy-first architecture dramatically lowers cloud hosting costs.\n\nExplore Toolverse: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/02_zero_upload_privacy_revolution.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/01_Tools_57_Folders/03_Mind_Reader/video (8)-cleaned.mp4"
   },
   {
     "day_num": 21,
@@ -263,7 +276,9 @@
     "hook": "Simplify your daily tasks with QR Viral Studio",
     "ig_caption": "QR Viral Studio on Toolverse — fast, private, and free.\n\nTry it now: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Discover QR Viral Studio on Toolverse.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "High-performance browser tools: Introducing QR Viral Studio. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app"
+    "li_caption": "High-performance browser tools: Introducing QR Viral Studio. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/06_qr_viral_studio.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/01_Tools_57_Folders/06_QR_Viral_Studio/video.mp4"
   },
   {
     "day_num": 22,
@@ -275,7 +290,9 @@
     "hook": "Simplify your daily tasks with Contract Forge",
     "ig_caption": "Contract Forge on Toolverse — fast, private, and free.\n\nTry it now: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Discover Contract Forge on Toolverse.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "High-performance browser tools: Introducing Contract Forge. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app"
+    "li_caption": "High-performance browser tools: Introducing Contract Forge. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/07_contract_forge.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/01_Tools_57_Folders/07_Contract_Forge/video.mp4"
   },
   {
     "day_num": 23,
@@ -288,7 +305,8 @@
     "hook": "Watch npm X Ray solve this workflow problem in 10 seconds",
     "ig_caption": "================================================================================\nREADY-TO-PUBLISH SOCIAL MEDIA CAPTION\nTool: NPM X-RAY (Studio: Developer Studio)\n================================================================================\n\nAudit any npm package before it breaks your production build! 🩻💻\n\nDon't let bloated dependencies or security vulnerabilities sneak into your project:\n📦 Check true minified & gzipped bundle size\n🛡️ Instant security vulnerability audit\n🌳 Interactive dependency tree visualization\n\nTest your packages free: toolverse-official.vercel.app\n\n#javascript #webdevelopment #reactjs #nodejs #programming #toolverse\n",
     "fb_caption": "Instant browser tool: npm X Ray. Free, private, and runs directly on your device.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Demoing npm X Ray — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app"
+    "li_caption": "Demoing npm X Ray — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/08_npm_x_ray.mp4"
   },
   {
     "day_num": 24,
@@ -300,7 +318,9 @@
     "hook": "The ultimate zero-friction freelancer stack for contracts and privacy",
     "ig_caption": "Combine Digital Shadow and Toolverse PDF Studio for a completely private document workflow.\n\nTest it: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Streamline your client workflow with Toolverse utilities.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Freelancers and agency owners spend too much time toggling between paywalled SaaS tools. Here's how to run your full contract and media workflow 100% locally.\n\nhttps://toolverse-official.vercel.app"
+    "li_caption": "Freelancers and agency owners spend too much time toggling between paywalled SaaS tools. Here's how to run your full contract and media workflow 100% locally.\n\nhttps://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/09_digital_shadow.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/01_Tools_57_Folders/09_Digital_Shadow/video.mp4"
   },
   {
     "day_num": 25,
@@ -313,7 +333,8 @@
     "hook": "Why the subscription software model is broken — and what we built instead",
     "ig_caption": "================================================================================\nREADY-TO-PUBLISH SOCIAL MEDIA CAPTION\nBrand Commercial #02: THE ZERO-UPLOAD PRIVACY REVOLUTION\n================================================================================\n\nWhere do your private files actually go when you use \"free\" websites? 🕵️‍♂️📁\n\nMost online PDF and file utilities upload your confidential documents to third-party cloud servers where they can be logged or scanned.\n\nWe built Toolverse with a strict ZERO-UPLOAD guarantee:\n🛡️ Powered by client-side WebAssembly & HTML5 Canvas\n💻 Files are processed entirely inside your device's memory\n✈️ Disconnect your Wi-Fi — the tools still work 100% offline\n\nReal privacy isn't marketing — it's engineering.\n\nExperience true privacy: toolverse-official.vercel.app\n\n#privacy #cybersecurity #dataprivacy #webassembly #infosec #toolverse\n",
     "fb_caption": "Tired of subscriptions? Toolverse provides 57 free, client-side tools with zero paywalls.\n\nVisit: https://toolverse-official.vercel.app",
-    "li_caption": "Software subscriptions have gotten out of hand. Why are developers and creators paying $15-30/month for basic tools that can execute 100% inside modern web browsers?\n\nThat's why I built Toolverse — 57 free tools with complete client-side data privacy.\n\nExplore: https://toolverse-official.vercel.app"
+    "li_caption": "Software subscriptions have gotten out of hand. Why are developers and creators paying $15-30/month for basic tools that can execute 100% inside modern web browsers?\n\nThat's why I built Toolverse — 57 free tools with complete client-side data privacy.\n\nExplore: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/02_zero_upload_privacy_revolution.mp4"
   },
   {
     "day_num": 26,
@@ -326,7 +347,8 @@
     "hook": "Watch PixelPress Compress solve this workflow problem in 10 seconds",
     "ig_caption": "================================================================================\nREADY-TO-PUBLISH SOCIAL MEDIA CAPTION\nTool: PIXELPRESS (COMPRESS) (Studio: Image Studio)\n================================================================================\n\nShrink heavy photos by 90% with zero quality loss! 🖼️📉\n\nStop getting rejected by email attachments and job portals because of heavy image sizes:\n⚡ Compress to an exact target KB size (e.g. exactly 200KB)\n🔒 100% browser-side WebAssembly — your photos never leave your device\n💎 Crisp, razor-sharp visual retention\n\nCompress unlimited files free: toolverse-official.vercel.app\n\n#photohacks #webdesign #graphicdesign #freelancers #productivity #toolverse\n",
     "fb_caption": "Instant browser tool: PixelPress Compress. Free, private, and runs directly on your device.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Demoing PixelPress Compress — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app"
+    "li_caption": "Demoing PixelPress Compress — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/10_pixelpress_compress.mp4"
   },
   {
     "day_num": 27,
@@ -338,7 +360,9 @@
     "hook": "How I built 57 developer tools as a solo founder without venture capital",
     "ig_caption": "Building in public: 57 tools, 0 external funding, 100% browser-side code.\n\nHere is how WebAssembly and modern web APIs make heavy servers obsolete.\n\nExplore: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Behind the scenes of Toolverse: Building 57 fast web utilities for developers worldwide.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Lessons learned building 57 production tools solo:\n\n1. WebAssembly is massively underutilized for client-side processing.\n2. Users hate account walls for one-off tasks.\n3. Privacy-first architecture dramatically lowers cloud hosting costs.\n\nExplore Toolverse: https://toolverse-official.vercel.app"
+    "li_caption": "Lessons learned building 57 production tools solo:\n\n1. WebAssembly is massively underutilized for client-side processing.\n2. Users hate account walls for one-off tasks.\n3. Privacy-first architecture dramatically lowers cloud hosting costs.\n\nExplore Toolverse: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/01_anti_subscription_manifesto.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/02_Brand_Marketing_07_Folders/01_Anti_Subscription_Manifesto/Untitled design-cleaned.mp4"
   },
   {
     "day_num": 28,
@@ -350,7 +374,9 @@
     "hook": "Simplify your daily tasks with Disposable Temp Mail",
     "ig_caption": "Disposable Temp Mail on Toolverse — fast, private, and free.\n\nTry it now: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Discover Disposable Temp Mail on Toolverse.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "High-performance browser tools: Introducing Disposable Temp Mail. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app"
+    "li_caption": "High-performance browser tools: Introducing Disposable Temp Mail. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/11_disposable_temp_mail.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/01_Tools_57_Folders/11_Disposable_Temp_Mail/video.mp4"
   },
   {
     "day_num": 29,
@@ -362,7 +388,9 @@
     "hook": "Simplify your daily tasks with GitHub Sponsors Finder",
     "ig_caption": "GitHub Sponsors Finder on Toolverse — fast, private, and free.\n\nTry it now: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Discover GitHub Sponsors Finder on Toolverse.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "High-performance browser tools: Introducing GitHub Sponsors Finder. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app"
+    "li_caption": "High-performance browser tools: Introducing GitHub Sponsors Finder. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/12_github_sponsors_finder.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/01_Tools_57_Folders/12_GitHub_Sponsors_Finder/video.mp4"
   },
   {
     "day_num": 30,
@@ -375,7 +403,8 @@
     "hook": "Watch Time Machine solve this workflow problem in 10 seconds",
     "ig_caption": "================================================================================\nREADY-TO-PUBLISH SOCIAL MEDIA CAPTION\nTool: TIME MACHINE (Studio: PDF Studio)\n================================================================================\n\nCatch every hidden edit in revised contracts before signing! ⏳📑\n\nClients or counterparties often sneak in changes without marking revisions:\n🔍 Visual side-by-side document diff comparison\n🔴 Red highlight for altered or deleted clauses\n🟢 Green highlight for newly added terms\n\nProtect your business free: toolverse-official.vercel.app\n\n#legalhacks #contracts #freelancetips #officelife #businessowner #toolverse\n",
     "fb_caption": "Instant browser tool: Time Machine. Free, private, and runs directly on your device.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Demoing Time Machine — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app"
+    "li_caption": "Demoing Time Machine — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/13_time_machine.mp4"
   },
   {
     "day_num": 31,
@@ -387,7 +416,9 @@
     "hook": "The ultimate zero-friction freelancer stack for contracts and privacy",
     "ig_caption": "Combine Speed Art Machine and Toolverse PDF Studio for a completely private document workflow.\n\nTest it: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Streamline your client workflow with Toolverse utilities.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Freelancers and agency owners spend too much time toggling between paywalled SaaS tools. Here's how to run your full contract and media workflow 100% locally.\n\nhttps://toolverse-official.vercel.app"
+    "li_caption": "Freelancers and agency owners spend too much time toggling between paywalled SaaS tools. Here's how to run your full contract and media workflow 100% locally.\n\nhttps://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/14_speed_art_machine.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/01_Tools_57_Folders/14_Speed_Art_Machine/video.mp4"
   },
   {
     "day_num": 32,
@@ -400,7 +431,8 @@
     "hook": "Why the subscription software model is broken — and what we built instead",
     "ig_caption": "================================================================================\nREADY-TO-PUBLISH SOCIAL MEDIA CAPTION\nBrand Commercial #03: THE DIGITAL SHADOW EXPOSURE\n================================================================================\n\nThe internet knows more about you than you think! 🕵️‍♂️⚡\n\nBrowser fingerprinting allows websites to identify you across the internet WITHOUT cookies:\n🔋 Your exact battery percentage & charging status\n🎮 Your graphics card model & audio latency\n🔤 Installed system fonts & canvas render hash\n\nCheck your exposure score in 2 seconds: toolverse-official.vercel.app\n\n#dataprivacy #cybersecurity #browserfingerprint #techtrends #privacytools #toolverse\n",
     "fb_caption": "Tired of subscriptions? Toolverse provides 57 free, client-side tools with zero paywalls.\n\nVisit: https://toolverse-official.vercel.app",
-    "li_caption": "Software subscriptions have gotten out of hand. Why are developers and creators paying $15-30/month for basic tools that can execute 100% inside modern web browsers?\n\nThat's why I built Toolverse — 57 free tools with complete client-side data privacy.\n\nExplore: https://toolverse-official.vercel.app"
+    "li_caption": "Software subscriptions have gotten out of hand. Why are developers and creators paying $15-30/month for basic tools that can execute 100% inside modern web browsers?\n\nThat's why I built Toolverse — 57 free tools with complete client-side data privacy.\n\nExplore: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/03_digital_shadow_exposure.mp4"
   },
   {
     "day_num": 33,
@@ -413,7 +445,8 @@
     "hook": "Watch Loans And Retirement solve this workflow problem in 10 seconds",
     "ig_caption": "================================================================================\nREADY-TO-PUBLISH SOCIAL MEDIA CAPTION\nTool: LOANS & RETIREMENT (Studio: Calculator Studio)\n================================================================================\n\nThe mortgage payoff vs investing dilemma solved with math! 🏡📊\n\nShould you clear your home loan early or put that extra cash in the market?\n📉 Exact loan amortization & interest savings breakdown\n📈 Opportunity cost comparison vs index fund compounding\n💡 Data-driven clarity for your retirement plan\n\nCalculate your path to wealth: toolverse-official.vercel.app\n\n#financialplanning #mortgage #retirement #investing #wealthbuilding #toolverse\n",
     "fb_caption": "Instant browser tool: Loans And Retirement. Free, private, and runs directly on your device.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Demoing Loans And Retirement — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app"
+    "li_caption": "Demoing Loans And Retirement — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/15_loans_and_retirement.mp4"
   },
   {
     "day_num": 34,
@@ -425,7 +458,9 @@
     "hook": "How I built 57 developer tools as a solo founder without venture capital",
     "ig_caption": "Building in public: 57 tools, 0 external funding, 100% browser-side code.\n\nHere is how WebAssembly and modern web APIs make heavy servers obsolete.\n\nExplore: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Behind the scenes of Toolverse: Building 57 fast web utilities for developers worldwide.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Lessons learned building 57 production tools solo:\n\n1. WebAssembly is massively underutilized for client-side processing.\n2. Users hate account walls for one-off tasks.\n3. Privacy-first architecture dramatically lowers cloud hosting costs.\n\nExplore Toolverse: https://toolverse-official.vercel.app"
+    "li_caption": "Lessons learned building 57 production tools solo:\n\n1. WebAssembly is massively underutilized for client-side processing.\n2. Users hate account walls for one-off tasks.\n3. Privacy-first architecture dramatically lowers cloud hosting costs.\n\nExplore Toolverse: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/03_digital_shadow_exposure.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/02_Brand_Marketing_07_Folders/02_Zero_Upload_Privacy_Revolution/Untitled design (1)-cleaned.mp4"
   },
   {
     "day_num": 35,
@@ -437,7 +472,9 @@
     "hook": "Simplify your daily tasks with Chat Reels",
     "ig_caption": "Chat Reels on Toolverse — fast, private, and free.\n\nTry it now: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Discover Chat Reels on Toolverse.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "High-performance browser tools: Introducing Chat Reels. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app"
+    "li_caption": "High-performance browser tools: Introducing Chat Reels. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/16_chat_reels.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/01_Tools_57_Folders/16_Chat_Reels/video.mp4"
   },
   {
     "day_num": 36,
@@ -449,7 +486,9 @@
     "hook": "Simplify your daily tasks with Business And Data",
     "ig_caption": "Business And Data on Toolverse — fast, private, and free.\n\nTry it now: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Discover Business And Data on Toolverse.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "High-performance browser tools: Introducing Business And Data. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app"
+    "li_caption": "High-performance browser tools: Introducing Business And Data. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/17_business_and_data.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/01_Tools_57_Folders/17_Business_And_Data/video (21)-cleaned.mp4"
   },
   {
     "day_num": 37,
@@ -462,7 +501,8 @@
     "hook": "Watch Theme Studio solve this workflow problem in 10 seconds",
     "ig_caption": "================================================================================\nREADY-TO-PUBLISH SOCIAL MEDIA CAPTION\nTool: THEME STUDIO (Studio: Developer Studio)\n================================================================================\n\nFlawless accessible dark & light mode palettes in 1 click! 🎨🌗\n\nCreating cohesive, WCAG-compliant design tokens shouldn't take days:\n🌗 Instant dark mode & light mode color harmony\n🛡️ Automatic WCAG AA & AAA contrast verification\n📋 Copy-paste ready Tailwind CSS and CSS variables\n\nBuild your next UI theme: toolverse-official.vercel.app\n\n#uidesign #webdevelopment #tailwind #css #designsystem #toolverse\n",
     "fb_caption": "Instant browser tool: Theme Studio. Free, private, and runs directly on your device.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Demoing Theme Studio — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app"
+    "li_caption": "Demoing Theme Studio — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/18_theme_studio.mp4"
   },
   {
     "day_num": 38,
@@ -474,7 +514,9 @@
     "hook": "The ultimate zero-friction freelancer stack for contracts and privacy",
     "ig_caption": "Combine Universal Clipboard and Toolverse PDF Studio for a completely private document workflow.\n\nTest it: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Streamline your client workflow with Toolverse utilities.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Freelancers and agency owners spend too much time toggling between paywalled SaaS tools. Here's how to run your full contract and media workflow 100% locally.\n\nhttps://toolverse-official.vercel.app"
+    "li_caption": "Freelancers and agency owners spend too much time toggling between paywalled SaaS tools. Here's how to run your full contract and media workflow 100% locally.\n\nhttps://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/19_universal_clipboard.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/01_Tools_57_Folders/19_Universal_Clipboard/video.mp4"
   },
   {
     "day_num": 39,
@@ -487,7 +529,8 @@
     "hook": "Why the subscription software model is broken — and what we built instead",
     "ig_caption": "================================================================================\nREADY-TO-PUBLISH SOCIAL MEDIA CAPTION\nBrand Commercial #04: THE 10-SECOND FREELANCER LEGAL STACK\n================================================================================\n\nGenerate, customize, and sign legal contracts in under 30 seconds! ⚖️📝\n\nDon't start another client project without legal protection:\n📑 Contract Forge generates customized NDAs & service agreements\n🌍 Multi-jurisdiction & multi-language legal formatting\n✍️ Sign directly in your browser & export print-ready vector PDFs\n\nProtect your business free: toolverse-official.vercel.app\n\n#freelancelife #agencygrowth #legalhacks #businessowner #startuptips #toolverse\n",
     "fb_caption": "Tired of subscriptions? Toolverse provides 57 free, client-side tools with zero paywalls.\n\nVisit: https://toolverse-official.vercel.app",
-    "li_caption": "Software subscriptions have gotten out of hand. Why are developers and creators paying $15-30/month for basic tools that can execute 100% inside modern web browsers?\n\nThat's why I built Toolverse — 57 free tools with complete client-side data privacy.\n\nExplore: https://toolverse-official.vercel.app"
+    "li_caption": "Software subscriptions have gotten out of hand. Why are developers and creators paying $15-30/month for basic tools that can execute 100% inside modern web browsers?\n\nThat's why I built Toolverse — 57 free tools with complete client-side data privacy.\n\nExplore: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/04_ten_second_legal_stack.mp4"
   },
   {
     "day_num": 40,
@@ -500,7 +543,8 @@
     "hook": "Watch AI Architect Studio solve this workflow problem in 10 seconds",
     "ig_caption": "================================================================================\nREADY-TO-PUBLISH SOCIAL MEDIA CAPTION\nTool: AI ARCHITECT STUDIO (Studio: AI Pro Studio)\n================================================================================\n\nConvert rough floor plan sketches into 3D blueprints! 📐🏡\n\nPlanning a renovation, office setup, or home build?\n✏️ Upload any napkin sketch or rough floor plan\n📐 Snaps to dimensionally accurate 2D architectural CAD lines\n🏢 Renders stunning 3D isometric room visualizations\n\nDesign your space free: toolverse-official.vercel.app\n\n#interiordesign #architecture #floorplan #3dmodeling #homeimprovement #toolverse\n",
     "fb_caption": "Instant browser tool: AI Architect Studio. Free, private, and runs directly on your device.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Demoing AI Architect Studio — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app"
+    "li_caption": "Demoing AI Architect Studio — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/20_ai_architect_studio.mp4"
   },
   {
     "day_num": 41,
@@ -512,7 +556,9 @@
     "hook": "How I built 57 developer tools as a solo founder without venture capital",
     "ig_caption": "Building in public: 57 tools, 0 external funding, 100% browser-side code.\n\nHere is how WebAssembly and modern web APIs make heavy servers obsolete.\n\nExplore: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Behind the scenes of Toolverse: Building 57 fast web utilities for developers worldwide.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Lessons learned building 57 production tools solo:\n\n1. WebAssembly is massively underutilized for client-side processing.\n2. Users hate account walls for one-off tasks.\n3. Privacy-first architecture dramatically lowers cloud hosting costs.\n\nExplore Toolverse: https://toolverse-official.vercel.app"
+    "li_caption": "Lessons learned building 57 production tools solo:\n\n1. WebAssembly is massively underutilized for client-side processing.\n2. Users hate account walls for one-off tasks.\n3. Privacy-first architecture dramatically lowers cloud hosting costs.\n\nExplore Toolverse: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/01_anti_subscription_manifesto.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/02_Brand_Marketing_07_Folders/03_Digital_Shadow_Exposure/Untitled design (2).mp4"
   },
   {
     "day_num": 42,
@@ -524,7 +570,9 @@
     "hook": "Simplify your daily tasks with Flipbook Studio",
     "ig_caption": "Flipbook Studio on Toolverse — fast, private, and free.\n\nTry it now: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Discover Flipbook Studio on Toolverse.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "High-performance browser tools: Introducing Flipbook Studio. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app"
+    "li_caption": "High-performance browser tools: Introducing Flipbook Studio. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/21_flipbook_studio.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/01_Tools_57_Folders/21_Flipbook_Studio/video (25)-cleaned.mp4"
   },
   {
     "day_num": 43,
@@ -536,7 +584,9 @@
     "hook": "Simplify your daily tasks with Living Photo",
     "ig_caption": "Living Photo on Toolverse — fast, private, and free.\n\nTry it now: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Discover Living Photo on Toolverse.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "High-performance browser tools: Introducing Living Photo. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app"
+    "li_caption": "High-performance browser tools: Introducing Living Photo. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/22_living_photo.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/01_Tools_57_Folders/22_Living_Photo/video.mp4"
   },
   {
     "day_num": 44,
@@ -549,7 +599,8 @@
     "hook": "Watch Shopping And Tax solve this workflow problem in 10 seconds",
     "ig_caption": "================================================================================\nREADY-TO-PUBLISH SOCIAL MEDIA CAPTION\nTool: SHOPPING & TAX (Studio: Calculator Studio)\n================================================================================\n\nNever get surprised by hidden import customs and taxes again! 🛍️📦\n\nBefore you order products from overseas websites:\n🌍 Calculate exact import tariffs and customs duties\n🧾 Break down domestic VAT, GST, and handling fees\n💱 Live multi-currency conversion at true market rates\n\nShop smart and calculate costs: toolverse-official.vercel.app\n\n#onlineshopping #customsduty #smartshopper #crossborder #moneyhacks #toolverse\n",
     "fb_caption": "Instant browser tool: Shopping And Tax. Free, private, and runs directly on your device.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Demoing Shopping And Tax — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app"
+    "li_caption": "Demoing Shopping And Tax — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/23_shopping_and_tax.mp4"
   },
   {
     "day_num": 45,
@@ -561,7 +612,9 @@
     "hook": "The ultimate zero-friction freelancer stack for contracts and privacy",
     "ig_caption": "Combine Text Symphony and Toolverse PDF Studio for a completely private document workflow.\n\nTest it: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Streamline your client workflow with Toolverse utilities.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Freelancers and agency owners spend too much time toggling between paywalled SaaS tools. Here's how to run your full contract and media workflow 100% locally.\n\nhttps://toolverse-official.vercel.app"
+    "li_caption": "Freelancers and agency owners spend too much time toggling between paywalled SaaS tools. Here's how to run your full contract and media workflow 100% locally.\n\nhttps://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/24_text_symphony.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/01_Tools_57_Folders/24_Text_Symphony/video.mp4"
   },
   {
     "day_num": 46,
@@ -574,7 +627,8 @@
     "hook": "Why the subscription software model is broken — and what we built instead",
     "ig_caption": "================================================================================\nREADY-TO-PUBLISH SOCIAL MEDIA CAPTION\nBrand Commercial #05: SHOULDIBUY AI (IMPULSE SHOPPING ROAST)\n================================================================================\n\nStop impulse spending! Let this brutal AI roast your checkout cart. 🛒💸\n\nE-commerce apps use dark patterns to trigger impulse buys. Fight back with ShouldIBuy:\n⏱️ Tells you exactly how many hours of work that gadget costs\n🔥 Delivers a hilarious, brutally honest verdict on whether to buy it\n📈 Calculates compound investment growth if you skip the purchase\n\nTest your wishlist item free: toolverse-official.vercel.app\n\n#personalfinance #savingmoney #budgeting #impulsebuying #aiadvisor #toolverse\n",
     "fb_caption": "Tired of subscriptions? Toolverse provides 57 free, client-side tools with zero paywalls.\n\nVisit: https://toolverse-official.vercel.app",
-    "li_caption": "Software subscriptions have gotten out of hand. Why are developers and creators paying $15-30/month for basic tools that can execute 100% inside modern web browsers?\n\nThat's why I built Toolverse — 57 free tools with complete client-side data privacy.\n\nExplore: https://toolverse-official.vercel.app"
+    "li_caption": "Software subscriptions have gotten out of hand. Why are developers and creators paying $15-30/month for basic tools that can execute 100% inside modern web browsers?\n\nThat's why I built Toolverse — 57 free tools with complete client-side data privacy.\n\nExplore: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/28_shouldibuy.mp4"
   },
   {
     "day_num": 47,
@@ -587,7 +641,8 @@
     "hook": "Watch Video Player Pro solve this workflow problem in 10 seconds",
     "ig_caption": "================================================================================\nREADY-TO-PUBLISH SOCIAL MEDIA CAPTION\nTool: VIDEO PLAYER PRO (Studio: Generator Studio)\n================================================================================\n\nFrame-by-frame precision video playback directly in your browser! 🎥⚡\n\nThe ultimate video player for creators, editors, and students:\n⏱️ 0.01-second frame-by-frame mouse scrubbing\n💬 Drag-and-drop instant subtitle sync (.SRT / .VTT)\n⏩ Smooth playback speed control up to 4x\n\nPlay your videos with precision: toolverse-official.vercel.app\n\n#videoediting #filmproduction #videoplayer #creators #filmmaking #toolverse\n",
     "fb_caption": "Instant browser tool: Video Player Pro. Free, private, and runs directly on your device.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Demoing Video Player Pro — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app"
+    "li_caption": "Demoing Video Player Pro — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/25_video_player_pro.mp4"
   },
   {
     "day_num": 48,
@@ -599,7 +654,9 @@
     "hook": "How I built 57 developer tools as a solo founder without venture capital",
     "ig_caption": "Building in public: 57 tools, 0 external funding, 100% browser-side code.\n\nHere is how WebAssembly and modern web APIs make heavy servers obsolete.\n\nExplore: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Behind the scenes of Toolverse: Building 57 fast web utilities for developers worldwide.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Lessons learned building 57 production tools solo:\n\n1. WebAssembly is massively underutilized for client-side processing.\n2. Users hate account walls for one-off tasks.\n3. Privacy-first architecture dramatically lowers cloud hosting costs.\n\nExplore Toolverse: https://toolverse-official.vercel.app"
+    "li_caption": "Lessons learned building 57 production tools solo:\n\n1. WebAssembly is massively underutilized for client-side processing.\n2. Users hate account walls for one-off tasks.\n3. Privacy-first architecture dramatically lowers cloud hosting costs.\n\nExplore Toolverse: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/02_zero_upload_privacy_revolution.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/01_Tools_57_Folders/04_Stardust_Storm/video.mp4"
   },
   {
     "day_num": 49,
@@ -611,7 +668,9 @@
     "hook": "Simplify your daily tasks with Developer Icon Library",
     "ig_caption": "Developer Icon Library on Toolverse — fast, private, and free.\n\nTry it now: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Discover Developer Icon Library on Toolverse.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "High-performance browser tools: Introducing Developer Icon Library. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app"
+    "li_caption": "High-performance browser tools: Introducing Developer Icon Library. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/26_developer_icon_library.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/01_Tools_57_Folders/26_Developer_Icon_Library/video.mp4"
   },
   {
     "day_num": 50,
@@ -623,7 +682,9 @@
     "hook": "Simplify your daily tasks with Forensics Lab",
     "ig_caption": "Forensics Lab on Toolverse — fast, private, and free.\n\nTry it now: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Discover Forensics Lab on Toolverse.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "High-performance browser tools: Introducing Forensics Lab. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app"
+    "li_caption": "High-performance browser tools: Introducing Forensics Lab. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/27_forensics_lab.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/01_Tools_57_Folders/27_Forensics_Lab/video.mp4"
   },
   {
     "day_num": 51,
@@ -636,7 +697,8 @@
     "hook": "Watch ShouldIBuy solve this workflow problem in 10 seconds",
     "ig_caption": "================================================================================\nREADY-TO-PUBLISH SOCIAL MEDIA CAPTION\nTool: SHOULDIBUY DECISION MAKER (Studio: AI Pro Studio)\n================================================================================\n\nStop impulse shopping! Let AI roast your purchase before you checkout. 🛒💸\n\nOnline stores spend billions making you spend money impulsively:\n⏱️ Calculates how many hours of hard labor that item costs you\n🔥 Brutal, funny AI roast evaluating whether you really need it\n📈 Shows what that money would be worth invested over 10 years\n\nTest your wishlist item free: toolverse-official.vercel.app\n\n#personalfinance #savingmoney #moneytips #aiadvisor #budgeting #toolverse\n",
     "fb_caption": "Instant browser tool: ShouldIBuy. Free, private, and runs directly on your device.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Demoing ShouldIBuy — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app"
+    "li_caption": "Demoing ShouldIBuy — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/28_shouldibuy.mp4"
   },
   {
     "day_num": 52,
@@ -648,7 +710,9 @@
     "hook": "The ultimate zero-friction freelancer stack for contracts and privacy",
     "ig_caption": "Combine Print Smart Pack and Toolverse PDF Studio for a completely private document workflow.\n\nTest it: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Streamline your client workflow with Toolverse utilities.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Freelancers and agency owners spend too much time toggling between paywalled SaaS tools. Here's how to run your full contract and media workflow 100% locally.\n\nhttps://toolverse-official.vercel.app"
+    "li_caption": "Freelancers and agency owners spend too much time toggling between paywalled SaaS tools. Here's how to run your full contract and media workflow 100% locally.\n\nhttps://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/29_print_smart_pack.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/01_Tools_57_Folders/29_Print_Smart_Pack/video (33)-cleaned.mp4"
   },
   {
     "day_num": 53,
@@ -661,7 +725,8 @@
     "hook": "Why the subscription software model is broken — and what we built instead",
     "ig_caption": "================================================================================\nREADY-TO-PUBLISH SOCIAL MEDIA CAPTION\nBrand Commercial #06: THE DEVELOPER'S SWISS ARMY KNIFE\n================================================================================\n\nThe ultimate browser cockpit for modern web developers! 💻⚡\n\nStop drowning in 20 open tabs:\n📦 npm X-Ray: Audit package size & vulnerabilities in 1 second\n💎 Icon Library: 1,009 handcrafted vector SVG icons with React export\n🎨 Theme Studio: Compute accessible WCAG design tokens & palettes\n🚀 Open Source: 254 UI components on npm under MIT license\n\nExplore Developer Studio: toolverse-official.vercel.app\n\n#webdev #reactjs #javascript #frontend #opensource #toolverse\n",
     "fb_caption": "Tired of subscriptions? Toolverse provides 57 free, client-side tools with zero paywalls.\n\nVisit: https://toolverse-official.vercel.app",
-    "li_caption": "Software subscriptions have gotten out of hand. Why are developers and creators paying $15-30/month for basic tools that can execute 100% inside modern web browsers?\n\nThat's why I built Toolverse — 57 free tools with complete client-side data privacy.\n\nExplore: https://toolverse-official.vercel.app"
+    "li_caption": "Software subscriptions have gotten out of hand. Why are developers and creators paying $15-30/month for basic tools that can execute 100% inside modern web browsers?\n\nThat's why I built Toolverse — 57 free tools with complete client-side data privacy.\n\nExplore: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/26_developer_icon_library.mp4"
   },
   {
     "day_num": 54,
@@ -674,7 +739,8 @@
     "hook": "Watch Puzzle Gift solve this workflow problem in 10 seconds",
     "ig_caption": "================================================================================\nREADY-TO-PUBLISH SOCIAL MEDIA CAPTION\nTool: PUZZLE GIFT MAKER (Studio: Image Studio)\n================================================================================\n\nCreate an interactive digital puzzle gift with a secret message! 🧩🎁\n\nTired of sending boring greeting cards and plain text messages?\n📸 Turn any personal photo into a playable digital jigsaw puzzle\n💌 Hide a secret love note or birthday greeting behind the puzzle\n🔗 Share an instant interactive link with your friends and family\n\nMake your puzzle gift free: toolverse-official.vercel.app\n\n#giftideas #creativegifts #interactivephoto #birthdaygifts #memories #toolverse\n",
     "fb_caption": "Instant browser tool: Puzzle Gift. Free, private, and runs directly on your device.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Demoing Puzzle Gift — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app"
+    "li_caption": "Demoing Puzzle Gift — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/30_puzzle_gift.mp4"
   },
   {
     "day_num": 55,
@@ -686,7 +752,9 @@
     "hook": "How I built 57 developer tools as a solo founder without venture capital",
     "ig_caption": "Building in public: 57 tools, 0 external funding, 100% browser-side code.\n\nHere is how WebAssembly and modern web APIs make heavy servers obsolete.\n\nExplore: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Behind the scenes of Toolverse: Building 57 fast web utilities for developers worldwide.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Lessons learned building 57 production tools solo:\n\n1. WebAssembly is massively underutilized for client-side processing.\n2. Users hate account walls for one-off tasks.\n3. Privacy-first architecture dramatically lowers cloud hosting costs.\n\nExplore Toolverse: https://toolverse-official.vercel.app"
+    "li_caption": "Lessons learned building 57 production tools solo:\n\n1. WebAssembly is massively underutilized for client-side processing.\n2. Users hate account walls for one-off tasks.\n3. Privacy-first architecture dramatically lowers cloud hosting costs.\n\nExplore Toolverse: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/03_digital_shadow_exposure.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/02_Brand_Marketing_07_Folders/01_Anti_Subscription_Manifesto/Untitled design-cleaned.mp4"
   },
   {
     "day_num": 56,
@@ -698,7 +766,9 @@
     "hook": "Simplify your daily tasks with Health And Life",
     "ig_caption": "Health And Life on Toolverse — fast, private, and free.\n\nTry it now: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Discover Health And Life on Toolverse.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "High-performance browser tools: Introducing Health And Life. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app"
+    "li_caption": "High-performance browser tools: Introducing Health And Life. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/31_health_and_life.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/01_Tools_57_Folders/31_Health_And_Life/video.mp4"
   },
   {
     "day_num": 57,
@@ -710,7 +780,9 @@
     "hook": "Simplify your daily tasks with Secret Ink",
     "ig_caption": "Secret Ink on Toolverse — fast, private, and free.\n\nTry it now: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Discover Secret Ink on Toolverse.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "High-performance browser tools: Introducing Secret Ink. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app"
+    "li_caption": "High-performance browser tools: Introducing Secret Ink. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/32_secret_ink.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/01_Tools_57_Folders/32_Secret_Ink/video.mp4"
   },
   {
     "day_num": 58,
@@ -723,7 +795,8 @@
     "hook": "Watch Design And CSS solve this workflow problem in 10 seconds",
     "ig_caption": "================================================================================\nREADY-TO-PUBLISH SOCIAL MEDIA CAPTION\nTool: DESIGN & CSS PLAYGROUND (Studio: Developer Studio)\n================================================================================\n\n169+ modern CSS animations and buttons ready to copy-paste! 💻✨\n\nLevel up your website frontend without writing hours of keyframes:\n🔮 Glassmorphic cards & frosted glass blur effects\n⚡ Interactive glowing neon buttons & hover micro-interactions\n📋 Clean, lightweight copy-paste HTML & CSS snippets\n\nBrowse the component library: toolverse-official.vercel.app\n\n#css #webdesign #frontenddev #uidesign #webdevelopment #toolverse\n",
     "fb_caption": "Instant browser tool: Design And CSS. Free, private, and runs directly on your device.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Demoing Design And CSS — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app"
+    "li_caption": "Demoing Design And CSS — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/33_design_and_css.mp4"
   },
   {
     "day_num": 59,
@@ -735,7 +808,9 @@
     "hook": "The ultimate zero-friction freelancer stack for contracts and privacy",
     "ig_caption": "Combine AI Boardroom and Toolverse PDF Studio for a completely private document workflow.\n\nTest it: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Streamline your client workflow with Toolverse utilities.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Freelancers and agency owners spend too much time toggling between paywalled SaaS tools. Here's how to run your full contract and media workflow 100% locally.\n\nhttps://toolverse-official.vercel.app"
+    "li_caption": "Freelancers and agency owners spend too much time toggling between paywalled SaaS tools. Here's how to run your full contract and media workflow 100% locally.\n\nhttps://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/34_ai_boardroom.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/01_Tools_57_Folders/34_AI_Boardroom/video.mp4"
   },
   {
     "day_num": 60,
@@ -748,7 +823,8 @@
     "hook": "Why the subscription software model is broken — and what we built instead",
     "ig_caption": "================================================================================\nREADY-TO-PUBLISH SOCIAL MEDIA CAPTION\nBrand Commercial #10: HOW I BUILT 57 WEB TOOLS IN PUBLIC\n================================================================================\n\nThe solo founder journey of building 57 free web tools in public. 💻🚀\n\nPeople asked why build 57 free utilities instead of charging $20/month for a micro-SaaS?\nBecause the web used to be helpful, open, and free before greedy subscriptions took over.\n\nOver the past months, I engineered:\n🛠️ 8 Complete Studios with 57 browser-native tools\n📦 Open-source React component library (254 UI components)\n🔒 100% client-side privacy architecture\n\nThank you to everyone using Toolverse: toolverse-official.vercel.app\n\n#buildinpublic #indiehackers #founders #softwareengineer #bootstrap #toolverse\n",
     "fb_caption": "Tired of subscriptions? Toolverse provides 57 free, client-side tools with zero paywalls.\n\nVisit: https://toolverse-official.vercel.app",
-    "li_caption": "Software subscriptions have gotten out of hand. Why are developers and creators paying $15-30/month for basic tools that can execute 100% inside modern web browsers?\n\nThat's why I built Toolverse — 57 free tools with complete client-side data privacy.\n\nExplore: https://toolverse-official.vercel.app"
+    "li_caption": "Software subscriptions have gotten out of hand. Why are developers and creators paying $15-30/month for basic tools that can execute 100% inside modern web browsers?\n\nThat's why I built Toolverse — 57 free tools with complete client-side data privacy.\n\nExplore: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/07_solo_founder_build_story.mp4"
   },
   {
     "day_num": 61,
@@ -761,7 +837,8 @@
     "hook": "Watch Form Filler solve this workflow problem in 10 seconds",
     "ig_caption": "================================================================================\nREADY-TO-PUBLISH SOCIAL MEDIA CAPTION\nTool: FORM FILLER & DUMMY DATA (Studio: PDF Studio)\n================================================================================\n\nInstant synthetic test data for developers and QA testers! 🧪📝\n\nStop wasting time manually typing fake names and addresses into test forms:\n👤 Realistic synthetic names, phone numbers, and job titles\n💳 Valid format test credit cards & addresses\n📋 1-click clipboard copy for lightning-fast testing\n\nGenerate test data free: toolverse-official.vercel.app\n\n#developerlife #softwaretesting #qaengineering #productivity #toolverse\n",
     "fb_caption": "Instant browser tool: Form Filler. Free, private, and runs directly on your device.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Demoing Form Filler — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app"
+    "li_caption": "Demoing Form Filler — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/35_form_filler.mp4"
   },
   {
     "day_num": 62,
@@ -773,7 +850,9 @@
     "hook": "How I built 57 developer tools as a solo founder without venture capital",
     "ig_caption": "Building in public: 57 tools, 0 external funding, 100% browser-side code.\n\nHere is how WebAssembly and modern web APIs make heavy servers obsolete.\n\nExplore: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Behind the scenes of Toolverse: Building 57 fast web utilities for developers worldwide.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Lessons learned building 57 production tools solo:\n\n1. WebAssembly is massively underutilized for client-side processing.\n2. Users hate account walls for one-off tasks.\n3. Privacy-first architecture dramatically lowers cloud hosting costs.\n\nExplore Toolverse: https://toolverse-official.vercel.app"
+    "li_caption": "Lessons learned building 57 production tools solo:\n\n1. WebAssembly is massively underutilized for client-side processing.\n2. Users hate account walls for one-off tasks.\n3. Privacy-first architecture dramatically lowers cloud hosting costs.\n\nExplore Toolverse: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/01_anti_subscription_manifesto.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/02_Brand_Marketing_07_Folders/02_Zero_Upload_Privacy_Revolution/Untitled design (1)-cleaned.mp4"
   },
   {
     "day_num": 63,
@@ -785,7 +864,9 @@
     "hook": "Simplify your daily tasks with FileCarver Pro",
     "ig_caption": "FileCarver Pro on Toolverse — fast, private, and free.\n\nTry it now: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Discover FileCarver Pro on Toolverse.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "High-performance browser tools: Introducing FileCarver Pro. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app"
+    "li_caption": "High-performance browser tools: Introducing FileCarver Pro. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/36_filecarver_pro.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/01_Tools_57_Folders/36_FileCarver_Pro/video.mp4"
   },
   {
     "day_num": 64,
@@ -797,7 +878,9 @@
     "hook": "Simplify your daily tasks with Vision Switch",
     "ig_caption": "Vision Switch on Toolverse — fast, private, and free.\n\nTry it now: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Discover Vision Switch on Toolverse.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "High-performance browser tools: Introducing Vision Switch. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app"
+    "li_caption": "High-performance browser tools: Introducing Vision Switch. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/37_vision_switch.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/01_Tools_57_Folders/37_Vision_Switch/Toolverse_Vision_Switch_product 20260930213255-cleaned.mp4"
   },
   {
     "day_num": 65,
@@ -810,7 +893,8 @@
     "hook": "Watch Text FX Studio solve this workflow problem in 10 seconds",
     "ig_caption": "================================================================================\nREADY-TO-PUBLISH SOCIAL MEDIA CAPTION\nTool: TEXT FX STUDIO (Studio: Text Studio)\n================================================================================\n\nStop the scroll with aesthetic Unicode fonts for your posts! ✨🔤\n\nMake your social media hooks and profile bios visually magnetic:\n✨ 20+ aesthetic Unicode fonts (Bold, Gothic, Cursive, Monospace)\n📋 1-click copy directly to LinkedIn, Twitter/X, and Instagram\n📱 Works universally across all devices with zero plugins\n\nStyle your text free: toolverse-official.vercel.app\n\n#linkedinmarketing #socialmediatips #copywriting #contentcreator #toolverse\n",
     "fb_caption": "Instant browser tool: Text FX Studio. Free, private, and runs directly on your device.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Demoing Text FX Studio — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app"
+    "li_caption": "Demoing Text FX Studio — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/38_text_fx_studio.mp4"
   },
   {
     "day_num": 66,
@@ -822,7 +906,9 @@
     "hook": "The ultimate zero-friction freelancer stack for contracts and privacy",
     "ig_caption": "Combine Link Unfurler Pro and Toolverse PDF Studio for a completely private document workflow.\n\nTest it: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Streamline your client workflow with Toolverse utilities.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Freelancers and agency owners spend too much time toggling between paywalled SaaS tools. Here's how to run your full contract and media workflow 100% locally.\n\nhttps://toolverse-official.vercel.app"
+    "li_caption": "Freelancers and agency owners spend too much time toggling between paywalled SaaS tools. Here's how to run your full contract and media workflow 100% locally.\n\nhttps://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/39_link_unfurler_pro.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/01_Tools_57_Folders/39_Link_Unfurler_Pro/video.mp4"
   },
   {
     "day_num": 67,
@@ -835,7 +921,8 @@
     "hook": "Why the subscription software model is broken — and what we built instead",
     "ig_caption": "================================================================================\nREADY-TO-PUBLISH SOCIAL MEDIA CAPTION\nBrand Commercial #01: THE ANTI-SUBSCRIPTION MANIFESTO\n================================================================================\n\nStop paying $240/year for basic tools that should be free! 🚫💳\n\nSubscription fatigue is real. Every website today wants your credit card:\n❌ \"Enter credit card to export without watermark\"\n❌ \"Create an account to download your 1-page PDF\"\n❌ \"Monthly subscription for basic file compression\"\n\nToolverse is the anti-subscription movement:\n✅ 57 professional web tools across 8 studios\n✅ 100% free with zero sign-ups and zero watermarks\n✅ Runs locally in your browser with complete privacy\n\nReclaim your digital freedom: toolverse-official.vercel.app\n\n#antisaas #productivity #usefulwebsites #freelancehacks #softwaredevelopment #toolverse\n",
     "fb_caption": "Tired of subscriptions? Toolverse provides 57 free, client-side tools with zero paywalls.\n\nVisit: https://toolverse-official.vercel.app",
-    "li_caption": "Software subscriptions have gotten out of hand. Why are developers and creators paying $15-30/month for basic tools that can execute 100% inside modern web browsers?\n\nThat's why I built Toolverse — 57 free tools with complete client-side data privacy.\n\nExplore: https://toolverse-official.vercel.app"
+    "li_caption": "Software subscriptions have gotten out of hand. Why are developers and creators paying $15-30/month for basic tools that can execute 100% inside modern web browsers?\n\nThat's why I built Toolverse — 57 free tools with complete client-side data privacy.\n\nExplore: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/01_anti_subscription_manifesto.mp4"
   },
   {
     "day_num": 68,
@@ -848,7 +935,8 @@
     "hook": "Watch CSS X Ray solve this workflow problem in 10 seconds",
     "ig_caption": "================================================================================\nREADY-TO-PUBLISH SOCIAL MEDIA CAPTION\nTool: CSS X-RAY (Studio: Developer Studio)\n================================================================================\n\nExtract design tokens and computed styles with visual precision! 🩻🎨\n\nStop digging through hundreds of CSS lines in browser dev tools:\n📐 Visual overlays for padding, margins, and border radii\n🎨 Extracts exact color hexes, gradients & typography scales\n📋 1-click export to Tailwind CSS or JSON design tokens\n\nInspect styles with precision: toolverse-official.vercel.app\n\n#css #frontenddev #webdevelopment #uidesign #webdeveloper #toolverse\n",
     "fb_caption": "Instant browser tool: CSS X Ray. Free, private, and runs directly on your device.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Demoing CSS X Ray — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app"
+    "li_caption": "Demoing CSS X Ray — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/40_css_x_ray.mp4"
   },
   {
     "day_num": 69,
@@ -860,7 +948,9 @@
     "hook": "How I built 57 developer tools as a solo founder without venture capital",
     "ig_caption": "Building in public: 57 tools, 0 external funding, 100% browser-side code.\n\nHere is how WebAssembly and modern web APIs make heavy servers obsolete.\n\nExplore: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Behind the scenes of Toolverse: Building 57 fast web utilities for developers worldwide.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Lessons learned building 57 production tools solo:\n\n1. WebAssembly is massively underutilized for client-side processing.\n2. Users hate account walls for one-off tasks.\n3. Privacy-first architecture dramatically lowers cloud hosting costs.\n\nExplore Toolverse: https://toolverse-official.vercel.app"
+    "li_caption": "Lessons learned building 57 production tools solo:\n\n1. WebAssembly is massively underutilized for client-side processing.\n2. Users hate account walls for one-off tasks.\n3. Privacy-first architecture dramatically lowers cloud hosting costs.\n\nExplore Toolverse: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/02_zero_upload_privacy_revolution.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/01_Tools_57_Folders/03_Mind_Reader/video (8)-cleaned.mp4"
   },
   {
     "day_num": 70,
@@ -872,7 +962,9 @@
     "hook": "Simplify your daily tasks with Watermark Eraser",
     "ig_caption": "Watermark Eraser on Toolverse — fast, private, and free.\n\nTry it now: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Discover Watermark Eraser on Toolverse.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "High-performance browser tools: Introducing Watermark Eraser. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app"
+    "li_caption": "High-performance browser tools: Introducing Watermark Eraser. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/41_watermark_eraser.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/01_Tools_57_Folders/41_Watermark_Eraser/Toolverse_Watermark_Eraser_remo-cleaned.mp4"
   },
   {
     "day_num": 71,
@@ -884,7 +976,9 @@
     "hook": "Simplify your daily tasks with GitScope Pro",
     "ig_caption": "GitScope Pro on Toolverse — fast, private, and free.\n\nTry it now: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Discover GitScope Pro on Toolverse.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "High-performance browser tools: Introducing GitScope Pro. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app"
+    "li_caption": "High-performance browser tools: Introducing GitScope Pro. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/42_gitscope_pro.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/01_Tools_57_Folders/42_GitScope_Pro/video.mp4"
   },
   {
     "day_num": 72,
@@ -897,7 +991,8 @@
     "hook": "Watch Steganography Studio solve this workflow problem in 10 seconds",
     "ig_caption": "================================================================================\nREADY-TO-PUBLISH SOCIAL MEDIA CAPTION\nTool: STEGANOGRAPHY STUDIO (Studio: Shield Studio)\n================================================================================\n\nHide secret encrypted messages inside ordinary image pixels! 🕵️‍♂️🔒\n\nSend confidential information in plain sight:\n🖼️ Embed secret text & files into standard JPEG/PNG pixels\n🔑 Military-grade password protection ensures only your recipient can read it\n👁️ The photo looks 100% normal to the naked eye\n\nTry steganography free: toolverse-official.vercel.app\n\n#cybersecurity #steganography #privacytools #infosec #techtricks #toolverse\n",
     "fb_caption": "Instant browser tool: Steganography Studio. Free, private, and runs directly on your device.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Demoing Steganography Studio — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app"
+    "li_caption": "Demoing Steganography Studio — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/43_steganography_studio.mp4"
   },
   {
     "day_num": 73,
@@ -909,7 +1004,9 @@
     "hook": "The ultimate zero-friction freelancer stack for contracts and privacy",
     "ig_caption": "Combine PDF Sign And Edit and Toolverse PDF Studio for a completely private document workflow.\n\nTest it: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Streamline your client workflow with Toolverse utilities.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Freelancers and agency owners spend too much time toggling between paywalled SaaS tools. Here's how to run your full contract and media workflow 100% locally.\n\nhttps://toolverse-official.vercel.app"
+    "li_caption": "Freelancers and agency owners spend too much time toggling between paywalled SaaS tools. Here's how to run your full contract and media workflow 100% locally.\n\nhttps://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/44_pdf_sign_and_edit.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/01_Tools_57_Folders/44_PDF_Sign_And_Edit/video.mp4"
   },
   {
     "day_num": 74,
@@ -922,7 +1019,8 @@
     "hook": "Why the subscription software model is broken — and what we built instead",
     "ig_caption": "================================================================================\nREADY-TO-PUBLISH SOCIAL MEDIA CAPTION\nBrand Commercial #02: THE ZERO-UPLOAD PRIVACY REVOLUTION\n================================================================================\n\nWhere do your private files actually go when you use \"free\" websites? 🕵️‍♂️📁\n\nMost online PDF and file utilities upload your confidential documents to third-party cloud servers where they can be logged or scanned.\n\nWe built Toolverse with a strict ZERO-UPLOAD guarantee:\n🛡️ Powered by client-side WebAssembly & HTML5 Canvas\n💻 Files are processed entirely inside your device's memory\n✈️ Disconnect your Wi-Fi — the tools still work 100% offline\n\nReal privacy isn't marketing — it's engineering.\n\nExperience true privacy: toolverse-official.vercel.app\n\n#privacy #cybersecurity #dataprivacy #webassembly #infosec #toolverse\n",
     "fb_caption": "Tired of subscriptions? Toolverse provides 57 free, client-side tools with zero paywalls.\n\nVisit: https://toolverse-official.vercel.app",
-    "li_caption": "Software subscriptions have gotten out of hand. Why are developers and creators paying $15-30/month for basic tools that can execute 100% inside modern web browsers?\n\nThat's why I built Toolverse — 57 free tools with complete client-side data privacy.\n\nExplore: https://toolverse-official.vercel.app"
+    "li_caption": "Software subscriptions have gotten out of hand. Why are developers and creators paying $15-30/month for basic tools that can execute 100% inside modern web browsers?\n\nThat's why I built Toolverse — 57 free tools with complete client-side data privacy.\n\nExplore: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/02_zero_upload_privacy_revolution.mp4"
   },
   {
     "day_num": 75,
@@ -935,7 +1033,8 @@
     "hook": "Watch AI HD Boost solve this workflow problem in 10 seconds",
     "ig_caption": "================================================================================\nREADY-TO-PUBLISH SOCIAL MEDIA CAPTION\nTool: AI HD BOOST (Studio: Image Studio)\n================================================================================\n\nUpscale blurry photos into razor-sharp 4K detail! 🔍✨\n\nBreathe new life into old, compressed, or pixelated pictures:\n💎 AI super-resolution upscaling up to 4x\n🔬 Enhances fine facial details, hair textures, and text sharpness\n⚡ Fast, browser-native processing with zero subscriptions\n\nBoost your images free: toolverse-official.vercel.app\n\n#aiupscale #photoenhancer #hdphotos #photographyhacks #creativetools #toolverse\n",
     "fb_caption": "Instant browser tool: AI HD Boost. Free, private, and runs directly on your device.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Demoing AI HD Boost — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app"
+    "li_caption": "Demoing AI HD Boost — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/45_ai_hd_boost.mp4"
   },
   {
     "day_num": 76,
@@ -947,7 +1046,9 @@
     "hook": "How I built 57 developer tools as a solo founder without venture capital",
     "ig_caption": "Building in public: 57 tools, 0 external funding, 100% browser-side code.\n\nHere is how WebAssembly and modern web APIs make heavy servers obsolete.\n\nExplore: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Behind the scenes of Toolverse: Building 57 fast web utilities for developers worldwide.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Lessons learned building 57 production tools solo:\n\n1. WebAssembly is massively underutilized for client-side processing.\n2. Users hate account walls for one-off tasks.\n3. Privacy-first architecture dramatically lowers cloud hosting costs.\n\nExplore Toolverse: https://toolverse-official.vercel.app"
+    "li_caption": "Lessons learned building 57 production tools solo:\n\n1. WebAssembly is massively underutilized for client-side processing.\n2. Users hate account walls for one-off tasks.\n3. Privacy-first architecture dramatically lowers cloud hosting costs.\n\nExplore Toolverse: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/03_digital_shadow_exposure.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/02_Brand_Marketing_07_Folders/03_Digital_Shadow_Exposure/Untitled design (2).mp4"
   },
   {
     "day_num": 77,
@@ -959,7 +1060,9 @@
     "hook": "Simplify your daily tasks with GitHub Manager",
     "ig_caption": "GitHub Manager on Toolverse — fast, private, and free.\n\nTry it now: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Discover GitHub Manager on Toolverse.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "High-performance browser tools: Introducing GitHub Manager. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app"
+    "li_caption": "High-performance browser tools: Introducing GitHub Manager. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/46_github_manager.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/01_Tools_57_Folders/46_GitHub_Manager/video.mp4"
   },
   {
     "day_num": 78,
@@ -971,7 +1074,9 @@
     "hook": "Simplify your daily tasks with PDF Merge And Split",
     "ig_caption": "PDF Merge And Split on Toolverse — fast, private, and free.\n\nTry it now: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Discover PDF Merge And Split on Toolverse.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "High-performance browser tools: Introducing PDF Merge And Split. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app"
+    "li_caption": "High-performance browser tools: Introducing PDF Merge And Split. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/47_pdf_merge_and_split.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/01_Tools_57_Folders/47_PDF_Merge_And_Split/video.mp4"
   },
   {
     "day_num": 79,
@@ -984,7 +1089,8 @@
     "hook": "Watch Extract Everything solve this workflow problem in 10 seconds",
     "ig_caption": "================================================================================\nREADY-TO-PUBLISH SOCIAL MEDIA CAPTION\nTool: EXTRACT EVERYTHING (Studio: PDF Studio)\n================================================================================\n\nExtract all original images and fonts from any PDF in 1 click! 📄🖼️\n\nNever settle for blurry screenshot crops again:\n🖼️ Pulls original high-resolution embedded images\n🔤 Extracts embedded vector fonts and styling\n📊 Exports data tables and raw text streams directly to ZIP\n\nExtract assets free: toolverse-official.vercel.app\n\n#pdfhacks #productivitytools #designhacks #graphicdesign #toolverse\n",
     "fb_caption": "Instant browser tool: Extract Everything. Free, private, and runs directly on your device.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Demoing Extract Everything — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app"
+    "li_caption": "Demoing Extract Everything — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/48_extract_everything.mp4"
   },
   {
     "day_num": 80,
@@ -996,7 +1102,9 @@
     "hook": "The ultimate zero-friction freelancer stack for contracts and privacy",
     "ig_caption": "Combine Organize Pages and Toolverse PDF Studio for a completely private document workflow.\n\nTest it: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Streamline your client workflow with Toolverse utilities.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Freelancers and agency owners spend too much time toggling between paywalled SaaS tools. Here's how to run your full contract and media workflow 100% locally.\n\nhttps://toolverse-official.vercel.app"
+    "li_caption": "Freelancers and agency owners spend too much time toggling between paywalled SaaS tools. Here's how to run your full contract and media workflow 100% locally.\n\nhttps://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/47_pdf_merge_and_split.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/01_Tools_57_Folders/02_PDF_Viral_Studio/video (7)-cleaned.mp4"
   },
   {
     "day_num": 81,
@@ -1009,7 +1117,8 @@
     "hook": "Why the subscription software model is broken — and what we built instead",
     "ig_caption": "================================================================================\nREADY-TO-PUBLISH SOCIAL MEDIA CAPTION\nBrand Commercial #03: THE DIGITAL SHADOW EXPOSURE\n================================================================================\n\nThe internet knows more about you than you think! 🕵️‍♂️⚡\n\nBrowser fingerprinting allows websites to identify you across the internet WITHOUT cookies:\n🔋 Your exact battery percentage & charging status\n🎮 Your graphics card model & audio latency\n🔤 Installed system fonts & canvas render hash\n\nCheck your exposure score in 2 seconds: toolverse-official.vercel.app\n\n#dataprivacy #cybersecurity #browserfingerprint #techtrends #privacytools #toolverse\n",
     "fb_caption": "Tired of subscriptions? Toolverse provides 57 free, client-side tools with zero paywalls.\n\nVisit: https://toolverse-official.vercel.app",
-    "li_caption": "Software subscriptions have gotten out of hand. Why are developers and creators paying $15-30/month for basic tools that can execute 100% inside modern web browsers?\n\nThat's why I built Toolverse — 57 free tools with complete client-side data privacy.\n\nExplore: https://toolverse-official.vercel.app"
+    "li_caption": "Software subscriptions have gotten out of hand. Why are developers and creators paying $15-30/month for basic tools that can execute 100% inside modern web browsers?\n\nThat's why I built Toolverse — 57 free tools with complete client-side data privacy.\n\nExplore: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/03_digital_shadow_exposure.mp4"
   },
   {
     "day_num": 82,
@@ -1022,7 +1131,8 @@
     "hook": "Watch Metadata Stripper And Editor solve this workflow problem in 10 seconds",
     "ig_caption": "================================================================================\nREADY-TO-PUBLISH SOCIAL MEDIA CAPTION\nTool: METADATA STRIPPER & EDITOR (Studio: PDF Studio)\n================================================================================\n\nInspect and strip hidden author & software metadata from your PDFs! 🕵️‍♂️📁\n\nDon't let confidential background data leak to clients or recruiters:\n🔍 Reveals author name, editing software, and exact timestamps\n🧹 1-click sanitizer strips all hidden forensic footprints\n🛡️ Ensures complete privacy before sending sensitive files\n\nSanitize your documents free: toolverse-official.vercel.app\n\n#cybersecurity #dataprivacy #pdfmetadata #officetips #toolverse\n",
     "fb_caption": "Instant browser tool: Metadata Stripper And Editor. Free, private, and runs directly on your device.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Demoing Metadata Stripper And Editor — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app"
+    "li_caption": "Demoing Metadata Stripper And Editor — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/51_metadata_stripper_and_editor.mp4"
   },
   {
     "day_num": 83,
@@ -1034,7 +1144,9 @@
     "hook": "How I built 57 developer tools as a solo founder without venture capital",
     "ig_caption": "Building in public: 57 tools, 0 external funding, 100% browser-side code.\n\nHere is how WebAssembly and modern web APIs make heavy servers obsolete.\n\nExplore: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Behind the scenes of Toolverse: Building 57 fast web utilities for developers worldwide.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Lessons learned building 57 production tools solo:\n\n1. WebAssembly is massively underutilized for client-side processing.\n2. Users hate account walls for one-off tasks.\n3. Privacy-first architecture dramatically lowers cloud hosting costs.\n\nExplore Toolverse: https://toolverse-official.vercel.app"
+    "li_caption": "Lessons learned building 57 production tools solo:\n\n1. WebAssembly is massively underutilized for client-side processing.\n2. Users hate account walls for one-off tasks.\n3. Privacy-first architecture dramatically lowers cloud hosting costs.\n\nExplore Toolverse: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/01_anti_subscription_manifesto.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/02_Brand_Marketing_07_Folders/01_Anti_Subscription_Manifesto/Untitled design-cleaned.mp4"
   },
   {
     "day_num": 84,
@@ -1046,7 +1158,9 @@
     "hook": "Simplify your daily tasks with Photo to 3D",
     "ig_caption": "Photo to 3D on Toolverse — fast, private, and free.\n\nTry it now: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Discover Photo to 3D on Toolverse.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "High-performance browser tools: Introducing Photo to 3D. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app"
+    "li_caption": "High-performance browser tools: Introducing Photo to 3D. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/52_photo_to_3d.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/01_Tools_57_Folders/52_Photo_to_3D/video.mp4"
   },
   {
     "day_num": 85,
@@ -1058,7 +1172,9 @@
     "hook": "Simplify your daily tasks with Color Palette Generator",
     "ig_caption": "Color Palette Generator on Toolverse — fast, private, and free.\n\nTry it now: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Discover Color Palette Generator on Toolverse.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "High-performance browser tools: Introducing Color Palette Generator. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app"
+    "li_caption": "High-performance browser tools: Introducing Color Palette Generator. Built with zero dependencies on remote backend servers for maximum security.\n\nhttps://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/53_color_palette_generator.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/01_Tools_57_Folders/53_Color_Palette_Generator/Extracting_colors_from_images_1080p_20260930231951-cleaned.mp4"
   },
   {
     "day_num": 86,
@@ -1071,7 +1187,8 @@
     "hook": "Watch Art Converters solve this workflow problem in 10 seconds",
     "ig_caption": "================================================================================\nREADY-TO-PUBLISH SOCIAL MEDIA CAPTION\nTool: ART CONVERTERS (Studio: Image Studio)\n================================================================================\n\nTransform photos into retro 8-bit pixel art or green ASCII hacker code! 🕹️👾\n\nGive your social profile pictures an unforgettable retro vibe:\n🕹️ 8-bit Nintendo retro sprite generator\n💻 Glowing green matrix ASCII terminal art\n🎨 Clean SVG vector art & oil painting filters\n\nConvert your photos free: toolverse-official.vercel.app\n\n#pixelart #asciiart #retrostyle #phototricks #gamers #toolverse\n",
     "fb_caption": "Instant browser tool: Art Converters. Free, private, and runs directly on your device.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Demoing Art Converters — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app"
+    "li_caption": "Demoing Art Converters — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/54_art_converters.mp4"
   },
   {
     "day_num": 87,
@@ -1083,7 +1200,9 @@
     "hook": "The ultimate zero-friction freelancer stack for contracts and privacy",
     "ig_caption": "Combine Butterfly Effect Blast Graph and Toolverse PDF Studio for a completely private document workflow.\n\nTest it: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Streamline your client workflow with Toolverse utilities.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Freelancers and agency owners spend too much time toggling between paywalled SaaS tools. Here's how to run your full contract and media workflow 100% locally.\n\nhttps://toolverse-official.vercel.app"
+    "li_caption": "Freelancers and agency owners spend too much time toggling between paywalled SaaS tools. Here's how to run your full contract and media workflow 100% locally.\n\nhttps://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/57_butterfly_effect_blast_graph.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/01_Tools_57_Folders/57_Butterfly_Effect_Blast_Graph/video.mp4"
   },
   {
     "day_num": 88,
@@ -1096,7 +1215,8 @@
     "hook": "Why the subscription software model is broken — and what we built instead",
     "ig_caption": "================================================================================\nREADY-TO-PUBLISH SOCIAL MEDIA CAPTION\nBrand Commercial #04: THE 10-SECOND FREELANCER LEGAL STACK\n================================================================================\n\nGenerate, customize, and sign legal contracts in under 30 seconds! ⚖️📝\n\nDon't start another client project without legal protection:\n📑 Contract Forge generates customized NDAs & service agreements\n🌍 Multi-jurisdiction & multi-language legal formatting\n✍️ Sign directly in your browser & export print-ready vector PDFs\n\nProtect your business free: toolverse-official.vercel.app\n\n#freelancelife #agencygrowth #legalhacks #businessowner #startuptips #toolverse\n",
     "fb_caption": "Tired of subscriptions? Toolverse provides 57 free, client-side tools with zero paywalls.\n\nVisit: https://toolverse-official.vercel.app",
-    "li_caption": "Software subscriptions have gotten out of hand. Why are developers and creators paying $15-30/month for basic tools that can execute 100% inside modern web browsers?\n\nThat's why I built Toolverse — 57 free tools with complete client-side data privacy.\n\nExplore: https://toolverse-official.vercel.app"
+    "li_caption": "Software subscriptions have gotten out of hand. Why are developers and creators paying $15-30/month for basic tools that can execute 100% inside modern web browsers?\n\nThat's why I built Toolverse — 57 free tools with complete client-side data privacy.\n\nExplore: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/04_ten_second_legal_stack.mp4"
   },
   {
     "day_num": 89,
@@ -1109,7 +1229,8 @@
     "hook": "Watch PDF Viral Studio solve this workflow problem in 10 seconds",
     "ig_caption": "================================================================================\nREADY-TO-PUBLISH SOCIAL MEDIA CAPTION\nTool: PDF VIRAL STUDIO (Studio: PDF Studio)\n================================================================================\n\nDon't have time to read 50-page PDFs? Turn them into audio summaries! 🎧📄\n\nInstead of wasting 2 hours reading dense reports or study notes, use Toolverse PDF Viral Studio:\n1️⃣ Drop your PDF file into the browser.\n2️⃣ Instant AI summary extracts key insights and stats.\n3️⃣ Listen to the generated audio summary on the go.\n\n100% free and runs locally in your browser!\n\nTry it today at: toolverse-official.vercel.app\n\n#pdfhacks #studentlife #productivity #studyhacks #officetips #toolverse\n",
     "fb_caption": "Instant browser tool: PDF Viral Studio. Free, private, and runs directly on your device.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Demoing PDF Viral Studio — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app"
+    "li_caption": "Demoing PDF Viral Studio — built for engineers, creators, and freelancers who want zero-friction productivity without uploading sensitive files to cloud servers.\n\nCheck it out: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/02_pdf_viral_studio.mp4"
   },
   {
     "day_num": 90,
@@ -1121,6 +1242,8 @@
     "hook": "How I built 57 developer tools as a solo founder without venture capital",
     "ig_caption": "Building in public: 57 tools, 0 external funding, 100% browser-side code.\n\nHere is how WebAssembly and modern web APIs make heavy servers obsolete.\n\nExplore: https://toolverse-official.vercel.app\n\n#WebDevelopment #JavaScript #DevTools #ProductivityTools #SaaS #SoloFounder #BuildInPublic #IndieHackers #PrivacyFirst #DataPrivacy #WebAssembly #Toolverse",
     "fb_caption": "Behind the scenes of Toolverse: Building 57 fast web utilities for developers worldwide.\n\nhttps://toolverse-official.vercel.app",
-    "li_caption": "Lessons learned building 57 production tools solo:\n\n1. WebAssembly is massively underutilized for client-side processing.\n2. Users hate account walls for one-off tasks.\n3. Privacy-first architecture dramatically lowers cloud hosting costs.\n\nExplore Toolverse: https://toolverse-official.vercel.app"
+    "li_caption": "Lessons learned building 57 production tools solo:\n\n1. WebAssembly is massively underutilized for client-side processing.\n2. Users hate account walls for one-off tasks.\n3. Privacy-first architecture dramatically lowers cloud hosting costs.\n\nExplore Toolverse: https://toolverse-official.vercel.app",
+    "video_url": "https://github.com/imranah10/toolverse_automation/releases/download/v1.0-assets/03_digital_shadow_exposure.mp4",
+    "video_path": "Toolverse_57_Tools_And_Brand_Videos/02_Brand_Marketing_07_Folders/02_Zero_Upload_Privacy_Revolution/Untitled design (1)-cleaned.mp4"
   }
 ]
