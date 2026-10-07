@@ -8,11 +8,11 @@ Ab aapka complete **90-Day Multi-Platform Automation Engine** GitHub Actions ke 
 
 1. **100% Free Forever:** GitHub Actions har mahine **2,000 free minutes** deta hai. Hamara daily post sirf 30 seconds leta hai (mahine ka mushkil se 15 minutes lagega). Zero cost!
 2. **24×7 Cloud Execution:** Aapka laptop/PC band bhi rahega tab bhi ye roz automatically run hoga.
-3. **Tier-1 Prime Time Schedule:** Har roz **Shaam 7:00 PM IST** (1:30 PM UTC / 9:30 AM New York / 2:30 PM London Peak) par automatically post karega.
-4. **Smart State Tracking (`data/state.json`):** 
-   - Days 1, 2, aur 3 pehle hi post ho chuke hain, isliye state **Day 3** par set hai.
-   - Agla automated post **Day 4** se hi shuru hoga. Koi purana post repeat nahi hoga!
-   - Roz post hone ke baad state automatically agle din (`Day 5`, `Day 6`, ... `Day 90`) par update ho jata hai.
+3. **Tier-1 Prime Time Schedule:** Har roz **Shaam 7:00 PM IST** (1:30 PM UTC / 9:30 AM New York / 2:30 PM London Peak) par image post, aur **Raat 11:00 PM IST** par video reel post hota hai.
+4. **Smart State Tracking (`data/state.json`):**
+   - Jo din publish ho chuka hai wo state me save hota hai.
+   - Agla automated post agle din se shuru hoga. Koi purana post repeat nahi hoga!
+   - Roz post hone ke baad state automatically agle din par update ho jata hai.
 5. **Multi-Platform Support:**
    - 📸 **Instagram Business:** `@toolverse.offiicial` (High-Res Images, Carousels, & Video Reels)
    - 📘 **Facebook Page:** `ToolverseOfficial` (Photos & Videos with Direct CTA Links)
@@ -32,44 +32,22 @@ Apne terminal ya VS Code mein `toolverse_automation` folder ke andar ye commands
    npm run test:conn
    ```
    *Ye Meta Graph API ko ping karke Instagram aur Facebook Page ka live connection check karega.*
-   
-   Output aayega:
-   ```text
-   ✅ Facebook Page Connected: "ToolverseOfficial" (ID: 1267223409818393)
-   ✅ Instagram Account Connected: @toolverse.offiicial (ID: 17841426643619667)
-   ✅ State file found: Last published Day 3 -> Next: DAY 4
-   ✅ Master 90-day schedule verified: 90 posts loaded.
-   ```
 
-2. **Day 4 Post Simulation (Dry Run — Without Posting Live):**
+2. **Dry Run (Simulation — Without Posting Live):**
    ```bash
    npm run test:dry
    ```
-   *Ye Day 4 ka poora caption, hashtag, media URL load karke preview dikhayega.*
-
-3. **Day 4 Real Post (LIVE Instagram + Facebook):**
-   ```bash
-   npm run publish:day4
-   ```
-   *Ye Day 4 ko turant LIVE publish kar dega aur post IDs return karega!*
 
 ---
 
 ### METHOD B: GitHub Actions Par "Run workflow" Button Se Test Karna (One-Click)
-
-Jab aap code GitHub par push kar denge:
 
 1. Apne GitHub Repo par jaakar **"Actions"** tab par click karein.
 2. Left sidebar mein **"Toolverse 90-Day Automation Engine"** par click karein.
 3. Right side mein **"Run workflow"** button par click karein:
    - Agar sirf test karna hai: `test_connection` checkbox par tick karein ya `dry_run` par tick karein.
    - Agar real post karna hai: Seedhe **"Run workflow"** green button daba dein!
-4. Workflow start ho jayega. Uspe click karke aap **Live Console Logs** dekh sakte hain jahan green checkmarks dikhenge:
-   ```text
-   📸 [Instagram] Container Created (ID: ...) -> INSTAGRAM PUBLISHED LIVE!
-   📘 [Facebook] FACEBOOK PAGE PUBLISHED LIVE! Post ID: ...
-   ✅ State updated successfully: last_published_day = 4
-   ```
+4. Workflow start ho jayega. Uspe click karke aap **Live Console Logs** dekh sakte hain jahan green checkmarks dikhenge.
 5. Apne Instagram app (`@toolverse.offiicial`) aur Facebook Page par jaakar fresh post verify karein! 🎉
 
 ---
@@ -79,7 +57,7 @@ Jab aap code GitHub par push kar denge:
 Agar aapne GitHub repository nahi banayi hai, to bas 2 minute ka step hai:
 
 ### Step 1: GitHub.com par new repo banayein
-1. [github.com/new](https://github.com/new) par jaakar repo ka naam rakhein: `toolverse_automation` (Private ya Public).
+1. [github.com/new](https://github.com/new) par jaakar repo ka naam rakhein: `toolverse_automation` (**Private** rakhein — recommended).
 
 ### Step 2: Terminal se push karein
 ```bash
@@ -99,15 +77,15 @@ git push -u origin main
 1. Apne GitHub Repo mein **Settings** -> **Secrets and variables** -> **Actions** par jayein.
 2. **"New repository secret"** button par click karein aur ye Secrets add karein:
 
-| Secret Name | Value | Description |
-|---|---|---|
-| `META_PAGE_ACCESS_TOKEN` | `YOUR_META_PAGE_ACCESS_TOKEN (Already configured in repo secrets)` | Active Long-lived Meta Token (Valid till Nov 2026) |
-| `FACEBOOK_PAGE_ID` | `1267223409818393` | ToolverseOfficial Page ID |
-| `INSTAGRAM_ACCOUNT_ID` | `17841426643619667` | @toolverse.offiicial Account ID |
-| `LINKEDIN_ACCESS_TOKEN` | *(Optional - apna token dalein)* | LinkedIn auto-publish ke liye |
-| `LINKEDIN_ORGANIZATION_ID` | `145223722` | Toolverse Official Organization URN |
+| Secret Name | Description |
+|---|---|
+| `META_PAGE_ACCESS_TOKEN` | Active Long-lived Meta Token (Settings me already configured hai) |
+| `FACEBOOK_PAGE_ID` | ToolverseOfficial Page ID (Settings me already configured hai) |
+| `INSTAGRAM_ACCOUNT_ID` | @toolverse.offiicial Account ID (Settings me already configured hai) |
+| `LINKEDIN_ACCESS_TOKEN` | *(Optional)* LinkedIn auto-publish ke liye |
+| `LINKEDIN_ORGANIZATION_ID` | Toolverse Official Organization URN (already configured) |
 
-*Note: Code ke andar pehle se safe fallbacks configured hain, par repository secrets best security practice hai.*
+> ⚠️ **Security Note:** Token aur IDs ki **asli values kabhi bhi is file ya kisi bhi file me mat likhna** — wo sirf GitHub Secrets me rehni chahiye (encrypted, logs me kabhi nahi dikhti).
 
 ---
 
@@ -117,10 +95,11 @@ git push -u origin main
 toolverse_automation/
 ├── .github/
 │   └── workflows/
-│       └── toolverse_daily_publish.yml    # Daily 7:00 PM IST Cron + Manual Trigger
+│       └── toolverse_daily_publish.yml    # Daily 7:00 PM IST + 11:00 PM IST Cron + Manual Trigger
 ├── data/
-│   ├── schedule_90_days.json              # Complete 90-Day Content Database (90 Posts)
-│   └── state.json                         # Tracks last published day (Starts at Day 3 -> Day 4)
+│   ├── schedule_90_days.json              # Complete 90-Day Content Database (90 Posts, sab video sahit)
+│   ├── video_cloud_urls.json              # Video CDN map (GitHub Releases)
+│   └── state.json                         # Tracks last published day
 ├── scripts/
 │   ├── publish_engine.js                  # Pure Node.js Meta & LinkedIn Multi-Platform Publisher
 │   └── build_schedule.js                  # Database Generator
