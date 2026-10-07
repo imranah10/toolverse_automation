@@ -7,6 +7,19 @@ jo 18 videos GitHub par missing hain, sirf WO upload karega.
 Jo videos pehle se hain, unhe kuch nahi karega.
 
 ----------------------------------------------------
+SABSE AASAN TARIKA: EK LINE COPY-PASTE (recommended)
+----------------------------------------------------
+1. PowerShell kholo (Start menu me "PowerShell" likhkar)
+2. Ye poori line COPY karke window me RIGHT-CLICK karo
+   (paste ho jayega), phir Enter dabao:
+
+   [Net.ServicePointManager]::SecurityProtocol='Tls12'; iwr https://raw.githubusercontent.com/imranah10/toolverse_automation/main/upload_videos.py -OutFile upload_videos.py; python upload_videos.py
+
+3. Bas! File khud download hokar khud chal jayegi.
+4. Token paste karo (dikhaga nahi, seedha Enter)
+5. Videos wali folder drag-and-drop karke Enter
+
+----------------------------------------------------
 STEP 1: Ye file download karo
 ----------------------------------------------------
 1. Is repo me upload_videos.py file khuli hai
@@ -43,6 +56,15 @@ STEP 3: Chalao
 ----------------------------------------------------
 FAQ
 ----------------------------------------------------
+Q: Videos wali folder ka path pata nahi, kaise dun?
+A: Folder ko mouse se pakad kar PowerShell window me drag
+   kar do - path khud likha aayega. Phir sirf Enter dabao.
+
+Q: "No such file or directory" aa raha hai?
+A: Matlab upload_videos.py us folder me nahi hai jisme aap ho.
+   Upar wali EK LINE wala tarika use karo - wo khud file
+   download karega aur chala dega.
+
 Q: Kya dobara upload hoga jo pehle se hai?
 A: Nahi. Tool khud check karta hai, sirf MISSING upload karta hai.
 
