@@ -1,0 +1,56 @@
+====================================================
+  VIDEO KAISE UPLOAD KAREIN (3 STEP - HINDI GUIDE)
+====================================================
+
+Ye tool (upload_videos.py) aapke computer par chalega aur
+jo 18 videos GitHub par missing hain, sirf WO upload karega.
+Jo videos pehle se hain, unhe kuch nahi karega.
+
+----------------------------------------------------
+STEP 1: Ye file download karo
+----------------------------------------------------
+1. Is repo me upload_videos.py file khuli hai
+2. Upar right side me "Download raw file" button
+   (ya Raw button -> Ctrl+S) -> apne computer par save karo
+3. Best: apne videos wale main folder me save karo
+   (jis folder ke andar saare video folders hain)
+
+----------------------------------------------------
+STEP 2: Python chahiye (sirf 1 baar)
+----------------------------------------------------
+- Agar pehle kabhi Python install hai to ye step skip karo
+- Check: Command Prompt kholo, likho "python" aur Enter
+- Agar error aaye ya Microsoft Store khul jaye:
+  python.org/downloads se Python download karke install karo
+  (install karte waqt "Add Python to PATH" checkbox TICK karo)
+
+----------------------------------------------------
+STEP 3: Chalao
+----------------------------------------------------
+1. Command Prompt (CMD) kholo:
+   - Video folder me Shift + Right-click -> "Open PowerShell window here"
+2. Ye command likho:
+       python upload_videos.py
+3. GitHub token paste karo (typing nahi dikhegi - normal hai, Enter maro)
+4. Video folder ka path poochhoge to:
+   - Agar script video folder me rakhi hai: bas Enter maro
+   - Nahi to full path paste karo (jaise C:\Users\...\Videos)
+5. Tool khud sab karega - sirf 18 missing upload honge
+6. Report dekho: [OK] = done, [MISS] = wo video mili nahi
+7. SABSE LAST MEIN: token DELETE kar dena
+   github.com > Settings > Developer settings > Personal access tokens > Delete
+
+----------------------------------------------------
+FAQ
+----------------------------------------------------
+Q: Kya dobara upload hoga jo pehle se hai?
+A: Nahi. Tool khud check karta hai, sirf MISSING upload karta hai.
+
+Q: Video ka naam galat jayega?
+A: Nahi. Tool folder ke naam se khud sahi naam deta hai.
+
+Q: Report me kuch [MISS] hai?
+A: Un folders me video nahi mili. Mujhe batao, main dekh lunga.
+
+Q: Kab se videos posts me use hongi?
+A: Upload ke turant baad agle slot (raat 11 PM IST) se.
