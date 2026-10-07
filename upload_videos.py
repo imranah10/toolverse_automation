@@ -4,7 +4,7 @@
 #  Run:  python upload_videos.py
 #  Windows PC par Python 3 chahiye (python.org se free)
 # ============================================================
-import json, os, re, sys, time, getpass, http.client, urllib.request, ssl
+import json, os, re, sys, time, getpass, http.client, urllib.request, urllib.error, ssl
 
 REPO = 'imranah10/toolverse_automation'
 RELEASE_TAG = 'v1.0-assets'
@@ -62,13 +62,16 @@ def fuzzy_match(dir_name, missing_keys):
     return (best_key, best) if best >= 0.6 else (None, 0.0)
 
 def cdn_exists(key):
+    """True = live, False = sach me nahi hai (404), None = network issue (pata nahi)"""
     url = f'https://github.com/{REPO}/releases/download/{RELEASE_TAG}/{key}'
     try:
         r = urllib.request.Request(url, headers={'Range': 'bytes=0-0', 'User-Agent': 'tv-uploader'})
         with urllib.request.urlopen(r, timeout=20) as resp:
             return resp.status in (200, 206)
+    except urllib.error.HTTPError as e:
+        return False if e.code == 404 else None
     except Exception:
-        return False
+        return None   # internet down tha - galat MISS mat gino
 
 def scan_videos(root, missing):
     """root folder ke andar saari mp4 dhoondo aur missing keys se match karo"""
@@ -93,11 +96,10 @@ def scan_videos(root, missing):
 
 def stream_upload(token, release_id, key, filepath):
     """1MB chunks me upload - file memory me nahi jaati.
-    v2.2: Host header fix (iska missing hona se server connection reset
-    karta tha - Errno 10054) + network error par 3 retry."""
+    v2.3: Host header fix (Errno 10054) + 4 retry (5s/10s/20s backoff)."""
     size = os.path.getsize(filepath)
     url = f'/repos/{REPO}/releases/{release_id}/assets?name={key}'
-    for attempt in range(3):
+    for attempt in range(4):
         conn = None
         try:
             conn = http.client.HTTPSConnection('uploads.github.com', timeout=600)
@@ -131,16 +133,17 @@ def stream_upload(token, release_id, key, filepath):
                     conn.close()
                 except Exception:
                     pass
-            if attempt < 2:
+            if attempt < 3:
+                wait = [5, 10, 20][attempt]
                 print(f'      !! Network issue ({str(e)[:60]})')
-                print(f'      !! 5 second me dobara koshish ({attempt + 2}/3)...')
-                time.sleep(5)
+                print(f'      !! {wait} second me dobara koshish ({attempt + 2}/4)...')
+                time.sleep(wait)
             else:
                 raise
 
 def main():
     print('=' * 58)
-    print('   TOOLVERSE VIDEO UPLOADER v2.2 - sirf missing videos')
+    print('   TOOLVERSE VIDEO UPLOADER v2.3 - sirf missing videos')
     print('=' * 58)
 
     token = os.environ.get('GH_TOKEN', '').strip()
@@ -223,28 +226,38 @@ def main():
 
     # 5. final CDN verify
     print('[5/5] Final verification (CDN check)...\n')
-    ok_list, miss_list = [], []
+    ok_list, miss_list, unk_list = [], [], []
     for k in ALL_KEYS:
-        if cdn_exists(k):
+        st = cdn_exists(k)
+        if st is True:
             ok_list.append(k)
-        else:
+        elif st is False:
             miss_list.append(k)
+        else:
+            unk_list.append(k)
 
     print('=' * 58)
     print('   FINAL REPORT')
     print('=' * 58)
     print(f'   [OK]   CDN par live: {len(ok_list)} / {len(ALL_KEYS)} videos')
     if miss_list:
-        print(f'   [MISS] Abhi bhi nahi mile ({len(miss_list)}):')
+        print(f'   [MISS] Sach me nahi hain ({len(miss_list)}):')
         for k in miss_list:
             print(f'          - {k}')
+    if unk_list:
+        print(f'   [?]    Check nahi ho paya - network down tha ({len(unk_list)})')
+        print('          Ghabrana nahi - inme se zyada tar pehle se live hain.')
+        print('          Internet theek hokar dobara chalao, sahi ginati dikhegi.')
     if failed:
         print(f'   Upload errors ({len(failed)}):')
         for k, e in failed:
             print(f'          - {k}: {e}')
     print()
-    if not miss_list:
+    if not miss_list and not unk_list:
         print('   SAB 60 VIDEOS LIVE HAIN! AUTOMATION 100% READY!')
+    elif not miss_list:
+        print('   Jo upload hui wo LIVE hain. Baaki ginati ke liye net theek')
+        print('   hokar dobara chalao (kuch naya upload nahi hoga, sirf check).')
     else:
         print('   Jo [MISS] hain: un video folders ka naam check karo,')
         print('   ya wo videos dobara banao. Baki sab kaam kar chuka hai.')
