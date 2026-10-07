@@ -65,6 +65,12 @@ A: Matlab upload_videos.py us folder me nahi hai jisme aap ho.
    Upar wali EK LINE wala tarika use karo - wo khud file
    download karega aur chala dega.
 
+Q: "[FAIL] Errno 10054 / connection reset" aa raha tha?
+A: Ye purane version ka bug tha - v2.2 me fix ho gaya.
+   Wahi ek-line command dobara chalao, naya version
+   khud download hoga. Jo videos pehle upload ho chuki
+   hain wo khud skip ho jayengi - dobara chalana safe hai.
+
 Q: Kya dobara upload hoga jo pehle se hai?
 A: Nahi. Tool khud check karta hai, sirf MISSING upload karta hai.
 
