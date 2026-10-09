@@ -1,6 +1,6 @@
 {
-  "current_day": 21,
-  "last_completed_day": 20,
+  "current_day": 22,
+  "last_completed_day": 21,
   "day_slots": {
     "9": {
       "image": {
@@ -179,6 +179,17 @@
           "story": null
         }
       }
+    },
+    "21": {
+      "video": {
+        "published": true,
+        "published_at": "2026-10-09T22:37:39.944Z",
+        "results": {
+          "instagram": "17957874843015247",
+          "facebook": "1442080127989168",
+          "story": null
+        }
+      }
     }
   },
   "history": [
@@ -267,6 +278,6 @@
       }
     }
   ],
-  "last_published_day": 20,
-  "last_published_at": "2026-10-09T21:54:45.601Z"
+  "last_published_day": 21,
+  "last_published_at": "2026-10-09T22:37:39.944Z"
 }
