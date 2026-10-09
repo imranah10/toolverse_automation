@@ -61,6 +61,7 @@ jobs:
           node-version: 22
 
       - name: Run Toolverse Automation Engine
+        id: engine
         env:
           META_PAGE_ACCESS_TOKEN: ${{ secrets.META_PAGE_ACCESS_TOKEN }}
           FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
@@ -96,14 +97,18 @@ jobs:
           node scripts/publish_engine.js $FLAGS
 
       - name: Commit and Push Updated State
-        if: github.event.inputs.dry_run != 'true' && github.event.inputs.test_connection != 'true'
+        if: always() && github.event.inputs.dry_run != 'true' && github.event.inputs.test_connection != 'true'
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
           if [ -n "$(git status --porcelain data/state.json)" ]; then
             git add data/state.json
-            git commit -m "chore(automation): record daily published post [skip ci]"
+            if [ "${{ steps.engine.outcome }}" = "failure" ]; then
+              git commit -m "chore(automation): record FAILED slot run (no post went live) [skip ci]"
+            else
+              git commit -m "chore(automation): record daily published post [skip ci]"
+            fi
             git push
             echo "✅ State updated and committed back to repository."
           else
