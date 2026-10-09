@@ -167,10 +167,28 @@ function resolveVideoUrl(postItem) {
   return null;
 }
 
+// PUBLIC ACCESSIBILITY PREFLIGHT (v2.2)
+// Meta's servers fetch media ANONYMOUSLY (no GitHub login). If the media URL is not
+// publicly reachable (repo turned private / asset missing / CDN broken), every upload
+// attempt fails silently. Fail FAST with a crystal-clear reason instead.
+async function assertMediaPubliclyFetchable(mediaUrl, label) {
+  try {
+    const res = await fetch(mediaUrl, { method: 'GET', headers: { Range: 'bytes=0-0' } });
+    if (res.status === 200 || res.status === 206) return true;
+    console.error(`  \u274c [MEDIA PREFLIGHT] ${label} is NOT publicly reachable (HTTP ${res.status})!`);
+    console.error(`     Meta fetches media anonymously -> a 404 here usually means the repo went PRIVATE or the asset is missing.`);
+    console.error(`     URL: ${mediaUrl}`);
+    return false;
+  } catch (e) {
+    console.error(`  \u274c [MEDIA PREFLIGHT] Could not fetch ${label}: ${e.message}`);
+    return false;
+  }
+}
+
 // 1. Connection & Health Check Test Mode
 async function runHealthCheck() {
   console.log("================================================================================");
-  console.log("        TOOLVERSE AUTOMATION ENGINE v2.1 — CONNECTIVITY TEST                    ");
+  console.log("        TOOLVERSE AUTOMATION ENGINE v2.2 — CONNECTIVITY TEST                    ");
   console.log("================================================================================");
 
   console.log("\n[1/4] Verifying Facebook Page Access & Token...");
@@ -236,6 +254,11 @@ async function publishToInstagram(postItem, slotType, isDryRun) {
   if (isDryRun) {
     console.log(`  [DRY-RUN] Instagram API call simulated successfully.`);
     return { ok: true, id: `simulated_ig_${slotType}_id` };
+  }
+
+  // v2.2 preflight: never attempt uploads with an unreachable media URL
+  if (!(await assertMediaPubliclyFetchable(mediaUrl, 'Instagram media'))) {
+    return { ok: false, error: 'media_not_publicly_fetchable' };
   }
 
   // Step 1: Create Media Container
@@ -372,6 +395,11 @@ async function publishToFacebook(postItem, slotType, isDryRun) {
   if (isDryRun) {
     console.log(`  [DRY-RUN] Facebook Page API call simulated successfully.`);
     return { ok: true, id: `simulated_fb_${slotType}_id` };
+  }
+
+  // v2.2 preflight: never attempt uploads with an unreachable media URL
+  if (!(await assertMediaPubliclyFetchable(mediaUrl, 'Facebook media'))) {
+    return { ok: false, error: 'media_not_publicly_fetchable' };
   }
 
   let endpoint = `https://graph.facebook.com/v21.0/${FB_PAGE_ID}/photos`;
@@ -556,7 +584,7 @@ async function main() {
   }
 
   console.log("================================================================================");
-  console.log("            TOOLVERSE DUAL-SLOT AUTOMATION ENGINE v2.1                          ");
+  console.log("            TOOLVERSE DUAL-SLOT AUTOMATION ENGINE v2.2                          ");
   console.log("================================================================================");
 
   // Load schedule
@@ -674,6 +702,14 @@ async function main() {
         state.current_day = targetDay + 1;
       }
       fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2), 'utf8');
+
+      // v2.2 LOUD FAILURE: never exit green when nothing went live.
+      // Exit code 1 marks this run RED and GitHub emails the owner - no more silent skips.
+      console.error("\n" + "❌".repeat(25));
+      console.error(`   ZERO POSTS WENT LIVE - Day ${targetDay} [${slotKey.toUpperCase()}] FAILED`);
+      console.error(`   IG: ${JSON.stringify(igResult.error || 'ok')} | FB: ${JSON.stringify(fbResult.error || 'ok')}`);
+      console.error("   This run is marked FAILED on purpose so GitHub notifies the owner. Fix the cause above.");
+      process.exitCode = 1;
     }
   }
 
