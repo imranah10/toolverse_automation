@@ -1,6 +1,6 @@
 {
-  "current_day": 22,
-  "last_completed_day": 21,
+  "current_day": 16,
+  "last_completed_day": 15,
   "day_slots": {
     "9": {
       "image": {
@@ -131,9 +131,11 @@
         "published_at": "2026-10-09T18:57:30.748Z",
         "results": {
           "instagram": "18187847152414687",
-          "facebook": "1063297016520183",
+          "facebook": "deleted-in-cleanup-oct10",
           "story": null
-        }
+        },
+        "ig_delete_pending": true,
+        "note": "burst reel: FB deleted Oct 10; IG delete pending (token lacks instagram_basic). Re-post decision pending user."
       }
     },
     "17": {
@@ -142,9 +144,11 @@
         "published_at": "2026-10-09T18:59:29.545Z",
         "results": {
           "instagram": "18148533709562802",
-          "facebook": "2164446390774154",
+          "facebook": "deleted-in-cleanup-oct10",
           "story": null
-        }
+        },
+        "ig_delete_pending": true,
+        "note": "burst reel: FB deleted Oct 10; IG delete pending (token lacks instagram_basic). Re-post decision pending user."
       }
     },
     "18": {
@@ -153,9 +157,11 @@
         "published_at": "2026-10-09T19:34:19.986Z",
         "results": {
           "instagram": "18118840046003453",
-          "facebook": "1046319361759225",
+          "facebook": "deleted-in-cleanup-oct10",
           "story": null
-        }
+        },
+        "ig_delete_pending": true,
+        "note": "burst reel: FB deleted Oct 10; IG delete pending (token lacks instagram_basic). Re-post decision pending user."
       }
     },
     "19": {
@@ -164,9 +170,11 @@
         "published_at": "2026-10-09T21:51:24.935Z",
         "results": {
           "instagram": "17930597589162035",
-          "facebook": "1712522264215170",
+          "facebook": "deleted-in-cleanup-oct10",
           "story": null
-        }
+        },
+        "ig_delete_pending": true,
+        "note": "burst reel: FB deleted Oct 10; IG delete pending (token lacks instagram_basic). Re-post decision pending user."
       }
     },
     "20": {
@@ -175,9 +183,11 @@
         "published_at": "2026-10-09T21:54:45.600Z",
         "results": {
           "instagram": "18354015424175517",
-          "facebook": "977252532089504",
+          "facebook": "deleted-in-cleanup-oct10",
           "story": null
-        }
+        },
+        "ig_delete_pending": true,
+        "note": "burst reel: FB deleted Oct 10; IG delete pending (token lacks instagram_basic). Re-post decision pending user."
       }
     },
     "21": {
@@ -186,9 +196,11 @@
         "published_at": "2026-10-09T22:37:39.944Z",
         "results": {
           "instagram": "17957874843015247",
-          "facebook": "1442080127989168",
+          "facebook": "deleted-in-cleanup-oct10",
           "story": null
-        }
+        },
+        "ig_delete_pending": true,
+        "note": "burst reel: FB deleted Oct 10; IG delete pending (token lacks instagram_basic). Re-post decision pending user."
       }
     },
     "22": {
@@ -290,6 +302,6 @@
       }
     }
   ],
-  "last_published_day": 22,
+  "last_published_day": 15,
   "last_published_at": "2026-10-10T15:26:21.143Z"
 }
