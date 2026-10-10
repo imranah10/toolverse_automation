@@ -1,0 +1,29 @@
+name: FB Audit Probe (read-only)
+
+# Maintenance-only: verifies deleted videos are gone + lists Page videos/reels/posts since Oct 9.
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: 'Type PROBE to run (read-only)'
+        required: true
+        type: string
+
+jobs:
+  audit:
+    if: ${{ github.event.inputs.confirm == 'PROBE' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Run FB audit
+        env:
+          META_PAGE_ACCESS_TOKEN: ${{ secrets.META_PAGE_ACCESS_TOKEN }}
+        run: node scripts/fb_probe.js
