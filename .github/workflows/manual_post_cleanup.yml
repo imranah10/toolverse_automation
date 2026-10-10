@@ -1,0 +1,42 @@
+name: Manual Post Cleanup (Delete Published Posts)
+
+# Maintenance-only workflow. Requires typing DELETE as confirm.
+# Supplies comma-separated platform ids via inputs; deletion is idempotent.
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: 'Type DELETE to confirm removal'
+        required: true
+        type: string
+      ig_ids:
+        description: 'Comma-separated Instagram media IDs to delete'
+        required: false
+        type: string
+        default: ''
+      fb_ids:
+        description: 'Comma-separated Facebook post/video IDs to delete'
+        required: false
+        type: string
+        default: ''
+
+jobs:
+  cleanup:
+    if: ${{ github.event.inputs.confirm == 'DELETE' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Delete posts from platforms
+        env:
+          META_PAGE_ACCESS_TOKEN: ${{ secrets.META_PAGE_ACCESS_TOKEN }}
+          IG_MEDIA_IDS: ${{ github.event.inputs.ig_ids }}
+          FB_POST_IDS: ${{ github.event.inputs.fb_ids }}
+        run: node scripts/delete_posts.js
