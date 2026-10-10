@@ -632,6 +632,24 @@ async function main() {
   console.log(`▶️ Active Publishing Slot: ${slotKey.toUpperCase()} (${slotKey === 'image' ? 'Slot 1: 7:00 PM IST Prime' : 'Slot 2: 11:00 PM IST Viral Reel'})`);
   console.log(`▶️ Execution Mode: ${isDryRun ? '[DRY-RUN SIMULATION]' : '[LIVE PRODUCTION RUN]'}`);
 
+  // v2.3.1 CATCH-UP ADVANCE: never get stuck on a day whose BOTH slots are already published.
+  // (e.g. after partial cleanup / manual state edits, engine skips past fully-done days.)
+  let catchupMoved = 0;
+  while (state.current_day < 90) {
+    const cs = (state.day_slots && state.day_slots[state.current_day]) || {};
+    const cImg = !!(cs.image && cs.image.published === true);
+    const cVid = !!(cs.video && cs.video.published === true);
+    if (!(cImg && cVid)) break;
+    state.last_completed_day = state.current_day;
+    state.last_published_day = state.current_day;
+    state.current_day += 1;
+    catchupMoved++;
+  }
+  if (catchupMoved > 0) {
+    fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2), 'utf8');
+    console.log(`⏭️ [CATCH-UP] ${catchupMoved} day(s) already fully published - current_day moved to Day ${state.current_day}.`);
+  }
+
   // v2.3 DAILY QUOTA: max 1 image + 1 reel per IST calendar day (burst guard).
   // Counts every slot in state whose published_at falls on today's IST date.
   const istToday = new Date(Date.now() + 5.5 * 3600 * 1000).toISOString().slice(0, 10);
