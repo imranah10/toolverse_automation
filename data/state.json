@@ -125,84 +125,6 @@
         }
       }
     },
-    "16": {
-      "video": {
-        "published": true,
-        "published_at": "2026-10-09T18:57:30.748Z",
-        "results": {
-          "instagram": "18187847152414687",
-          "facebook": "deleted-in-cleanup-oct10",
-          "story": null
-        },
-        "ig_delete_pending": true,
-        "note": "burst reel: FB deleted Oct 10; IG delete pending (token lacks instagram_basic). Re-post decision pending user."
-      }
-    },
-    "17": {
-      "video": {
-        "published": true,
-        "published_at": "2026-10-09T18:59:29.545Z",
-        "results": {
-          "instagram": "18148533709562802",
-          "facebook": "deleted-in-cleanup-oct10",
-          "story": null
-        },
-        "ig_delete_pending": true,
-        "note": "burst reel: FB deleted Oct 10; IG delete pending (token lacks instagram_basic). Re-post decision pending user."
-      }
-    },
-    "18": {
-      "video": {
-        "published": true,
-        "published_at": "2026-10-09T19:34:19.986Z",
-        "results": {
-          "instagram": "18118840046003453",
-          "facebook": "deleted-in-cleanup-oct10",
-          "story": null
-        },
-        "ig_delete_pending": true,
-        "note": "burst reel: FB deleted Oct 10; IG delete pending (token lacks instagram_basic). Re-post decision pending user."
-      }
-    },
-    "19": {
-      "video": {
-        "published": true,
-        "published_at": "2026-10-09T21:51:24.935Z",
-        "results": {
-          "instagram": "17930597589162035",
-          "facebook": "deleted-in-cleanup-oct10",
-          "story": null
-        },
-        "ig_delete_pending": true,
-        "note": "burst reel: FB deleted Oct 10; IG delete pending (token lacks instagram_basic). Re-post decision pending user."
-      }
-    },
-    "20": {
-      "video": {
-        "published": true,
-        "published_at": "2026-10-09T21:54:45.600Z",
-        "results": {
-          "instagram": "18354015424175517",
-          "facebook": "deleted-in-cleanup-oct10",
-          "story": null
-        },
-        "ig_delete_pending": true,
-        "note": "burst reel: FB deleted Oct 10; IG delete pending (token lacks instagram_basic). Re-post decision pending user."
-      }
-    },
-    "21": {
-      "video": {
-        "published": true,
-        "published_at": "2026-10-09T22:37:39.944Z",
-        "results": {
-          "instagram": "17957874843015247",
-          "facebook": "deleted-in-cleanup-oct10",
-          "story": null
-        },
-        "ig_delete_pending": true,
-        "note": "burst reel: FB deleted Oct 10; IG delete pending (token lacks instagram_basic). Re-post decision pending user."
-      }
-    },
     "22": {
       "image": {
         "published": true,
@@ -299,6 +221,15 @@
         "instagram": "18081174620374446",
         "facebook": "1267223409818393_122115981309481665",
         "linkedin": "urn:li:share:7512203105711833088"
+      }
+    },
+    {
+      "day": "16-21",
+      "date": "2026-10-10",
+      "tool": "burst-cleanup (maintenance)",
+      "status": "cleanup-complete",
+      "results": {
+        "note": "6 burst reels (Day 16-21) deleted from Instagram + Facebook; video slots reset for 1/day re-post from Oct 11 alongside daily images. Day 15 image+reel kept."
       }
     }
   ],
