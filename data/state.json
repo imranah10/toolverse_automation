@@ -125,6 +125,17 @@
         }
       }
     },
+    "16": {
+      "video": {
+        "published": true,
+        "published_at": "2026-10-10T17:58:29.573Z",
+        "results": {
+          "instagram": "18075479804555228",
+          "facebook": "1812504243268765",
+          "story": null
+        }
+      }
+    },
     "22": {
       "image": {
         "published": true,
@@ -233,6 +244,6 @@
       }
     }
   ],
-  "last_published_day": 15,
-  "last_published_at": "2026-10-10T15:26:21.143Z"
+  "last_published_day": 16,
+  "last_published_at": "2026-10-10T17:58:29.573Z"
 }
