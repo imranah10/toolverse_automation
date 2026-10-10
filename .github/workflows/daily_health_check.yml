@@ -1,0 +1,26 @@
+name: Daily Health Check (self-audit)
+
+# Runs 9:00 AM IST daily. Live-checks every published post of the last 8 days
+# (IG + FB). Fails (=> owner email) if any expected-live post is missing.
+
+on:
+  schedule:
+    - cron: '30 3 * * *'
+  workflow_dispatch: {}
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Audit published posts
+        env:
+          META_PAGE_ACCESS_TOKEN: ${{ secrets.META_PAGE_ACCESS_TOKEN }}
+        run: node scripts/daily_health_check.js
