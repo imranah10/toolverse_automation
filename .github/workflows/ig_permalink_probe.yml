@@ -1,0 +1,29 @@
+name: IG Permalink Probe (read-only)
+
+# Maintenance-only: prints permalink+caption for given IG media ids. No writes.
+
+on:
+  workflow_dispatch:
+    inputs:
+      ig_ids:
+        description: 'Comma-separated Instagram media IDs'
+        required: true
+        type: string
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Fetch permalinks
+        env:
+          META_PAGE_ACCESS_TOKEN: ${{ secrets.META_PAGE_ACCESS_TOKEN }}
+          IG_MEDIA_IDS: ${{ github.event.inputs.ig_ids }}
+        run: node scripts/ig_probe.js
