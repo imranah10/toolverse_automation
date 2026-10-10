@@ -1,6 +1,6 @@
 /**
  * publish_engine.js
- * Toolverse Automated Multi-Slot Publishing Engine v2.1
+ * Toolverse Automated Multi-Slot Publishing Engine v2.3
  * Built for GitHub Actions Cron & Direct Manual Execution
  * 
  * Schedule Architecture:
@@ -18,6 +18,14 @@
  * - Anti-Stuck-Forever Guard (allows forward progress on persistent failures)
  * - Meta Video Processing Status Polling (guarantees Reel readiness)
  * - Idempotent Slot Tracking (never double-posts or skips days)
+ *
+ * Key Fixes v2.3 (burst + content-loss protection):
+ * - DAILY QUOTA: max 1 image + 1 reel per IST calendar day, no matter how many
+ *   cron runs fire (GitHub late/repeated crons can never flood the feed again)
+ * - PAIRED ADVANCE: current_day advances ONLY after BOTH slots (image + reel)
+ *   of the day are published - a day's image post can never be skipped over
+ * - STALL VALVE: if a day's image stays pending >24h after its reel went live,
+ *   it is auto-marked skipped and the engine moves on (never freezes)
  */
 
 const fs = require('fs');
@@ -584,7 +592,7 @@ async function main() {
   }
 
   console.log("================================================================================");
-  console.log("            TOOLVERSE DUAL-SLOT AUTOMATION ENGINE v2.2                          ");
+  console.log("            TOOLVERSE DUAL-SLOT AUTOMATION ENGINE v2.3                          ");
   console.log("================================================================================");
 
   // Load schedule
@@ -623,6 +631,41 @@ async function main() {
   console.log(`\n▶️ Target Publishing Day: DAY ${targetDay} (Out of 90)`);
   console.log(`▶️ Active Publishing Slot: ${slotKey.toUpperCase()} (${slotKey === 'image' ? 'Slot 1: 7:00 PM IST Prime' : 'Slot 2: 11:00 PM IST Viral Reel'})`);
   console.log(`▶️ Execution Mode: ${isDryRun ? '[DRY-RUN SIMULATION]' : '[LIVE PRODUCTION RUN]'}`);
+
+  // v2.3 DAILY QUOTA: max 1 image + 1 reel per IST calendar day (burst guard).
+  // Counts every slot in state whose published_at falls on today's IST date.
+  const istToday = new Date(Date.now() + 5.5 * 3600 * 1000).toISOString().slice(0, 10);
+  let quotaImg = 0, quotaVid = 0;
+  for (const slots of Object.values(state.day_slots || {})) {
+    for (const [name, sd] of Object.entries(slots || {})) {
+      if (!sd || sd.published !== true || !sd.published_at) continue;
+      if (name !== 'image' && name !== 'video') continue;
+      const istDay = new Date(new Date(sd.published_at).getTime() + 5.5 * 3600 * 1000).toISOString().slice(0, 10);
+      if (istDay === istToday) { if (name === 'image') quotaImg++; else quotaVid++; }
+    }
+  }
+  if ((slotKey === 'image' && quotaImg >= 1) || (slotKey === 'video' && quotaVid >= 1)) {
+    console.log(`\n🛑 [DAILY QUOTA] Today (IST ${istToday}) already published: ${quotaImg} image + ${quotaVid} reel.`);
+    console.log(`🛑 Skipping "${slotKey}" run to prevent burst posting. Nothing went live (this is a healthy no-op, not an error).`);
+    return;
+  }
+
+  // v2.3 STALL VALVE: if current day's reel went live but its image has been pending >24h,
+  // auto-skip that image and advance so automation never freezes on a dead image cron.
+  const curValve = state.current_day;
+  const valveSlots = (state.day_slots && state.day_slots[curValve]) || {};
+  const valveVidAt = valveSlots.video && valveSlots.video.published_at;
+  if (valveSlots.video && valveSlots.video.published === true && !(valveSlots.image && valveSlots.image.published === true) && valveVidAt) {
+    const ageH = (Date.now() - new Date(valveVidAt).getTime()) / 3600000;
+    if (ageH >= 24) {
+      state.day_slots[curValve].image = { ...(valveSlots.image || {}), published: false, skipped: true, skip_reason: 'auto-skipped: image slot unavailable for >24h after reel went live (v2.3 stall valve)' };
+      state.current_day = curValve + 1;
+      state.last_completed_day = curValve;
+      state.last_published_day = curValve;
+      fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2), 'utf8');
+      console.log(`\n⏭️ [STALL VALVE] Day ${curValve} image pending >24h after its reel went live. Image marked skipped, advanced to Day ${curValve + 1}.`);
+    }
+  }
 
   // Duplicate Check
   const daySlotState = state.day_slots[targetDay] || {};
@@ -677,12 +720,23 @@ async function main() {
         }
       };
 
-      // If Slot 2 (video) just finished, the entire day is officially complete! Advance to tomorrow
-      if (slotKey === 'video') {
+      // v2.3 PAIRED ADVANCE: advance ONLY when BOTH slots of this day are published,
+      // so a day's image post can never be silently skipped by a late video cron.
+      const doneSlots = state.day_slots[targetDay] || {};
+      const imgDone = !!(doneSlots.image && doneSlots.image.published === true);
+      const vidDone = !!(doneSlots.video && doneSlots.video.published === true);
+      if (imgDone && vidDone) {
         state.last_completed_day = targetDay;
         state.current_day = targetDay + 1;
         state.last_published_day = targetDay;
-        console.log(`\n🏆 Day ${targetDay} fully completed! Advanced current_day to Day ${targetDay + 1} for tomorrow's Slot 1.`);
+        console.log(`\n🏆 Day ${targetDay} fully completed (image + reel)! Advanced current_day to Day ${targetDay + 1}.`);
+      } else if (slotKey === 'video') {
+        state.last_published_day = targetDay;
+        console.log(`\n⏸️ Day ${targetDay} reel is LIVE, but its image slot is still pending.`);
+        console.log(`⏸️ Keeping current_day at ${targetDay} so the next image run publishes Day ${targetDay}'s image first (no content skipped).`);
+      } else {
+        state.last_published_day = targetDay;
+        console.log(`\n✅ Day ${targetDay} image is LIVE. Reel slot pending for tonight's 11:00 PM IST run.`);
       }
 
       state.last_published_at = new Date().toISOString();
