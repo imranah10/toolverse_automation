@@ -190,6 +190,18 @@
           "story": null
         }
       }
+    },
+    "22": {
+      "image": {
+        "published": true,
+        "published_at": "2026-10-10T15:26:21.143Z",
+        "results": {
+          "instagram": "18118230362001213",
+          "facebook": "1267223409818393_122120220411481665",
+          "story": null,
+          "linkedin": "urn:li:share:7514707902436388865"
+        }
+      }
     }
   },
   "history": [
@@ -278,6 +290,6 @@
       }
     }
   ],
-  "last_published_day": 21,
-  "last_published_at": "2026-10-09T22:37:39.944Z"
+  "last_published_day": 22,
+  "last_published_at": "2026-10-10T15:26:21.143Z"
 }
