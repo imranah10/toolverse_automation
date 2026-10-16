@@ -1,0 +1,6 @@
+ONE_CLICK_WIPE_OLD_AND_PUSH_GITHUB.bat
+clean_and_push_to_github.sh
+deploy_to_github.sh
+deploy_and_clean_github.sh
+ONE_CLICK_GITHUB_PUSH.bat
+report.txt
